@@ -3,7 +3,7 @@
     "document_id": "MUA8L7mvWTTCJGSg-p5g",
     "original_document_id": "MUA8L7mvWTTCJGSg-p5g",
     "version": "29",
-    "lastChanged": "1665021738632",
+    "lastChanged": "1665041698509",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -38,6 +38,78 @@
                         "ChangeNumOnTap"
                     ],
                     [
+                        "CloudStorage"
+                    ],
+                    [
+                        "CloudStorage",
+                        "CloudStorage Module"
+                    ],
+                    [
+                        "CloudStorage",
+                        "Lens Cloud - Persistent Cloud Storage"
+                    ],
+                    [
+                        "Connected"
+                    ],
+                    [
+                        "ConnectedUI"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Materials"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Models"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "HDRI"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "HDRI",
+                        "Diff"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "HDRI",
+                        "Specular"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "MaterialParams"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "ProgressBar"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "SampleSnapcode"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "ScanningAnimation"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "Spinner"
+                    ],
+                    [
+                        "ConnectedUI",
+                        "Textures",
+                        "StartButton"
+                    ],
+                    [
                         "Echopark"
                     ],
                     [
@@ -52,15 +124,16 @@
                         "HelloWorldScript"
                     ],
                     [
+                        "PokerLogic"
+                    ],
+                    [
                         "ShareSession"
                     ],
                     [
-                        "[Example][Connected Lenses] Multiplayer Session",
-                        "Connected Lens Module"
+                        "Textures"
                     ],
                     [
-                        "[Example][Connected Lenses] Multiplayer Session",
-                        "Connected Lenses - Multiplayer Session"
+                        "connected-lens"
                     ]
                 ]
             ]
@@ -220,6 +293,310 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "23",
+                    "uid": "1665024730468220:1459888",
+                    "name": "Files\/File18.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "24",
+                    "uid": "1665024730539149:1459892",
+                    "name": "Files\/File19.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "25",
+                    "uid": "1665024730561429:1459896",
+                    "name": "Files\/File20.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "26",
+                    "uid": "1665024730599039:1459900",
+                    "name": "Files\/File21.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "27",
+                    "uid": "1665024730635576:1459904",
+                    "name": "Files\/File22.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "28",
+                    "uid": "1665024730819795:1459921",
+                    "name": "Files\/File23",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "29",
+                    "uid": "1665024731193585:1459952",
+                    "name": "Files\/File25.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "30",
+                    "uid": "1665024732088981:1460007",
+                    "name": "Files\/File27",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "31",
+                    "uid": "1665024732221508:1460022",
+                    "name": "Files\/File28.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "32",
+                    "uid": "1665024733118859:1460052",
+                    "name": "Files\/File32",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "33",
+                    "uid": "1665024734079168:1460084",
+                    "name": "Files\/File34",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "34",
+                    "uid": "1665024734442823:1460115",
+                    "name": "Files\/File36.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "35",
+                    "uid": "1665024735124895:1460180",
+                    "name": "Files\/File39",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "36",
+                    "uid": "1665024735491175:1460211",
+                    "name": "Files\/File41.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "37",
+                    "uid": "1665024736263196:1460270",
+                    "name": "Files\/File44",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "38",
+                    "uid": "1665024737713538:1460322",
+                    "name": "Files\/File46",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "39",
+                    "uid": "1665024739596920:1460348",
+                    "name": "Files\/File48",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "40",
+                    "uid": "1665024740894261:1460391",
+                    "name": "Files\/File50.mesh",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "41",
+                    "uid": "1665024740941381:1460397",
+                    "name": "sceneObject_0",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "42",
+                    "uid": "1665024741383769:1460442",
+                    "name": "Files\/File53.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "43",
+                    "uid": "1665024741482549:1460446",
+                    "name": "Files\/File54.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "44",
+                    "uid": "1665024744116312:1460450",
+                    "name": "Files\/File55.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "45",
+                    "uid": "1665024744323080:1460454",
+                    "name": "Files\/File58.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "46",
+                    "uid": "1665024744371051:1460458",
+                    "name": "Files\/File60.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "47",
+                    "uid": "1665024744473616:1460462",
+                    "name": "Files\/File63.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "48",
+                    "uid": "1665024744554818:1460466",
+                    "name": "Files\/File66.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "49",
+                    "uid": "1665024744613804:1460470",
+                    "name": "Files\/File69.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "50",
+                    "uid": "1665024759789089:1462935",
+                    "name": "Files\/File76.jpeg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "51",
+                    "uid": "1665024759855913:1462941",
+                    "name": "Files\/File78.jpeg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "52",
+                    "uid": "1665024759967913:1462949",
+                    "name": "Files\/File81.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "53",
+                    "uid": "1665024760010565:1462955",
+                    "name": "Files\/File83.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "54",
+                    "uid": "1665024760081272:1462961",
+                    "name": "Files\/File86.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "55",
+                    "uid": "1665024760202899:1462975",
+                    "name": "Files\/File89",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "56",
+                    "uid": "1665024760431414:1462993",
+                    "name": "Files\/File92.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "57",
+                    "uid": "1665024760502386:1463001",
+                    "name": "Files\/File95.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "58",
+                    "uid": "1665037294328916:62013",
+                    "name": "Files\/File108.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "59",
+                    "uid": "1665037294357268:62024",
+                    "name": "",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "60",
+                    "uid": "1665038284717325:124916",
+                    "name": "Files\/File109.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -311,7 +688,8 @@
                 "8": "1664999454491808:69558",
                 "9": "1664999454532196:69686",
                 "10": "1665000344946900:170274",
-                "11": "1665001379491451:234843"
+                "11": "1665001379491451:234843",
+                "12": "1665037294359826:62027"
             }
         },
         "LayerComponent": {
@@ -377,6 +755,374 @@
                 {
                     "k": "17",
                     "v": "Files\/File17.js"
+                },
+                {
+                    "k": "18",
+                    "v": "Files\/File18.js"
+                },
+                {
+                    "k": "19",
+                    "v": "Files\/File19.js"
+                },
+                {
+                    "k": "20",
+                    "v": "Files\/File20.js"
+                },
+                {
+                    "k": "21",
+                    "v": "Files\/File21.js"
+                },
+                {
+                    "k": "22",
+                    "v": "Files\/File22.js"
+                },
+                {
+                    "k": "23",
+                    "v": "Files\/File23"
+                },
+                {
+                    "k": "24",
+                    "v": "Files\/File24.lsmat"
+                },
+                {
+                    "k": "25",
+                    "v": "Files\/File25.png"
+                },
+                {
+                    "k": "26",
+                    "v": "Files\/File26.png"
+                },
+                {
+                    "k": "27",
+                    "v": "Files\/File27"
+                },
+                {
+                    "k": "28",
+                    "v": "Files\/File28.pvr"
+                },
+                {
+                    "k": "29",
+                    "v": "Files\/File29.png"
+                },
+                {
+                    "k": "30",
+                    "v": "Files\/File30.png"
+                },
+                {
+                    "k": "31",
+                    "v": "Files\/File31.lsmat"
+                },
+                {
+                    "k": "32",
+                    "v": "Files\/File32"
+                },
+                {
+                    "k": "33",
+                    "v": "Files\/File33.lsmat"
+                },
+                {
+                    "k": "34",
+                    "v": "Files\/File34"
+                },
+                {
+                    "k": "35",
+                    "v": "Files\/File35.lsmat"
+                },
+                {
+                    "k": "36",
+                    "v": "Files\/File36.pvr"
+                },
+                {
+                    "k": "37",
+                    "v": "Files\/File37.png"
+                },
+                {
+                    "k": "38",
+                    "v": "Files\/File38.png"
+                },
+                {
+                    "k": "39",
+                    "v": "Files\/File39"
+                },
+                {
+                    "k": "40",
+                    "v": "Files\/File40.lsmat"
+                },
+                {
+                    "k": "41",
+                    "v": "Files\/File41.pvr"
+                },
+                {
+                    "k": "42",
+                    "v": "Files\/File42.png"
+                },
+                {
+                    "k": "43",
+                    "v": "Files\/File43.png"
+                },
+                {
+                    "k": "44",
+                    "v": "Files\/File44"
+                },
+                {
+                    "k": "45",
+                    "v": "Files\/File45.lsmat"
+                },
+                {
+                    "k": "46",
+                    "v": "Files\/File46"
+                },
+                {
+                    "k": "47",
+                    "v": "Files\/File47.lsmat"
+                },
+                {
+                    "k": "48",
+                    "v": "Files\/File48"
+                },
+                {
+                    "k": "49",
+                    "v": "Files\/File49.lsmat"
+                },
+                {
+                    "k": "50",
+                    "v": "Files\/File50.mesh"
+                },
+                {
+                    "k": "51",
+                    "v": "Files\/File51.mesh"
+                },
+                {
+                    "k": "52",
+                    "v": "Files\/File52.oprfb"
+                },
+                {
+                    "k": "53",
+                    "v": "Files\/File53.js"
+                },
+                {
+                    "k": "54",
+                    "v": "Files\/File54.js"
+                },
+                {
+                    "k": "55",
+                    "v": "Files\/File55.pvr"
+                },
+                {
+                    "k": "56",
+                    "v": "Files\/File56.png"
+                },
+                {
+                    "k": "57",
+                    "v": "Files\/File57.png"
+                },
+                {
+                    "k": "58",
+                    "v": "Files\/File58.png"
+                },
+                {
+                    "k": "59",
+                    "v": "Files\/File59.png"
+                },
+                {
+                    "k": "60",
+                    "v": "Files\/File60.pvr"
+                },
+                {
+                    "k": "61",
+                    "v": "Files\/File61.png"
+                },
+                {
+                    "k": "62",
+                    "v": "Files\/File62.png"
+                },
+                {
+                    "k": "63",
+                    "v": "Files\/File63.pvr"
+                },
+                {
+                    "k": "64",
+                    "v": "Files\/File64.png"
+                },
+                {
+                    "k": "65",
+                    "v": "Files\/File65.png"
+                },
+                {
+                    "k": "66",
+                    "v": "Files\/File66.pvr"
+                },
+                {
+                    "k": "67",
+                    "v": "Files\/File67.png"
+                },
+                {
+                    "k": "68",
+                    "v": "Files\/File68.png"
+                },
+                {
+                    "k": "69",
+                    "v": "Files\/File69.pvr"
+                },
+                {
+                    "k": "70",
+                    "v": "Files\/File70.png"
+                },
+                {
+                    "k": "71",
+                    "v": "Files\/File71.png"
+                },
+                {
+                    "k": "72",
+                    "v": "Files\/File72.pvr"
+                },
+                {
+                    "k": "73",
+                    "v": "Files\/File73.pvr"
+                },
+                {
+                    "k": "74",
+                    "v": "Files\/File74.pvr"
+                },
+                {
+                    "k": "75",
+                    "v": "Files\/File75.pvr"
+                },
+                {
+                    "k": "76",
+                    "v": "Files\/File76.jpeg"
+                },
+                {
+                    "k": "77",
+                    "v": "Files\/File77.jpeg"
+                },
+                {
+                    "k": "78",
+                    "v": "Files\/File78.jpeg"
+                },
+                {
+                    "k": "79",
+                    "v": "Files\/File79.jpeg"
+                },
+                {
+                    "k": "80",
+                    "v": "Files\/File80.hdr"
+                },
+                {
+                    "k": "81",
+                    "v": "Files\/File81.png"
+                },
+                {
+                    "k": "82",
+                    "v": "Files\/File82.png"
+                },
+                {
+                    "k": "83",
+                    "v": "Files\/File83.pvr"
+                },
+                {
+                    "k": "84",
+                    "v": "Files\/File84.png"
+                },
+                {
+                    "k": "85",
+                    "v": "Files\/File85.png"
+                },
+                {
+                    "k": "86",
+                    "v": "Files\/File86.pvr"
+                },
+                {
+                    "k": "87",
+                    "v": "Files\/File87.png"
+                },
+                {
+                    "k": "88",
+                    "v": "Files\/File88.png"
+                },
+                {
+                    "k": "89",
+                    "v": "Files\/File89"
+                },
+                {
+                    "k": "90",
+                    "v": "Files\/File90"
+                },
+                {
+                    "k": "91",
+                    "v": "Files\/File91"
+                },
+                {
+                    "k": "92",
+                    "v": "Files\/File92.pvr"
+                },
+                {
+                    "k": "93",
+                    "v": "Files\/File93.png"
+                },
+                {
+                    "k": "94",
+                    "v": "Files\/File94.png"
+                },
+                {
+                    "k": "95",
+                    "v": "Files\/File95.pvr"
+                },
+                {
+                    "k": "96",
+                    "v": "Files\/File96.png"
+                },
+                {
+                    "k": "97",
+                    "v": "Files\/File97.png"
+                },
+                {
+                    "k": "98",
+                    "v": "Files\/File98.pvr"
+                },
+                {
+                    "k": "99",
+                    "v": "Files\/File99.pvr"
+                },
+                {
+                    "k": "100",
+                    "v": "Files\/File100.pvr"
+                },
+                {
+                    "k": "101",
+                    "v": "Files\/File101.pvr"
+                },
+                {
+                    "k": "102",
+                    "v": "Files\/File102.pvr"
+                },
+                {
+                    "k": "103",
+                    "v": "Files\/File103.pvr"
+                },
+                {
+                    "k": "104",
+                    "v": "Files\/File104"
+                },
+                {
+                    "k": "105",
+                    "v": "Files\/File105.pvr"
+                },
+                {
+                    "k": "106",
+                    "v": "Files\/File106.pvr"
+                },
+                {
+                    "k": "107",
+                    "v": "Files\/File107.oprfb"
+                },
+                {
+                    "k": "108",
+                    "v": "Files\/File108.js"
+                },
+                {
+                    "k": "109",
+                    "v": "Files\/File109.js"
                 }
             ]
         },
@@ -413,15 +1159,191 @@
                     },
                     {
                         "k": "974",
-                        "v": "[Example][Connected Lenses] Multiplayer Session"
+                        "v": "connected-lens"
                     },
                     {
                         "k": "975",
-                        "v": "[Example][Connected Lenses] Multiplayer Session\/Connected Lenses - Multiplayer Session.js"
+                        "v": "connected-lens\/my-connected-lens.js"
                     },
                     {
                         "k": "976",
                         "v": "ShareSession.js"
+                    },
+                    {
+                        "k": "31509",
+                        "v": "Connected"
+                    },
+                    {
+                        "k": "31510",
+                        "v": "Connected\/ConnectedBehavior.js"
+                    },
+                    {
+                        "k": "31511",
+                        "v": "Connected\/ConnectedController.js"
+                    },
+                    {
+                        "k": "31512",
+                        "v": "Connected\/ConnectedHelper.js"
+                    },
+                    {
+                        "k": "31513",
+                        "v": "Connected\/Packets.js"
+                    },
+                    {
+                        "k": "31514",
+                        "v": "Connected\/Utils.js"
+                    },
+                    {
+                        "k": "31515",
+                        "v": "ConnectedUI"
+                    },
+                    {
+                        "k": "31516",
+                        "v": "ConnectedUI\/Materials"
+                    },
+                    {
+                        "k": "31517",
+                        "v": "ConnectedUI\/Materials\/Arrow.lsmat"
+                    },
+                    {
+                        "k": "31518",
+                        "v": "Textures"
+                    },
+                    {
+                        "k": "31519",
+                        "v": "Textures\/Base.png"
+                    },
+                    {
+                        "k": "31520",
+                        "v": "ConnectedUI\/Materials\/Landmarks2D.lsmat"
+                    },
+                    {
+                        "k": "31521",
+                        "v": "Textures\/circle-32.png"
+                    },
+                    {
+                        "k": "31522",
+                        "v": "ConnectedUI\/Materials\/Landmarks3D.lsmat"
+                    },
+                    {
+                        "k": "31523",
+                        "v": "ConnectedUI\/Materials\/ProgressBar.lsmat"
+                    },
+                    {
+                        "k": "31524",
+                        "v": "Textures\/ProgressBar.png"
+                    },
+                    {
+                        "k": "31525",
+                        "v": "ConnectedUI\/Materials\/Spinner.lsmat"
+                    },
+                    {
+                        "k": "31526",
+                        "v": "Textures\/Spinner.png"
+                    },
+                    {
+                        "k": "31527",
+                        "v": "ConnectedUI\/Materials\/UICircle.lsmat"
+                    },
+                    {
+                        "k": "31528",
+                        "v": "ConnectedUI\/Materials\/UnlitBlack40.lsmat"
+                    },
+                    {
+                        "k": "31529",
+                        "v": "ConnectedUI\/Materials\/UnlitGradient.lsmat"
+                    },
+                    {
+                        "k": "31530",
+                        "v": "ConnectedUI\/Models"
+                    },
+                    {
+                        "k": "31531",
+                        "v": "ConnectedUI\/Models\/ArrowMesh.mesh"
+                    },
+                    {
+                        "k": "31532",
+                        "v": "ConnectedUI\/Models\/ArrowPrefab.oprfb"
+                    },
+                    {
+                        "k": "31533",
+                        "v": "ConnectedUI\/Scripts"
+                    },
+                    {
+                        "k": "31534",
+                        "v": "ConnectedUI\/Scripts\/Arrow.js"
+                    },
+                    {
+                        "k": "31535",
+                        "v": "ConnectedUI\/Scripts\/Behavior.js"
+                    },
+                    {
+                        "k": "31536",
+                        "v": "ConnectedUI\/Textures"
+                    },
+                    {
+                        "k": "31537",
+                        "v": "ConnectedUI\/Textures\/Arrow.png"
+                    },
+                    {
+                        "k": "31538",
+                        "v": "ConnectedUI\/Textures\/Base.png"
+                    },
+                    {
+                        "k": "31539",
+                        "v": "ConnectedUI\/Textures\/BlockDrawingSplash.png"
+                    },
+                    {
+                        "k": "31540",
+                        "v": "ConnectedUI\/Textures\/ButtonBackgroundFilled.png"
+                    },
+                    {
+                        "k": "31541",
+                        "v": "ConnectedUI\/Textures\/ButtonBackgroundOutlined.png"
+                    },
+                    {
+                        "k": "31542",
+                        "v": "ConnectedUI\/Textures\/Circle.png"
+                    },
+                    {
+                        "k": "31543",
+                        "v": "ConnectedUI\/Textures\/HDRI.hdr"
+                    },
+                    {
+                        "k": "31544",
+                        "v": "ConnectedUI\/Textures\/MaterialParams.png"
+                    },
+                    {
+                        "k": "31545",
+                        "v": "ConnectedUI\/Textures\/ProgressBar.png"
+                    },
+                    {
+                        "k": "31546",
+                        "v": "ConnectedUI\/Textures\/SampleSnapcode.png"
+                    },
+                    {
+                        "k": "31547",
+                        "v": "ConnectedUI\/Textures\/ScanningAnimation"
+                    },
+                    {
+                        "k": "31548",
+                        "v": "ConnectedUI\/Textures\/Spinner.png"
+                    },
+                    {
+                        "k": "31549",
+                        "v": "ConnectedUI\/Textures\/StartButton.png"
+                    },
+                    {
+                        "k": "31550",
+                        "v": "CloudStorage"
+                    },
+                    {
+                        "k": "31551",
+                        "v": "CloudStorage\/Lens Cloud - Persistent Cloud Storage.js"
+                    },
+                    {
+                        "k": "31552",
+                        "v": "PokerLogic.js"
                     }
                 ],
                 "hashes": [
@@ -463,19 +1385,191 @@
                     },
                     {
                         "k": "975",
-                        "v": "320d5767c01cefd440827b626338c3b0"
+                        "v": "f1fd4f5321bd21be59e933de6cddd30d"
                     },
                     {
                         "k": "976",
                         "v": "b7256c31c32e84532c0ea514b6153949"
+                    },
+                    {
+                        "k": "31509",
+                        "v": "9269027cfb88ceacbeb0ad4d78df3c92"
+                    },
+                    {
+                        "k": "31510",
+                        "v": "c99a06b2e0b094508b660a5f83eec2e8"
+                    },
+                    {
+                        "k": "31511",
+                        "v": "174d14bb5eada8411e97533dc1417984"
+                    },
+                    {
+                        "k": "31512",
+                        "v": "d2d933dde5cc4cad90a859a08a34f4a1"
+                    },
+                    {
+                        "k": "31513",
+                        "v": "678dacfcb7ef56b482ad5717d25cff81"
+                    },
+                    {
+                        "k": "31514",
+                        "v": "2f5c3777d1e48b9acb7f077aa97ae0b2"
+                    },
+                    {
+                        "k": "31515",
+                        "v": "6700b7cf653f7ad2c1e947b61619b66e"
+                    },
+                    {
+                        "k": "31516",
+                        "v": "3c5cbcceca7bc0d19c0a374f8bfd34f0"
+                    },
+                    {
+                        "k": "31517",
+                        "v": "ff6628fbc4303e764a6068e64805dcc1"
+                    },
+                    {
+                        "k": "31519",
+                        "v": "cb607d7b25a160872c49fb4d2635cc33"
+                    },
+                    {
+                        "k": "31520",
+                        "v": "dd989bdc4cf116310f313e7fc4fd9ae7"
+                    },
+                    {
+                        "k": "31521",
+                        "v": "ae84d3506906e7a365f75001d40e4a7f"
+                    },
+                    {
+                        "k": "31522",
+                        "v": "a4efd440e5438c060474383a7c2d52b4"
+                    },
+                    {
+                        "k": "31523",
+                        "v": "a4e5f8bdf5c759ed98918c855237b1f1"
+                    },
+                    {
+                        "k": "31524",
+                        "v": "096f22964e57dea0dbb65db8cc81ab15"
+                    },
+                    {
+                        "k": "31525",
+                        "v": "7e37299a718aea7cc2a356044660bccf"
+                    },
+                    {
+                        "k": "31526",
+                        "v": "024a1b7e91b04aa7e7ad9828f2444316"
+                    },
+                    {
+                        "k": "31527",
+                        "v": "2908bb132a7d7c6e25ba00d982965324"
+                    },
+                    {
+                        "k": "31528",
+                        "v": "4b587d4e255c52c273bb6e68e1110d0f"
+                    },
+                    {
+                        "k": "31529",
+                        "v": "f68ad84163de15207609840cb55f71f0"
+                    },
+                    {
+                        "k": "31530",
+                        "v": "6bf3ebe7f0471e0ca6615cd9c1d80914"
+                    },
+                    {
+                        "k": "31531",
+                        "v": "8c6163bad29637274782c3a671a796ec"
+                    },
+                    {
+                        "k": "31532",
+                        "v": "70550eff780eb19d63365811e5d704ce"
+                    },
+                    {
+                        "k": "31533",
+                        "v": "4612834b05418f9ad768228f5b832c62"
+                    },
+                    {
+                        "k": "31534",
+                        "v": "7729b9b876c0693a465c0bbdd4055b50"
+                    },
+                    {
+                        "k": "31535",
+                        "v": "91c13f7497081d3638dd81f8c7b017fd"
+                    },
+                    {
+                        "k": "31536",
+                        "v": "a883ff1af2b288e0a73a09d39d91a81f"
+                    },
+                    {
+                        "k": "31537",
+                        "v": "179daffcefc2b58aa49c652c1046145b"
+                    },
+                    {
+                        "k": "31538",
+                        "v": "cb607d7b25a160872c49fb4d2635cc33"
+                    },
+                    {
+                        "k": "31539",
+                        "v": "318876392c441c9f596253881af41c33"
+                    },
+                    {
+                        "k": "31540",
+                        "v": "d1ffd766a77af658f276592dfeed63fc"
+                    },
+                    {
+                        "k": "31541",
+                        "v": "ea45338745786678876db8274b1847eb"
+                    },
+                    {
+                        "k": "31542",
+                        "v": "ae84d3506906e7a365f75001d40e4a7f"
+                    },
+                    {
+                        "k": "31543",
+                        "v": "5ebb8b8effe5f217cfa923dfc90ed39f"
+                    },
+                    {
+                        "k": "31544",
+                        "v": "0eaf75fe039aabe3cde223768d9fef47"
+                    },
+                    {
+                        "k": "31545",
+                        "v": "096f22964e57dea0dbb65db8cc81ab15"
+                    },
+                    {
+                        "k": "31546",
+                        "v": "80f2e758b35637d87c26e78775c5aba8"
+                    },
+                    {
+                        "k": "31547",
+                        "v": "299e3dfd515666d4fbd11a8ac20b7230"
+                    },
+                    {
+                        "k": "31548",
+                        "v": "024a1b7e91b04aa7e7ad9828f2444316"
+                    },
+                    {
+                        "k": "31549",
+                        "v": "6c69b9b05cdbc627a09e6f314233a7c6"
+                    },
+                    {
+                        "k": "31551",
+                        "v": "9b120b1c15da6cb71abaa9fdc8551cbd"
+                    },
+                    {
+                        "k": "31552",
+                        "v": "f9a1a4cbf650ae0cba95b1478fbcce0b"
+                    },
+                    {
+                        "k": "31553",
+                        "v": "59361291686fd7cebf3981836238abbb"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-10-05T16:42:04",
+                        "lastModified": "2022-10-06T02:54:29",
                         "name": "Public",
-                        "hash": "de324adb17e8a9ca5c500da1466075da",
+                        "hash": "82576c38ce01d8639f08bccbae39ad4f",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -490,6 +1584,365 @@
                                 "name": "ChangeNumOnTap.js",
                                 "hash": "be4bee42b07eccb57ad1585e05fa6a22",
                                 "children": ""
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2022-10-06T02:21:34",
+                                "name": "CloudStorage",
+                                "hash": "025440ef52e01eef2bed09500b7b40cc",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-06T02:21:34",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-06T02:21:34",
+                                        "name": "Lens Cloud - Persistent Cloud Storage.js",
+                                        "hash": "9b120b1c15da6cb71abaa9fdc8551cbd",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2022-10-06T02:41:18",
+                                "name": "Connected",
+                                "hash": "607c1fb2ee1f53dc157ea657bd3cce75",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:15:53",
+                                        "name": "ConnectedBehavior.js",
+                                        "hash": "c99a06b2e0b094508b660a5f83eec2e8",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:15:53",
+                                        "name": "ConnectedController.js",
+                                        "hash": "174d14bb5eada8411e97533dc1417984",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-06T02:41:18",
+                                        "name": "ConnectedHelper.js",
+                                        "hash": "d2d933dde5cc4cad90a859a08a34f4a1",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:15:53",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:15:53",
+                                        "name": "Packets.js",
+                                        "hash": "678dacfcb7ef56b482ad5717d25cff81",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:15:53",
+                                        "name": "Utils.js",
+                                        "hash": "2f5c3777d1e48b9acb7f077aa97ae0b2",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2022-10-06T02:35:06",
+                                "name": "connected-lens",
+                                "hash": "c1a00a414cd7dc194a95d7bd75351968",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T16:22:59",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-06T02:34:10",
+                                        "name": "my-connected-lens.js",
+                                        "hash": "f1fd4f5321bd21be59e933de6cddd30d",
+                                        "children": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "isFolder": "true",
+                                "lastModified": "2022-10-05T22:51:30",
+                                "name": "ConnectedUI",
+                                "hash": "905851dac7e73d73f7f2d993a72e7401",
+                                "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:15:56",
+                                        "name": "folder.lock",
+                                        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-10-05T22:52:35",
+                                        "name": "Materials",
+                                        "hash": "8ad9d695562ef450ed2007aaaedc958f",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:11",
+                                                "name": "Arrow.lsmat",
+                                                "hash": "ff6628fbc4303e764a6068e64805dcc1",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:57",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:34",
+                                                "name": "Landmarks2D.lsmat",
+                                                "hash": "dd989bdc4cf116310f313e7fc4fd9ae7",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:34",
+                                                "name": "Landmarks3D.lsmat",
+                                                "hash": "a4efd440e5438c060474383a7c2d52b4",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:14",
+                                                "name": "ProgressBar.lsmat",
+                                                "hash": "a4e5f8bdf5c759ed98918c855237b1f1",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:16",
+                                                "name": "Spinner.lsmat",
+                                                "hash": "7e37299a718aea7cc2a356044660bccf",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:17",
+                                                "name": "UICircle.lsmat",
+                                                "hash": "2908bb132a7d7c6e25ba00d982965324",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:34",
+                                                "name": "UnlitBlack40.lsmat",
+                                                "hash": "4b587d4e255c52c273bb6e68e1110d0f",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:20",
+                                                "name": "UnlitGradient.lsmat",
+                                                "hash": "f68ad84163de15207609840cb55f71f0",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-10-05T22:52:21",
+                                        "name": "Models",
+                                        "hash": "61be9519de821878c89597774a68af30",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:57",
+                                                "name": "ArrowMesh.mesh",
+                                                "hash": "8c6163bad29637274782c3a671a796ec",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:52:21",
+                                                "name": "ArrowPrefab.oprfb",
+                                                "hash": "70550eff780eb19d63365811e5d704ce",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:57",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-10-05T22:51:30",
+                                        "name": "Scripts",
+                                        "hash": "82a870eacccc5569836d08c945180ed1",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:57",
+                                                "name": "Arrow.js",
+                                                "hash": "7729b9b876c0693a465c0bbdd4055b50",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:57",
+                                                "name": "Behavior.js",
+                                                "hash": "91c13f7497081d3638dd81f8c7b017fd",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:57",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-10-05T22:51:30",
+                                        "name": "Textures",
+                                        "hash": "6a8e093b4ea6ca763a3056d1696f60fb",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "Arrow.png",
+                                                "hash": "179daffcefc2b58aa49c652c1046145b",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "Base.png",
+                                                "hash": "cb607d7b25a160872c49fb4d2635cc33",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "BlockDrawingSplash.png",
+                                                "hash": "318876392c441c9f596253881af41c33",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "ButtonBackgroundFilled.png",
+                                                "hash": "d1ffd766a77af658f276592dfeed63fc",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "ButtonBackgroundOutlined.png",
+                                                "hash": "ea45338745786678876db8274b1847eb",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "Circle.png",
+                                                "hash": "ae84d3506906e7a365f75001d40e4a7f",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "HDRI.hdr",
+                                                "hash": "5ebb8b8effe5f217cfa923dfc90ed39f",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "MaterialParams.png",
+                                                "hash": "0eaf75fe039aabe3cde223768d9fef47",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "ProgressBar.png",
+                                                "hash": "096f22964e57dea0dbb65db8cc81ab15",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "SampleSnapcode.png",
+                                                "hash": "80f2e758b35637d87c26e78775c5aba8",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "true",
+                                                "lastModified": "2022-10-05T22:52:40",
+                                                "name": "ScanningAnimation",
+                                                "hash": "b9e06b10a08ea25744c864f67409bb84",
+                                                "children": [
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2022-10-05T22:15:56",
+                                                        "name": "animation.t3d",
+                                                        "hash": "27f01633b221a2ca1cd762d2fb3ee4ee",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2022-10-05T22:15:56",
+                                                        "name": "atlas_0.png",
+                                                        "hash": "b8a76d07151d7d1b6d29ca02573aeb06",
+                                                        "children": ""
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "Spinner.png",
+                                                "hash": "024a1b7e91b04aa7e7ad9828f2444316",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-10-05T22:15:56",
+                                                "name": "StartButton.png",
+                                                "hash": "6c69b9b05cdbc627a09e6f314233a7c6",
+                                                "children": ""
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "isFolder": "false",
@@ -514,29 +1967,57 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-10-03T02:31:34",
+                                "lastModified": "2022-10-06T03:33:27",
+                                "name": "PokerLogic.js",
+                                "hash": "f9a1a4cbf650ae0cba95b1478fbcce0b",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-10-05T22:02:16",
                                 "name": "ShareSession.js",
-                                "hash": "59361291686fd7cebf3981836238abbb",
+                                "hash": "b7256c31c32e84532c0ea514b6153949",
                                 "children": ""
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-10-05T16:44:38",
-                                "name": "[Example][Connected Lenses] Multiplayer Session",
-                                "hash": "8b0f81e54fc1b81984d848fd19cb38b8",
+                                "lastModified": "2022-10-05T22:52:15",
+                                "name": "Textures",
+                                "hash": "e60f9781b75cc3d9d8b3072f1010f536",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-05T16:44:38",
-                                        "name": "Connected Lenses - Multiplayer Session.js",
-                                        "hash": "320d5767c01cefd440827b626338c3b0",
+                                        "lastModified": "2022-10-05T22:52:11",
+                                        "name": "Base.png",
+                                        "hash": "cb607d7b25a160872c49fb4d2635cc33",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-05T16:22:59",
+                                        "lastModified": "2022-10-05T22:52:12",
+                                        "name": "circle-32.png",
+                                        "hash": "ae84d3506906e7a365f75001d40e4a7f",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:52:11",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:52:14",
+                                        "name": "ProgressBar.png",
+                                        "hash": "096f22964e57dea0dbb65db8cc81ab15",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-10-05T22:52:15",
+                                        "name": "Spinner.png",
+                                        "hash": "024a1b7e91b04aa7e7ad9828f2444316",
                                         "children": ""
                                     }
                                 ]
@@ -544,7 +2025,9 @@
                         ]
                     }
                 },
-                "complexResources": ""
+                "complexResources": [
+                    "31547"
+                ]
             },
             "tree": {
                 "name": "",
@@ -720,7 +2203,21 @@
                         }
                     },
                     {
-                        "name": "[Example][Connected Lenses] Multiplayer Session",
+                        "name": "ShareSession",
+                        "type": "4",
+                        "subtype": "0",
+                        "resourceId": "22",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1665002512992972:300760",
+                        "fileId": "17",
+                        "originalId": "18446744073709551615",
+                        "publicId": "976",
+                        "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioONuzUVAhPoPq\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                        "additional": ""
+                    },
+                    {
+                        "name": "connected-lens",
                         "type": "0",
                         "subtype": "-1",
                         "resourceId": "-1",
@@ -734,20 +2231,6 @@
                         "additional": "",
                         "resources": [
                             {
-                                "name": "Connected Lenses - Multiplayer Session",
-                                "type": "4",
-                                "subtype": "0",
-                                "resourceId": "20",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "1665001379454983:234829",
-                                "fileId": "16",
-                                "originalId": "18446744073709551615",
-                                "publicId": "975",
-                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioNrCtEhNLCiQZ\/\/system\/\/emergencyFiles\/emergencyJs.js",
-                                "additional": ""
-                            },
-                            {
                                 "name": "Connected Lens Module",
                                 "type": "25",
                                 "subtype": "0",
@@ -760,21 +2243,757 @@
                                 "publicId": "18446744073709551615",
                                 "source": "",
                                 "additional": ""
+                            },
+                            {
+                                "name": "my-connected-lens",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "20",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665001379454983:234829",
+                                "fileId": "16",
+                                "originalId": "18446744073709551615",
+                                "publicId": "975",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioNrCtEhNLCiQZ\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                "additional": ""
                             }
                         ]
                     },
                     {
-                        "name": "ShareSession",
-                        "type": "4",
-                        "subtype": "0",
-                        "resourceId": "22",
+                        "name": "Connected",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
                         "dependency": "0",
                         "hidden": "false",
-                        "uid": "1665002512992972:300760",
-                        "fileId": "17",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
                         "originalId": "18446744073709551615",
-                        "publicId": "976",
-                        "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioONuzUVAhPoPq\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                        "publicId": "31509",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "ConnectedBehavior",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "23",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024730468220:1459888",
+                                "fileId": "18",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31510",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/Connected\/ConnectedBehavior.js",
+                                "additional": ""
+                            },
+                            {
+                                "name": "ConnectedController",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "24",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024730539149:1459892",
+                                "fileId": "19",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31511",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/Connected\/ConnectedController.js",
+                                "additional": ""
+                            },
+                            {
+                                "name": "ConnectedHelper",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "25",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024730561429:1459896",
+                                "fileId": "20",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31512",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/Connected\/ConnectedHelper.js",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Packets",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "26",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024730599039:1459900",
+                                "fileId": "21",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31513",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/Connected\/Packets.js",
+                                "additional": ""
+                            },
+                            {
+                                "name": "Utils",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "27",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024730635576:1459904",
+                                "fileId": "22",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31514",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/Connected\/Utils.js",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ConnectedUI",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "31515",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Materials",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31516",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Arrow",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "28",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024730819795:1459921",
+                                        "fileId": "23",
+                                        "originalId": "24",
+                                        "publicId": "31517",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Landmarks2D",
+                                        "type": "2",
+                                        "subtype": "0",
+                                        "resourceId": "30",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024732088981:1460007",
+                                        "fileId": "27",
+                                        "originalId": "31",
+                                        "publicId": "31520",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Landmarks3D",
+                                        "type": "2",
+                                        "subtype": "0",
+                                        "resourceId": "32",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024733118859:1460052",
+                                        "fileId": "32",
+                                        "originalId": "33",
+                                        "publicId": "31522",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "ProgressBar",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "33",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024734079168:1460084",
+                                        "fileId": "34",
+                                        "originalId": "35",
+                                        "publicId": "31523",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Spinner",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "35",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024735124895:1460180",
+                                        "fileId": "39",
+                                        "originalId": "40",
+                                        "publicId": "31525",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "UICircle",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "37",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024736263196:1460270",
+                                        "fileId": "44",
+                                        "originalId": "45",
+                                        "publicId": "31527",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "UnlitBlack40",
+                                        "type": "2",
+                                        "subtype": "0",
+                                        "resourceId": "38",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024737713538:1460322",
+                                        "fileId": "46",
+                                        "originalId": "47",
+                                        "publicId": "31528",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "UnlitGradient",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "39",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024739596920:1460348",
+                                        "fileId": "48",
+                                        "originalId": "49",
+                                        "publicId": "31529",
+                                        "source": "",
+                                        "additional": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Models",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31530",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "ArrowMesh",
+                                        "type": "3",
+                                        "subtype": "0",
+                                        "resourceId": "40",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024740894261:1460391",
+                                        "fileId": "50",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "31531",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Models\/ArrowMesh.mesh",
+                                        "additional": {
+                                            "info": {
+                                                "vertexAttribs": [
+                                                    {
+                                                        "semantic": "position",
+                                                        "format": "9",
+                                                        "canBeDisabled": "false"
+                                                    },
+                                                    {
+                                                        "semantic": "normal",
+                                                        "format": "9",
+                                                        "canBeDisabled": "true"
+                                                    },
+                                                    {
+                                                        "semantic": "tangent",
+                                                        "format": "9",
+                                                        "canBeDisabled": "true"
+                                                    },
+                                                    {
+                                                        "semantic": "texture0",
+                                                        "format": "9",
+                                                        "canBeDisabled": "true"
+                                                    }
+                                                ],
+                                                "hasBlendShapes": "false"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "ArrowPrefab",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "41",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024740941381:1460397",
+                                        "fileId": "52",
+                                        "originalId": "107",
+                                        "publicId": "31532",
+                                        "source": "",
+                                        "additional": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Scripts",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31533",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Arrow",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "42",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024741383769:1460442",
+                                        "fileId": "53",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "31534",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Scripts\/Arrow.js",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Behavior",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "43",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024741482549:1460446",
+                                        "fileId": "54",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "31535",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Scripts\/Behavior.js",
+                                        "additional": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Textures",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31536",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Arrow",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "44",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024744116312:1460450",
+                                        "fileId": "55",
+                                        "originalId": "56",
+                                        "publicId": "31537",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/Arrow.png",
+                                        "additional": {
+                                            "originHash": "179daffcefc2b58aa49c652c1046145b"
+                                        }
+                                    },
+                                    {
+                                        "name": "Base",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "45",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024744323080:1460454",
+                                        "fileId": "58",
+                                        "originalId": "59",
+                                        "publicId": "31538",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/Base.png",
+                                        "additional": {
+                                            "originHash": "cb607d7b25a160872c49fb4d2635cc33"
+                                        }
+                                    },
+                                    {
+                                        "name": "BlockDrawingSplash",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "46",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024744371051:1460458",
+                                        "fileId": "60",
+                                        "originalId": "61",
+                                        "publicId": "31539",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/BlockDrawingSplash.png",
+                                        "additional": {
+                                            "originHash": "318876392c441c9f596253881af41c33"
+                                        }
+                                    },
+                                    {
+                                        "name": "ButtonBackgroundFilled",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "47",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024744473616:1460462",
+                                        "fileId": "63",
+                                        "originalId": "64",
+                                        "publicId": "31540",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/ButtonBackgroundFilled.png",
+                                        "additional": {
+                                            "originHash": "d1ffd766a77af658f276592dfeed63fc"
+                                        }
+                                    },
+                                    {
+                                        "name": "ButtonBackgroundOutlined",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "48",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024744554818:1460466",
+                                        "fileId": "66",
+                                        "originalId": "67",
+                                        "publicId": "31541",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/ButtonBackgroundOutlined.png",
+                                        "additional": {
+                                            "originHash": "ea45338745786678876db8274b1847eb"
+                                        }
+                                    },
+                                    {
+                                        "name": "Circle",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "49",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024744613804:1460470",
+                                        "fileId": "69",
+                                        "originalId": "70",
+                                        "publicId": "31542",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/Circle.png",
+                                        "additional": {
+                                            "originHash": "ae84d3506906e7a365f75001d40e4a7f"
+                                        }
+                                    },
+                                    {
+                                        "name": "HDRI",
+                                        "type": "9",
+                                        "subtype": "-1",
+                                        "resourceId": "-1",
+                                        "dependency": "2",
+                                        "hidden": "false",
+                                        "uid": "-1:-1",
+                                        "fileId": "80",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "31543",
+                                        "source": "",
+                                        "additional": "",
+                                        "resources": [
+                                            {
+                                                "name": "Diff",
+                                                "type": "1",
+                                                "subtype": "9",
+                                                "resourceId": "50",
+                                                "dependency": "1",
+                                                "hidden": "false",
+                                                "uid": "1665024759789089:1462935",
+                                                "fileId": "76",
+                                                "originalId": "77",
+                                                "publicId": "18446744073709551615",
+                                                "source": "",
+                                                "additional": {
+                                                    "originHash": "55e6f93b956e889c52a19ae86c1b796e"
+                                                }
+                                            },
+                                            {
+                                                "name": "Specular",
+                                                "type": "1",
+                                                "subtype": "9",
+                                                "resourceId": "51",
+                                                "dependency": "1",
+                                                "hidden": "false",
+                                                "uid": "1665024759855913:1462941",
+                                                "fileId": "78",
+                                                "originalId": "79",
+                                                "publicId": "18446744073709551615",
+                                                "source": "",
+                                                "additional": {
+                                                    "originHash": "a54bc9da78ee3c28bade6ef5e8191599"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "MaterialParams",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "52",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024759967913:1462949",
+                                        "fileId": "81",
+                                        "originalId": "82",
+                                        "publicId": "31544",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/MaterialParams.png",
+                                        "additional": {
+                                            "originHash": "0eaf75fe039aabe3cde223768d9fef47"
+                                        }
+                                    },
+                                    {
+                                        "name": "ProgressBar",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "53",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024760010565:1462955",
+                                        "fileId": "83",
+                                        "originalId": "84",
+                                        "publicId": "31545",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/ProgressBar.png",
+                                        "additional": {
+                                            "originHash": "096f22964e57dea0dbb65db8cc81ab15"
+                                        }
+                                    },
+                                    {
+                                        "name": "SampleSnapcode",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "54",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024760081272:1462961",
+                                        "fileId": "86",
+                                        "originalId": "87",
+                                        "publicId": "31546",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/SampleSnapcode.png",
+                                        "additional": {
+                                            "originHash": "80f2e758b35637d87c26e78775c5aba8"
+                                        }
+                                    },
+                                    {
+                                        "name": "ScanningAnimation",
+                                        "type": "1",
+                                        "subtype": "5",
+                                        "resourceId": "55",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024760202899:1462975",
+                                        "fileId": "89",
+                                        "originalId": "90",
+                                        "publicId": "31547",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/ScanningAnimation\/animation.t3d",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Spinner",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "56",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024760431414:1462993",
+                                        "fileId": "92",
+                                        "originalId": "93",
+                                        "publicId": "31548",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/Spinner.png",
+                                        "additional": {
+                                            "originHash": "024a1b7e91b04aa7e7ad9828f2444316"
+                                        }
+                                    },
+                                    {
+                                        "name": "StartButton",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "57",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1665024760502386:1463001",
+                                        "fileId": "95",
+                                        "originalId": "96",
+                                        "publicId": "31549",
+                                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/ConnectedUI\/Textures\/StartButton.png",
+                                        "additional": {
+                                            "originHash": "6c69b9b05cdbc627a09e6f314233a7c6"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Textures",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "31518",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Base",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "29",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024731193585:1459952",
+                                "fileId": "25",
+                                "originalId": "26",
+                                "publicId": "31519",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioYOUZoOlQcXxY\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "cb607d7b25a160872c49fb4d2635cc33"
+                                }
+                            },
+                            {
+                                "name": "circle-32",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "31",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024732221508:1460022",
+                                "fileId": "28",
+                                "originalId": "29",
+                                "publicId": "31521",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioYOUZoOlQcXxY\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "ae84d3506906e7a365f75001d40e4a7f"
+                                }
+                            },
+                            {
+                                "name": "ProgressBar",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "34",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024734442823:1460115",
+                                "fileId": "36",
+                                "originalId": "37",
+                                "publicId": "31524",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioYOUZoOlQcXxY\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "096f22964e57dea0dbb65db8cc81ab15"
+                                }
+                            },
+                            {
+                                "name": "Spinner",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "36",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665024735491175:1460211",
+                                "fileId": "41",
+                                "originalId": "42",
+                                "publicId": "31526",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioYOUZoOlQcXxY\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "024a1b7e91b04aa7e7ad9828f2444316"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CloudStorage",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "31550",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Lens Cloud - Persistent Cloud Storage",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "58",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665037294328916:62013",
+                                "fileId": "108",
+                                "originalId": "18446744073709551615",
+                                "publicId": "31551",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiosKXDkQMZbmzk\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                "additional": ""
+                            },
+                            {
+                                "name": "CloudStorage Module",
+                                "type": "38",
+                                "subtype": "0",
+                                "resourceId": "59",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1665037294357268:62024",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "18446744073709551615",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "PokerLogic",
+                        "type": "4",
+                        "subtype": "0",
+                        "resourceId": "60",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1665038284717325:124916",
+                        "fileId": "109",
+                        "originalId": "18446744073709551615",
+                        "publicId": "31552",
+                        "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiosKXDkQMZbmzk\/\/system\/\/emergencyFiles\/emergencyJs.js",
                         "additional": ""
                     }
                 ]
@@ -782,14 +3001,8 @@
         },
         "InspectorController": {
             "selection": {
-                "resources": [
-                    {
-                        "uid": "1665001379454983:234829",
-                        "path_list": [
-                            "[Example][Connected Lenses] Multiplayer Session",
-                            "Connected Lenses - Multiplayer Session"
-                        ]
-                    }
+                "objects": [
+                    "1664999454532196:69686"
                 ]
             }
         },
@@ -893,6 +3106,421 @@
                         "uncompressed_file": "13",
                         "compressed_files": ""
                     }
+                },
+                {
+                    "k": "1665024732221508:1460022",
+                    "v": {
+                        "infos": {
+                            "originalSize": "533",
+                            "compressedSize": "389",
+                            "originalRAM": "4096",
+                            "compressedRAM": "512",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "30",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ae84d3506906e7a365f75001d40e4a7f",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "72"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024734442823:1460115",
+                    "v": {
+                        "infos": {
+                            "originalSize": "1346",
+                            "compressedSize": "893",
+                            "originalRAM": "100480",
+                            "compressedRAM": "12560",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "38",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "096f22964e57dea0dbb65db8cc81ab15",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "73"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024735491175:1460211",
+                    "v": {
+                        "infos": {
+                            "originalSize": "5553",
+                            "compressedSize": "5024",
+                            "originalRAM": "262144",
+                            "compressedRAM": "32768",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "43",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "024a1b7e91b04aa7e7ad9828f2444316",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "74"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024740894261:1460391",
+                    "v": {
+                        "infos": {
+                            "originalSize": "21644",
+                            "compressedSize": "21644",
+                            "originalRAM": "35112",
+                            "compressedRAM": "35112",
+                            "extension": "mesh",
+                            "settings": {
+                                "isCompressed": "false",
+                                "info": {
+                                    "vertexAttribs": [
+                                        {
+                                            "semantic": "position",
+                                            "format": "9",
+                                            "canBeDisabled": "false"
+                                        },
+                                        {
+                                            "semantic": "normal",
+                                            "format": "9",
+                                            "canBeDisabled": "true"
+                                        },
+                                        {
+                                            "semantic": "tangent",
+                                            "format": "9",
+                                            "canBeDisabled": "true"
+                                        },
+                                        {
+                                            "semantic": "texture0",
+                                            "format": "9",
+                                            "canBeDisabled": "true"
+                                        }
+                                    ],
+                                    "hasBlendShapes": "false"
+                                },
+                                "type": "0",
+                                "attributeFormat": "",
+                                "draco": {
+                                    "posBits": "11",
+                                    "texBits": "10",
+                                    "normalBits": "8",
+                                    "colorBits": "8",
+                                    "compressLvl": "7"
+                                }
+                            }
+                        },
+                        "uncompressed_file": "51",
+                        "compressed_files": ""
+                    }
+                },
+                {
+                    "k": "1665024744116312:1460450",
+                    "v": {
+                        "infos": {
+                            "originalSize": "3390",
+                            "compressedSize": "1786",
+                            "originalRAM": "34272",
+                            "compressedRAM": "4368",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "57",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "179daffcefc2b58aa49c652c1046145b",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "75"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024744371051:1460458",
+                    "v": {
+                        "infos": {
+                            "originalSize": "120712",
+                            "compressedSize": "40199",
+                            "originalRAM": "1048576",
+                            "compressedRAM": "131072",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "62",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "318876392c441c9f596253881af41c33",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "98"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024744473616:1460462",
+                    "v": {
+                        "infos": {
+                            "originalSize": "1585",
+                            "compressedSize": "1294",
+                            "originalRAM": "177280",
+                            "compressedRAM": "22240",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "65",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "d1ffd766a77af658f276592dfeed63fc",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "99"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024744554818:1460466",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2972",
+                            "compressedSize": "2179",
+                            "originalRAM": "177280",
+                            "compressedRAM": "22240",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "68",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ea45338745786678876db8274b1847eb",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024744613804:1460470",
+                    "v": {
+                        "infos": {
+                            "originalSize": "533",
+                            "compressedSize": "389",
+                            "originalRAM": "4096",
+                            "compressedRAM": "512",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "71",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ae84d3506906e7a365f75001d40e4a7f",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "101"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024760010565:1462955",
+                    "v": {
+                        "infos": {
+                            "originalSize": "1346",
+                            "compressedSize": "893",
+                            "originalRAM": "100480",
+                            "compressedRAM": "12560",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "85",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "096f22964e57dea0dbb65db8cc81ab15",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "102"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024760081272:1462961",
+                    "v": {
+                        "infos": {
+                            "originalSize": "6493",
+                            "compressedSize": "2282",
+                            "originalRAM": "65536",
+                            "compressedRAM": "8192",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "88",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "80f2e758b35637d87c26e78775c5aba8",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "103"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024760202899:1462975",
+                    "v": {
+                        "infos": {
+                            "originalSize": "416605",
+                            "compressedSize": "147121",
+                            "originalRAM": "15073280",
+                            "compressedRAM": "15073280",
+                            "extension": "t3d",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "5"
+                            }
+                        },
+                        "uncompressed_file": "91",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "299e3dfd515666d4fbd11a8ac20b7230",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "104"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024760431414:1462993",
+                    "v": {
+                        "infos": {
+                            "originalSize": "5553",
+                            "compressedSize": "5024",
+                            "originalRAM": "262144",
+                            "compressedRAM": "32768",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "94",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "024a1b7e91b04aa7e7ad9828f2444316",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "105"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665024760502386:1463001",
+                    "v": {
+                        "infos": {
+                            "originalSize": "25266",
+                            "compressedSize": "20017",
+                            "originalRAM": "292160",
+                            "compressedRAM": "36960",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "97",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "6c69b9b05cdbc627a09e6f314233a7c6",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "106"
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -901,6 +3529,10 @@
                 {
                     "k": "1665001379491451:234843",
                     "v": "1xKmKO6ZW8xHdKUamnVS1g"
+                },
+                {
+                    "k": "1665037294359826:62027",
+                    "v": "6QaN2c6MWfDek5eWa4HEVn"
                 }
             ]
         }
