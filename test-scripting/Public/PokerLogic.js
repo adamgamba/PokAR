@@ -1,6 +1,6 @@
-import assert from "assert";
-
-// First hand
+//import assert from "assert";
+//
+// Define Variables
 const players = {
   A: "A",
   B: "B",
@@ -21,6 +21,8 @@ const rounds = {
   TURN: "turn",
   RIVER: "river",
 };
+
+// Starting stacks - // todo user input
 var stacks = {
   A: 100,
   B: 100,
@@ -233,7 +235,7 @@ function showdown() {
 }
 
 function betsAmount(player, amount) {
-  assert(stacks[player] >= amount);
+  // assert(stacks[player] >= amount);
   stacks[player] -= amount;
   stacks.POT += amount;
 }

@@ -3,7 +3,7 @@
     "document_id": "MUA8L7mvWTTCJGSg-p5g",
     "original_document_id": "MUA8L7mvWTTCJGSg-p5g",
     "version": "29",
-    "lastChanged": "1665041698509",
+    "lastChanged": "1665517069144",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -47,9 +47,6 @@
                     [
                         "CloudStorage",
                         "Lens Cloud - Persistent Cloud Storage"
-                    ],
-                    [
-                        "Connected"
                     ],
                     [
                         "ConnectedUI"
@@ -133,6 +130,15 @@
                         "Textures"
                     ],
                     [
+                        "button"
+                    ],
+                    [
+                        "button_bet"
+                    ],
+                    [
+                        "button_check"
+                    ],
+                    [
                         "connected-lens"
                     ]
                 ]
@@ -162,13 +168,13 @@
             "show_snap_ui": "true",
             "show_sponsored_ui": "false",
             "preview_images_project_config": {
-                "back_preview_id": "bundle:Preview\/Images\/Body.jpg",
+                "back_preview_id": "bundle:Preview\/Images\/Beach.jpg",
                 "back_preview_is_favorite": "false",
                 "front_preview_id": "bundle:Preview\/Images\/Person 1.jpg",
                 "front_preview_is_favorite": "false"
             },
             "preview_videos_project_config": {
-                "back_preview_id": "bundle:Preview\/Videos\/Co-Located\/indoor.webm",
+                "back_preview_id": "bundle:Preview\/Videos\/Beach.webm",
                 "back_preview_is_favorite": "false",
                 "front_preview_id": "bundle:Preview\/Videos\/Idle Person 1.webm",
                 "front_preview_is_favorite": "false"
@@ -597,6 +603,30 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "62",
+                    "uid": "1665042610292670:217579",
+                    "name": "Files\/File111.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "63",
+                    "uid": "1665516644431125:2331327",
+                    "name": "Files\/File114.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "64",
+                    "uid": "1665516644548739:2331339",
+                    "name": "Files\/File117.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -669,6 +699,62 @@
                                     "attachTop": "false"
                                 }
                             }
+                        },
+                        {
+                            "k": "1665516487425689:2314465",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1665516487478308:2314607",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1665516504506696:2319419",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1665516504599520:2319561",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
                         }
                     ],
                     "generalData": ""
@@ -689,7 +775,11 @@
                 "9": "1664999454532196:69686",
                 "10": "1665000344946900:170274",
                 "11": "1665001379491451:234843",
-                "12": "1665037294359826:62027"
+                "12": "1665037294359826:62027",
+                "13": "1665516487185775:2313983",
+                "14": "1665516487358129:2314224",
+                "15": "1665516504272846:2318933",
+                "16": "1665516504401007:2319176"
             }
         },
         "LayerComponent": {
@@ -1123,6 +1213,50 @@
                 {
                     "k": "109",
                     "v": "Files\/File109.js"
+                },
+                {
+                    "k": "111",
+                    "v": "Files\/File111.jpg"
+                },
+                {
+                    "k": "112",
+                    "v": "Files\/File112.jpg"
+                },
+                {
+                    "k": "113",
+                    "v": "Files\/File113.jpg"
+                },
+                {
+                    "k": "114",
+                    "v": "Files\/File114.pvr"
+                },
+                {
+                    "k": "115",
+                    "v": "Files\/File115.png"
+                },
+                {
+                    "k": "116",
+                    "v": "Files\/File116.png"
+                },
+                {
+                    "k": "117",
+                    "v": "Files\/File117.pvr"
+                },
+                {
+                    "k": "118",
+                    "v": "Files\/File118.png"
+                },
+                {
+                    "k": "119",
+                    "v": "Files\/File119.png"
+                },
+                {
+                    "k": "120",
+                    "v": "Files\/File120.pvr"
+                },
+                {
+                    "k": "121",
+                    "v": "Files\/File121.pvr"
                 }
             ]
         },
@@ -1344,6 +1478,18 @@
                     {
                         "k": "31552",
                         "v": "PokerLogic.js"
+                    },
+                    {
+                        "k": "31554",
+                        "v": "button.jpg"
+                    },
+                    {
+                        "k": "31555",
+                        "v": "button_bet.png"
+                    },
+                    {
+                        "k": "31556",
+                        "v": "button_check.png"
                     }
                 ],
                 "hashes": [
@@ -1361,11 +1507,11 @@
                     },
                     {
                         "k": "968",
-                        "v": "13bcbce6e14c24c8fd99b2aa638ef4b9"
+                        "v": "d9c4c7c50232008919e6a016e82f222d"
                     },
                     {
                         "k": "969",
-                        "v": "be4bee42b07eccb57ad1585e05fa6a22"
+                        "v": "5f76016450813d5a0f5303e6d4de4a36"
                     },
                     {
                         "k": "970",
@@ -1557,19 +1703,31 @@
                     },
                     {
                         "k": "31552",
-                        "v": "f9a1a4cbf650ae0cba95b1478fbcce0b"
+                        "v": "eb4329ac46588d0629068df2ecb27b96"
                     },
                     {
                         "k": "31553",
                         "v": "59361291686fd7cebf3981836238abbb"
+                    },
+                    {
+                        "k": "31554",
+                        "v": "40b142fb0148f42ed95430f776188f4a"
+                    },
+                    {
+                        "k": "31555",
+                        "v": "bfc88f2dfc0fd75d7abec06a4ea4c42a"
+                    },
+                    {
+                        "k": "31556",
+                        "v": "d4a74004f762ca2f9891c8afca63f9ae"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-10-06T02:54:29",
+                        "lastModified": "2022-10-11T15:35:19",
                         "name": "Public",
-                        "hash": "82576c38ce01d8639f08bccbae39ad4f",
+                        "hash": "ace83bdfede95d3e9c203959b88fdbbb",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -1580,9 +1738,30 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-10-05T15:49:57",
+                                "lastModified": "2022-10-06T03:50:02",
+                                "name": "button.jpg",
+                                "hash": "40b142fb0148f42ed95430f776188f4a",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-10-11T15:30:09",
+                                "name": "button_bet.png",
+                                "hash": "bfc88f2dfc0fd75d7abec06a4ea4c42a",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-10-11T15:30:17",
+                                "name": "button_check.png",
+                                "hash": "d4a74004f762ca2f9891c8afca63f9ae",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-10-11T15:35:18",
                                 "name": "ChangeNumOnTap.js",
-                                "hash": "be4bee42b07eccb57ad1585e05fa6a22",
+                                "hash": "5f76016450813d5a0f5303e6d4de4a36",
                                 "children": ""
                             },
                             {
@@ -1960,16 +2139,16 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-10-05T15:49:17",
+                                "lastModified": "2022-10-06T03:58:37",
                                 "name": "HelloWorldScript.js",
-                                "hash": "13bcbce6e14c24c8fd99b2aa638ef4b9",
+                                "hash": "d9c4c7c50232008919e6a016e82f222d",
                                 "children": ""
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-10-06T03:33:27",
+                                "lastModified": "2022-10-06T03:46:39",
                                 "name": "PokerLogic.js",
-                                "hash": "f9a1a4cbf650ae0cba95b1478fbcce0b",
+                                "hash": "eb4329ac46588d0629068df2ecb27b96",
                                 "children": ""
                             },
                             {
@@ -2995,6 +3174,54 @@
                         "publicId": "31552",
                         "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiosKXDkQMZbmzk\/\/system\/\/emergencyFiles\/emergencyJs.js",
                         "additional": ""
+                    },
+                    {
+                        "name": "button",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "62",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1665042610292670:217579",
+                        "fileId": "111",
+                        "originalId": "112",
+                        "publicId": "31554",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/button.jpg",
+                        "additional": {
+                            "originHash": "40b142fb0148f42ed95430f776188f4a"
+                        }
+                    },
+                    {
+                        "name": "button_bet",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "63",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1665516644431125:2331327",
+                        "fileId": "114",
+                        "originalId": "115",
+                        "publicId": "31555",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/button_bet.png",
+                        "additional": {
+                            "originHash": "bfc88f2dfc0fd75d7abec06a4ea4c42a"
+                        }
+                    },
+                    {
+                        "name": "button_check",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "64",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1665516644548739:2331339",
+                        "fileId": "117",
+                        "originalId": "118",
+                        "publicId": "31556",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 Build and Evaluate Augmented Reality Applications for In-person Social Interactions\/Lens Studio\/PokAR\/test-scripting\/Public\/button_check.png",
+                        "additional": {
+                            "originHash": "d4a74004f762ca2f9891c8afca63f9ae"
+                        }
                     }
                 ]
             }
@@ -3002,7 +3229,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1664999454532196:69686"
+                    "1664999454491808:69558"
                 ]
             }
         },
@@ -3518,6 +3745,82 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "106"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665042610292670:217579",
+                    "v": {
+                        "infos": {
+                            "originalSize": "36301",
+                            "compressedSize": "36301",
+                            "originalRAM": "2560000",
+                            "compressedRAM": "2560000",
+                            "extension": "jpg",
+                            "settings": {
+                                "isCompressed": "false",
+                                "level": "0",
+                                "type": "0",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "113",
+                        "compressed_files": ""
+                    }
+                },
+                {
+                    "k": "1665516644431125:2331327",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2904",
+                            "compressedSize": "1352",
+                            "originalRAM": "44088",
+                            "compressedRAM": "5712",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "116",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "bfc88f2dfc0fd75d7abec06a4ea4c42a",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "120"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1665516644548739:2331339",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2327",
+                            "compressedSize": "1202",
+                            "originalRAM": "44352",
+                            "compressedRAM": "5712",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "119",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "d4a74004f762ca2f9891c8afca63f9ae",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "121"
                             }
                         ]
                     }
