@@ -28,6 +28,7 @@
 //@input Component.Text currentPlayer
 //@input Component.Text currentDealer
 //@input Component.Text amountToCall
+//@input Component.Text gameMessage
 
 //@input SceneObject gameOverScreen
 //@input float missedScoreMax
@@ -68,7 +69,6 @@ const rounds = {
 };
 
 // Define vars to be updated
-var numberOfChecks = 0;
 var stacks = {
   A: 100,
   B: 100,
@@ -81,14 +81,17 @@ var currentPlayer = currentDealer;
 var nextTurnActions = [actions.FOLD, actions.CALL, actions.BET];
 var previousAction = null;
 var amountToCall = 0;
+var gameMessage = "";
 // var playing = true;
 
 // Helper Functions
 function endHand(winner) {
   if (winner == players.A) {
     stacks.A += stacks.POT;
+    gameMessage += " Player A wins $" + stacks.POT + ".";
   } else {
     stacks.B += stacks.POT;
+    gameMessage += " Player B wins $" + stacks.POT + ".";
   }
   stacks.POT = 0;
   currentDealer = getOpponent(currentDealer);
@@ -108,6 +111,8 @@ function endHand(winner) {
   script.nextHandButton.enabled = true;
   script.AWinsButton.enabled = false;
   script.BWinsButton.enabled = false;
+  updateUI();
+  gameMessage = "";
 }
 
 function advanceRound() {
@@ -120,12 +125,20 @@ function advanceRound() {
   switch (currentRound) {
     case rounds.PREFLOP:
       currentRound = rounds.FLOP;
+      print("Advanced to Flop.");
+      gameMessage += " Deal the Flop.";
       break;
     case rounds.FLOP:
       currentRound = rounds.TURN;
+      print("Advanced to Turn.");
+      gameMessage += " Deal the Turn.";
+
       break;
     case rounds.TURN:
       currentRound = rounds.RIVER;
+      print("Advanced to River.");
+      gameMessage += " Deal the River.";
+
       break;
     case rounds.RIVER:
       showdown();
@@ -137,6 +150,7 @@ function advanceRound() {
 
 function showdown() {
   print("Showdown! Who has the winner?");
+  gameMessage = "Showdown!\n Select the winner.";
   // Enable correct UI elements
   script.startButton.enabled = false;
   script.checkButton.enabled = false;
@@ -169,7 +183,6 @@ function setNextTurnActions() {
 
   for (var i in arguments) {
     var action = arguments[i];
-    print("arg: " + action);
     nextTurnActions.push(action);
 
     switch (action) {
@@ -197,9 +210,18 @@ function updateUI() {
   script.currentPlayer.text = currentPlayer;
   script.currentDealer.text = currentDealer;
   script.amountToCall.text = amountToCall.toString();
+  script.gameMessage.text = gameMessage;
 }
 
 function payBlinds() {
+  print(
+    "Paying blinds. Player " +
+      currentDealer +
+      " is Little Blind and player " +
+      currentVillain +
+      " is Big Blind."
+  );
+
   // Dealer is Little, Villain is Big
   betsAmount(currentDealer, blinds.LITTLE);
 
@@ -215,8 +237,11 @@ function payBlinds() {
 
 // * Event Functions *
 function onCheck() {
-  numberOfChecks++;
-  print("Player checked: " + numberOfChecks);
+  print("Player " + currentPlayer + " checks.");
+  gameMessage = "Player " + currentPlayer + " checks.";
+
+  //   numberOfChecks++;
+  //   print("Player checked: " + numberOfChecks);
 
   //   var dealer = currentDealer;
   //   var round = currentRound;
@@ -231,17 +256,25 @@ function onCheck() {
     setNextTurnActions(actions.CHECK, actions.BET);
     currentPlayer = getOpponent(currentPlayer);
   }
-
+  previousAction = actions.CHECK;
   updateUI();
 }
 
 function onFold() {
+  print("Player " + currentPlayer + " folds.");
+  gameMessage = "Player " + currentPlayer + " folds.";
+
   var winner = getOpponent(currentPlayer);
   endHand(winner);
-  updateUI();
+  previousAction = actions.FOLD;
+
+  //   updateUI();
 }
 
 function onCall() {
+  print("Player " + currentPlayer + " calls.");
+  gameMessage = "Player " + currentPlayer + " calls.";
+
   betsAmount(currentPlayer, amountToCall);
   amountToCall = 0;
 
@@ -252,6 +285,8 @@ function onCall() {
     // todo - subtract chips
     advanceRound();
   }
+  previousAction = actions.CALL;
+
   updateUI();
 }
 
@@ -284,6 +319,9 @@ options.onKeyboardStateChanged = function (isOpen) {
 };
 
 function resolveOnBet(betAmount) {
+  print("Player " + currentPlayer + " bets $" + betAmount + ".");
+  gameMessage = "Player " + currentPlayer + " bets $" + betAmount + ".";
+
   print("Bet amount: " + betAmount);
 
   print("onBet called...");
@@ -295,6 +333,8 @@ function resolveOnBet(betAmount) {
 
   setNextTurnActions(actions.FOLD, actions.CALL, actions.BET);
   currentPlayer = getOpponent(currentPlayer);
+  previousAction = actions.BET;
+
   updateUI();
 }
 
@@ -317,9 +357,11 @@ function resolveOnBet(betAmount) {
 // }
 
 function onAWins() {
+  print("Player A Wins!");
   endHand(players.A);
 }
 function onBWins() {
+  print("Player B Wins!");
   endHand(players.B);
 }
 
@@ -404,6 +446,7 @@ global.behaviorSystem.addCustomTriggerResponse("B_WINS", onBWins);
 
 // var startgame = false;
 function onStartGame() {
+  print("Game started.");
   // Enable correct UI elements
   script.startButton.enabled = false;
   script.checkButton.enabled = false;
@@ -421,6 +464,7 @@ function onStartGame() {
 }
 
 function onNextHand() {
+  print("Hand started.");
   // Pay blinds
   payBlinds();
 

@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1665556805396",
+    "lastChanged": "1665626380757",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -161,9 +161,9 @@
                 "front_preview_is_favorite": "false"
             },
             "preview_ie_project_config": {
-                "back_preview_id": "",
+                "back_preview_id": "bundle:Preview\/InteractiveEnvironments\/Colorful Home",
                 "back_preview_is_favorite": "false",
-                "front_preview_id": "",
+                "front_preview_id": "bundle:Preview\/InteractiveEnvironments\/Colorful Home",
                 "front_preview_is_favorite": "false"
             }
         },
@@ -1044,8 +1044,8 @@
                                     "fixHeight": "false",
                                     "attachBottom": "true",
                                     "attachLeft": "true",
-                                    "attachRight": "true",
-                                    "attachTop": "true"
+                                    "attachRight": "false",
+                                    "attachTop": "false"
                                 }
                             }
                         },
@@ -1065,6 +1065,34 @@
                         },
                         {
                             "k": "1665555217561343:3639049",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "true",
+                                    "fixHeight": "true",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1665623483547786:27293",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "true",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1665623483630052:27427",
                             "v": {
                                 "isBasicMode": "true",
                                 "basicModeSetup": {
@@ -1133,7 +1161,9 @@
                 "46": "1665551962556992:3279229",
                 "47": "1665555216996963:3638060",
                 "48": "1665555217117455:3638301",
-                "49": "1665555217336797:3638674"
+                "49": "1665555217336797:3638674",
+                "50": "1665623483118806:26432",
+                "51": "1665623483454954:27052"
             }
         },
         "LayerComponent": {
@@ -1629,7 +1659,7 @@
                     },
                     {
                         "k": "970",
-                        "v": "ea1abe7c9acaad22283bde6af4a8d4d2"
+                        "v": "d4ac5526a4e06e0601c8d9de61cd287d"
                     },
                     {
                         "k": "971",
@@ -1771,9 +1801,9 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-10-12T02:39:20",
+                        "lastModified": "2022-10-12T11:17:57",
                         "name": "Public",
-                        "hash": "473b278f62562278b03c9d87c9e0c953",
+                        "hash": "6bf0fdd0f83c3ff53c4f7818d227a9a3",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -1882,9 +1912,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-10-12T00:53:22",
+                                "lastModified": "2022-10-12T11:17:57",
                                 "name": "Scripts",
-                                "hash": "7c5a611040bc08ef2e0fe23f8eee06e6",
+                                "hash": "a39f27e4f5e270c7deb4ca733c5d9258",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -1902,9 +1932,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-12T02:38:00",
+                                        "lastModified": "2022-10-12T21:19:23",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "ea1abe7c9acaad22283bde6af4a8d4d2",
+                                        "hash": "d4ac5526a4e06e0601c8d9de61cd287d",
                                         "children": ""
                                     },
                                     {
@@ -1918,13 +1948,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-10-11T22:29:14",
+                                "lastModified": "2022-10-12T11:17:58",
                                 "name": "Textures",
                                 "hash": "32d827dd01ab7538c5639b50d7c52338",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:55",
+                                        "lastModified": "2022-10-12T11:17:57",
                                         "name": "cookie-broken",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -1946,7 +1976,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:55",
+                                        "lastModified": "2022-10-12T11:17:57",
                                         "name": "cookie-broken 2",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -1968,7 +1998,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:55",
+                                        "lastModified": "2022-10-12T11:17:57",
                                         "name": "cookie-broken 3",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -1990,7 +2020,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:55",
+                                        "lastModified": "2022-10-12T11:17:57",
                                         "name": "cookie-broken 4",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -2012,7 +2042,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:55",
+                                        "lastModified": "2022-10-12T11:17:58",
                                         "name": "cookie-broken 5",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -2034,7 +2064,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:54",
+                                        "lastModified": "2022-10-12T11:17:58",
                                         "name": "cookie-broken 6",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -2056,7 +2086,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-11T22:25:55",
+                                        "lastModified": "2022-10-12T11:17:58",
                                         "name": "cookie-broken 7",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -2660,7 +2690,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1665544398675599:2363565"
+                    "1665623483454954:27052"
                 ]
             }
         },
