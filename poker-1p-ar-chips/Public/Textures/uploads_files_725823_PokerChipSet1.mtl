@@ -1,0 +1,67 @@
+# Blender MTL File: 'PokerChipSet1.blend'
+# Material Count: 5
+
+newmtl $1
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd PokerChip1 - Normal.jpg
+map_Bump PokerChip1 - Normal.jpg
+map_Ns PokerChip1 - Normal.jpg
+
+newmtl $10
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd PokerChip1 - Normal.jpg
+map_Bump PokerChip1 - Normal.jpg
+map_Ns PokerChip10 - Diffuse.jpg
+
+newmtl $100
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd PokerChip1 - Normal.jpg
+map_Bump PokerChip1 - Normal.jpg
+map_Ns PokerChip100- Diffuse.jpg
+
+newmtl $25
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd PokerChip1 - Normal.jpg
+map_Bump PokerChip1 - Normal.jpg
+map_Ns PokerChip25- Diffuse.jpg
+
+newmtl $5
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd PokerChip1 - Normal.jpg
+map_Bump PokerChip1 - Normal.jpg
+map_Ns PokerChip5 - Diffuse.jpg

@@ -3,7 +3,7 @@
     "document_id": "viclqr4ILVBMOk-AGRs5",
     "original_document_id": "DuAr6HLsCgLb9oDitIbx",
     "version": "29",
-    "lastChanged": "1665541647814",
+    "lastChanged": "1666845415212",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -549,7 +549,6 @@
                     "1517446348227994:84813",
                     "1517446348228144:84822",
                     "1528843813151434:5126",
-                    "1615827258308895:2619927",
                     "1615827258317646:2619989",
                     "1615887360421034:63944",
                     "1615887489969830:95716",
@@ -740,7 +739,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "0",
+                "is_capture": "3",
                 "camera_type": "1"
             },
             "show_snap_ui": "true",
@@ -4636,15 +4635,15 @@
                     },
                     {
                         "k": "39",
-                        "v": "4d7aebcdc3c048df4d5d33f918db0d1e"
+                        "v": "e11dc29701b3ad94765605e34fd38fa2"
                     },
                     {
                         "k": "40",
-                        "v": "02f428747886c8598cd4cb3cc3783bbd"
+                        "v": "b72236f2d9a4d17b1a7d1f0150eb4fc6"
                     },
                     {
                         "k": "41",
-                        "v": "91dbe0b59f4f73197313711da6596380"
+                        "v": "58127934c99831ea94cdef114792e371"
                     },
                     {
                         "k": "43",
@@ -4724,7 +4723,7 @@
                     },
                     {
                         "k": "66",
-                        "v": "5a30d0173bbf8a07dbd85c1d08ffa7b8"
+                        "v": "383220971adb2b833c3855516c46bbc7"
                     },
                     {
                         "k": "67",
@@ -4896,7 +4895,7 @@
                         "isFolder": "true",
                         "lastModified": "2022-10-11T22:22:15",
                         "name": "Public",
-                        "hash": "1e553de8a510d54204f744b005b3f776",
+                        "hash": "2023c4b80b41e4685151fd6bd05b78a3",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -4909,7 +4908,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-11T15:47:10",
                                 "name": "BlockDrawing",
-                                "hash": "28aa2fca147af2ddb05553c5e19242d3",
+                                "hash": "7ae88354511302fd7241649f36e842a3",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -5014,20 +5013,20 @@
                                         "isFolder": "true",
                                         "lastModified": "2022-10-11T15:47:10",
                                         "name": "Scripts",
-                                        "hash": "70b2964321ce410363ce112769e73392",
+                                        "hash": "bc7286392da49ed9c46d77778ea8a1be",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-11T15:46:44",
+                                                "lastModified": "2022-10-26T22:21:23",
                                                 "name": "BlockDrawing.js",
-                                                "hash": "02f428747886c8598cd4cb3cc3783bbd",
+                                                "hash": "b72236f2d9a4d17b1a7d1f0150eb4fc6",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-11T15:46:44",
+                                                "lastModified": "2022-10-27T00:17:17",
                                                 "name": "BlockSync.js",
-                                                "hash": "4d7aebcdc3c048df4d5d33f918db0d1e",
+                                                "hash": "e11dc29701b3ad94765605e34fd38fa2",
                                                 "children": ""
                                             },
                                             {
@@ -5039,9 +5038,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-11T15:46:44",
+                                                "lastModified": "2022-10-26T21:54:25",
                                                 "name": "MathUtils.js",
-                                                "hash": "91dbe0b59f4f73197313711da6596380",
+                                                "hash": "58127934c99831ea94cdef114792e371",
                                                 "children": ""
                                             }
                                         ]
@@ -5416,7 +5415,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-11T15:47:10",
                                 "name": "Prototyping",
-                                "hash": "2d79c074cf93e6ce8e8f9c895a6d223f",
+                                "hash": "68f9e5c440df42dbd2f9cfe4be430541",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -5664,7 +5663,7 @@
                                         "isFolder": "true",
                                         "lastModified": "2022-10-11T15:47:10",
                                         "name": "Placement",
-                                        "hash": "3dab39441ea2c244502cc0235bb3d32a",
+                                        "hash": "eea4dc33bebe8d7a85436904891af036",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -5703,9 +5702,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-11T15:46:44",
+                                                "lastModified": "2022-10-26T22:07:21",
                                                 "name": "PlacementGridController.js",
-                                                "hash": "5a30d0173bbf8a07dbd85c1d08ffa7b8",
+                                                "hash": "383220971adb2b833c3855516c46bbc7",
                                                 "children": ""
                                             },
                                             {
@@ -7758,11 +7757,7 @@
             }
         },
         "InspectorController": {
-            "selection": {
-                "objects": [
-                    "1665521269821526:3873831"
-                ]
-            }
+            "selection": ""
         },
         "EffectsController": {
             "1": "",

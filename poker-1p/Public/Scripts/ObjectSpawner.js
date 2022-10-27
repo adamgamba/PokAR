@@ -45,6 +45,24 @@
 // - put all persistent variables in big JSON object and add to
 //   connected lens realtime store
 // - update vars for both players at every game update
+// - get player ID/name of each player, say "waiting for opponent" when
+//   its not your turn
+
+// State cache
+// To be used to send game data to opponent
+function getCache() {
+  return {
+    stacks: stacks,
+    currentDealer: currentDealer,
+    currentVillain: currentVillain,
+    currentRound: currentRound,
+    currentPlayer: currentPlayer,
+    nextTurnActions: nextTurnActions,
+    previousAction: previousAction,
+    amountToCall: amountToCall,
+    gameMessage: gameMessage,
+  };
+}
 
 // Define Enums
 const players = {
@@ -82,7 +100,6 @@ var nextTurnActions = [actions.FOLD, actions.CALL, actions.BET];
 var previousAction = null;
 var amountToCall = 0;
 var gameMessage = "";
-// var playing = true;
 
 // Helper Functions
 function endHand(winner) {
