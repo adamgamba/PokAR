@@ -82,26 +82,40 @@ var cache = {
   gameMessage: "",
 };
 
-script.api.apiOnCheck = function () {
-  print("apiOnCheck");
-  packets.sendObject("/poker/apiOnCheck/", {
-    msg: { hello: "hello world I checked" },
-  });
-};
+// * Working - response to check
+// script.api.apiOnCheck = function () {
+//   print("apiOnCheck");
+//   packets.sendObject("/poker/apiOnCheck/", {
+//     msg: { hello: "hello world I checked" },
+//   });
+// };
 packets.on("/poker/apiOnCheck/", function (body, params, userId) {
-  print("recieved /poker/test/. Body: ", body);
-  var message = JSON.parse(body);
-  events.trigger("respondToCheck", message.hello);
+  //   print("recieved /poker/test/. Body: ", body);
+  //   var message = JSON.parse(body);
+  events.trigger("respondToCheck");
 });
 
-events.on("respondToCheck", function (msgStr) {
-  print("msgStr in events.on:", msgStr);
+events.on("respondToCheck", function () {
+  print("msgStr in events.on:");
 
   // set player a's stack to 999
   cache.stacks.A = 999;
   updateUI();
 });
+// *
 
+// * test - update UI (get players in the same game state)
+packets.on("/poker/updateCache/", function (body, params, userId) {
+  // print("recieved /poker/test/. Body: ", body);
+  var cache = JSON.parse(body);
+  events.trigger("updateCache", cache);
+});
+
+events.on("updateCache", function (newCache) {
+  print("msgStr in events.on:");
+  setCache(newCache);
+  updateUI();
+});
 // *
 
 // TODO by Wednesday:
@@ -193,7 +207,10 @@ function endHand(winner) {
   script.nextHandButton.enabled = true;
   script.AWinsButton.enabled = false;
   script.BWinsButton.enabled = false;
+
+  packets.sendObject("/poker/updateCache/", cache);
   updateUI();
+
   cache.gameMessage = "";
 }
 
@@ -319,6 +336,10 @@ function payBlinds() {
 
 // * Event Functions *
 function onCheck() {
+  //  packets.sendObject("/poker/apiOnCheck/", {
+  //    msg: { hello: "hello world I checked (1)" },
+  //  });
+  //   packets.send("/poker/apiOnCheck/");
   print("Player " + cache.currentPlayer + " checks.");
   cache.gameMessage = "Player " + cache.currentPlayer + " checks.";
 
@@ -339,6 +360,8 @@ function onCheck() {
     cache.currentPlayer = getOpponent(cache.currentPlayer);
   }
   cache.previousAction = actions.CHECK;
+
+  packets.sendObject("/poker/updateCache/", cache);
   updateUI();
 }
 
@@ -350,7 +373,8 @@ function onFold() {
   endHand(winner);
   cache.previousAction = actions.FOLD;
 
-  //   updateUI();
+  packets.sendObject("/poker/updateCache/", cache);
+  updateUI();
 }
 
 function onCall() {
@@ -369,6 +393,7 @@ function onCall() {
   }
   cache.previousAction = actions.CALL;
 
+  packets.sendObject("/poker/updateCache/", cache);
   updateUI();
 }
 
@@ -418,6 +443,7 @@ function resolveOnBet(betAmount) {
   cache.currentPlayer = getOpponent(cache.currentPlayer);
   cache.previousAction = actions.BET;
 
+  packets.sendObject("/poker/updateCache/", cache);
   updateUI();
 }
 
@@ -561,6 +587,7 @@ function onNextHand() {
   script.AWinsButton.enabled = false;
   script.BWinsButton.enabled = false;
 
+  packets.sendObject("/poker/updateCache/", cache);
   updateUI();
 }
 
