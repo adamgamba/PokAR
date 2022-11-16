@@ -3,7 +3,7 @@
 // @input Component.ScriptComponent packets
 var packets = script.packets.api;
 var utils = global.utils;
-var log = utils.makeLogger("BlockSync");
+// var log = utils.makeLogger("BlockSync");
 
 // Create event system
 var events = new utils.Events();
@@ -119,6 +119,12 @@ packets.on("/blocks/state/request/", function (body, params, userId) {
 events.on("create", function (positionArray, colorArray) {
   cache.set(positionArray, colorArray);
 });
+
+// * test
+events.on("pokerTest", function (msgStr) {
+  print("msgStr in events.on:", msgStr);
+});
+// *
 
 function requestPlayersCache() {
   var requestId = "" + Math.floor(Math.random() * 100000);

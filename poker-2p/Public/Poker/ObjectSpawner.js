@@ -33,30 +33,15 @@
 //@input SceneObject gameOverScreen
 //@input float missedScoreMax
 
-// TODO by Wednesday:
-// - START RESEARCH JOURNAL
-// - fix directories
-// - Clean up code from previous app
-// - Code up "x to call" so base functionality works (with raising too)
-// - Code up text "x to call"
-// - Bet amount to be variable
-// -
-// TODO later:
-// - put all persistent variables in big JSON object and add to
-//   connected lens realtime store
-// - update vars for both players at every game update
-// - get player ID/name of each player, say "waiting for opponent" when
-//   its not your turn
-
+// *************** test 2p
 // @input Component.ScriptComponent connectedController
 // @input Component.ScriptComponent packets
 var packets = script.packets.api;
 var utils = global.utils;
-var log = utils.makeLogger("BlockSync");
 
-var broadcastValue = packets.makeBroadcastValue("/poker/", userId);
-// Receive other player's broadcasts
-broadcastValue.on(function (cache, params, userId) {});
+// Create event system
+var events = new utils.Events();
+script.api.events = events;
 
 // Define Enums
 const players = {
@@ -90,26 +75,77 @@ var cache = {
   currentDealer: players.A,
   currentVillain: players.B,
   currentRound: rounds.PREFLOP,
-  currentPlayer: currentDealer,
+  currentPlayer: players.A,
   nextTurnActions: [actions.FOLD, actions.CALL, actions.BET],
   previousAction: null,
   amountToCall: 0,
   gameMessage: "",
 };
 
+script.api.apiOnCheck = function () {
+  print("apiOnCheck");
+  packets.sendObject("/poker/apiOnCheck/", {
+    msg: { hello: "hello world I checked" },
+  });
+};
+packets.on("/poker/apiOnCheck/", function (body, params, userId) {
+  print("recieved /poker/test/. Body: ", body);
+  var message = JSON.parse(body);
+  events.trigger("respondToCheck", message.hello);
+});
+
+events.on("respondToCheck", function (msgStr) {
+  print("msgStr in events.on:", msgStr);
+
+  // set player a's stack to 999
+  cache.stacks.A = 999;
+  updateUI();
+});
+
+// *
+
+// TODO by Wednesday:
+// - START RESEARCH JOURNAL
+// - fix directories
+// - Clean up code from previous app
+// - Code up "x to call" so base functionality works (with raising too)
+// - Code up text "x to call"
+// - Bet amount to be variable
+// -
+// TODO later:
+// - put all persistent variables in big JSON object and add to
+//   connected lens realtime store
+// - update vars for both players at every game update
+// - get player ID/name of each player, say "waiting for opponent" when
+//   its not your turn
+
+// @input Component.ScriptComponent connectedController
+// @input Component.ScriptComponent packets
+
+// ! remove?
+// var packets = script.packets.api;
+// var utils = global.utils;
+// var log = utils.makeLogger("BlockSync");
+
+// var broadcastValue = packets.makeBroadcastValue("/poker/", userId);
+// // Receive other player's broadcasts
+// broadcastValue.on(function (cache, params, userId) {});
+// !
+
 // To be used to send game data to opponent
 function getCache() {
-  return {
-    stacks: stacks,
-    currentDealer: currentDealer,
-    currentVillain: currentVillain,
-    currentRound: currentRound,
-    currentPlayer: currentPlayer,
-    nextTurnActions: nextTurnActions,
-    previousAction: previousAction,
-    amountToCall: amountToCall,
-    gameMessage: gameMessage,
-  };
+  return cache;
+  //   {
+  //     stacks: stacks,
+  //     currentDealer: currentDealer,
+  //     currentVillain: currentVillain,
+  //     currentRound: currentRound,
+  //     currentPlayer: currentPlayer,
+  //     nextTurnActions: nextTurnActions,
+  //     previousAction: previousAction,
+  //     amountToCall: amountToCall,
+  //     gameMessage: gameMessage,
+  //   };
 }
 function setCache(newCache) {
   cache = newCache;
@@ -140,10 +176,10 @@ function endHand(winner) {
     cache.gameMessage += " Player B wins $" + cache.stacks.POT + ".";
   }
   cache.stacks.POT = 0;
-  cache.currentDealer = getOpponent(currentDealer);
-  cache.currentVillain = getOpponent(currentVillain);
+  cache.currentDealer = getOpponent(cache.currentDealer);
+  cache.currentVillain = getOpponent(cache.currentVillain);
   cache.currentRound = rounds.PREFLOP;
-  cache.currentPlayer = currentDealer;
+  cache.currentPlayer = cache.currentDealer;
   cache.nextTurnActions = [actions.FOLD, actions.CALL, actions.BET];
   cache.previousAction = null;
   cache.amountToCall = 0;
@@ -165,10 +201,10 @@ function advanceRound() {
   // Advanced to either FLOP, TURN, or RIVER
   // All which have identical actions/first player to act
   setNextTurnActions(actions.CHECK, actions.BET);
-  cache.currentPlayer = currentVillain;
+  cache.currentPlayer = cache.currentVillain;
   cache.amountToCall = 0;
 
-  switch (currentRound) {
+  switch (cache.currentRound) {
     case rounds.PREFLOP:
       cache.currentRound = rounds.FLOP;
       print("Advanced to Flop.");
@@ -252,10 +288,10 @@ function updateUI() {
   script.stackANumber.text = cache.stacks.A.toString();
   script.stackBNumber.text = cache.stacks.B.toString();
   script.potNumber.text = cache.stacks.POT.toString();
-  script.currentRound.text = currentRound;
-  script.currentPlayer.text = currentPlayer;
-  script.currentDealer.text = currentDealer;
-  script.amountToCall.text = amountToCall.toString();
+  script.currentRound.text = cache.currentRound;
+  script.currentPlayer.text = cache.currentPlayer;
+  script.currentDealer.text = cache.currentDealer;
+  script.amountToCall.text = cache.amountToCall.toString();
   script.gameMessage.text = cache.gameMessage;
 }
 
@@ -284,7 +320,7 @@ function payBlinds() {
 // * Event Functions *
 function onCheck() {
   print("Player " + cache.currentPlayer + " checks.");
-  cache.gameMessage = "Player " + currentPlayer + " checks.";
+  cache.gameMessage = "Player " + cache.currentPlayer + " checks.";
 
   //   numberOfChecks++;
   //   print("Player checked: " + numberOfChecks);
@@ -294,13 +330,13 @@ function onCheck() {
   //   var previousAction = actions.CHECK;
   if (cache.currentRound == rounds.PREFLOP) {
     advanceRound();
-  } else if (cache.currentPlayer == currentDealer) {
+  } else if (cache.currentPlayer == cache.currentDealer) {
     advanceRound();
   }
   // Case where villain checks as first action
   else {
     setNextTurnActions(actions.CHECK, actions.BET);
-    cache.currentPlayer = getOpponent(currentPlayer);
+    cache.currentPlayer = getOpponent(cache.currentPlayer);
   }
   cache.previousAction = actions.CHECK;
   updateUI();
@@ -321,12 +357,12 @@ function onCall() {
   print("Player " + cache.currentPlayer + " calls.");
   cache.gameMessage = "Player " + cache.currentPlayer + " calls.";
 
-  betsAmount(currentPlayer, amountToCall);
+  betsAmount(cache.currentPlayer, cache.amountToCall);
   cache.amountToCall = 0;
 
-  if (previousAction == null) {
+  if (cache.previousAction == null) {
     setNextTurnActions(actions.CHECK, actions.BET);
-    cache.currentPlayer = getOpponent(currentPlayer);
+    cache.currentPlayer = getOpponent(cache.currentPlayer);
   } else {
     // todo - subtract chips
     advanceRound();
@@ -365,9 +401,9 @@ options.onKeyboardStateChanged = function (isOpen) {
 };
 
 function resolveOnBet(betAmount) {
-  print("Player " + currentPlayer + " bets $" + betAmount + ".");
+  print("Player " + cache.currentPlayer + " bets $" + betAmount + ".");
   cache.gameMessage =
-    "Player " + currentPlayer + " bets $" + betAmount + ".";
+    "Player " + cache.currentPlayer + " bets $" + betAmount + ".";
 
   print("Bet amount: " + betAmount);
 
@@ -375,11 +411,11 @@ function resolveOnBet(betAmount) {
 
   // todo - get amount raised
   //   var betAmount = 5;
-  betsAmount(currentPlayer, betAmount);
-  cache.amountToCall = betAmount - amountToCall;
+  betsAmount(cache.currentPlayer, betAmount);
+  cache.amountToCall = betAmount - cache.amountToCall;
 
   setNextTurnActions(actions.FOLD, actions.CALL, actions.BET);
-  cache.currentPlayer = getOpponent(currentPlayer);
+  cache.currentPlayer = getOpponent(cache.currentPlayer);
   cache.previousAction = actions.BET;
 
   updateUI();

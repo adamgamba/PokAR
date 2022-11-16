@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1666831985228",
+    "lastChanged": "1666896597559",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -289,10 +289,10 @@
             "collapsedList": [
                 [
                     "1517446348227994:84813",
-                    "1592408243355212:3301",
                     "1594415847783893:415654",
                     "1665544305237623:2345573",
-                    "1666830577135973:64901"
+                    "1666830577135973:64901",
+                    "1666831640714509:190320"
                 ]
             ],
             "selectionSetList": ""
@@ -314,13 +314,13 @@
             "preview_images_project_config": {
                 "back_preview_id": "bundle:Preview\/Images\/Beach.jpg",
                 "back_preview_is_favorite": "false",
-                "front_preview_id": "bundle:Preview\/Images\/Cat.jpg",
+                "front_preview_id": "local:C:\/Users\/adamg\/OneDrive\/Pictures\/Camera Roll\/WIN_20221027_13_56_53_Pro.jpg",
                 "front_preview_is_favorite": "false"
             },
             "preview_videos_project_config": {
                 "back_preview_id": "bundle:Preview\/Videos\/Beach.webm",
                 "back_preview_is_favorite": "false",
-                "front_preview_id": "bundle:Preview\/Videos\/Dog.webm",
+                "front_preview_id": "bundle:Preview\/Videos\/Zoom Out.webm",
                 "front_preview_is_favorite": "false"
             },
             "preview_ie_project_config": {
@@ -4683,7 +4683,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1666831641201546:190915"
+                    "1666831640714509:190320"
                 ]
             }
         },
@@ -7279,13 +7279,7 @@
                             }
                         },
                         "uncompressed_file": "378",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 },
                 {
@@ -7305,13 +7299,7 @@
                             }
                         },
                         "uncompressed_file": "381",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 },
                 {
@@ -7331,13 +7319,7 @@
                             }
                         },
                         "uncompressed_file": "384",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 },
                 {
@@ -7357,13 +7339,7 @@
                             }
                         },
                         "uncompressed_file": "387",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 },
                 {
@@ -7383,13 +7359,7 @@
                             }
                         },
                         "uncompressed_file": "390",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 },
                 {
@@ -7409,13 +7379,7 @@
                             }
                         },
                         "uncompressed_file": "393",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 },
                 {
@@ -7435,13 +7399,7 @@
                             }
                         },
                         "uncompressed_file": "397",
-                        "compressed_files": "",
-                        "desiredSettings": {
-                            "isCompressed": "true",
-                            "level": "3",
-                            "type": "0",
-                            "subtype": "9"
-                        }
+                        "compressed_files": ""
                     }
                 }
             ]

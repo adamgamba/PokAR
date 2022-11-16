@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1666846463038",
+    "lastChanged": "1668630407894",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -22,7 +22,7 @@
         "lastSavedWith": {
             "type": "Public",
             "major": "4",
-            "minor": "31",
+            "minor": "34",
             "patch": "0",
             "build": "0"
         }
@@ -394,9 +394,6 @@
                     ],
                     [
                         "ObjectPrefab"
-                    ],
-                    [
-                        "Poker"
                     ],
                     [
                         "Poker",
@@ -773,10 +770,9 @@
             "collapsedList": [
                 [
                     "1517446348227994:84813",
-                    "1592408243355212:3301",
                     "1594415847783893:415654",
                     "1665544305237623:2345573",
-                    "1666846304887200:2418964"
+                    "1666846304916694:2419022"
                 ]
             ],
             "selectionSetList": ""
@@ -838,7 +834,7 @@
             "mapPinPoints": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "-1:-1"
+            "active_graph_asset": "1666845794740870:2110438"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -1969,6 +1965,198 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "0"
+                },
+                {
+                    "resId": "158",
+                    "uid": "1668629911129679:434376",
+                    "name": "Files\/File350",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "159",
+                    "uid": "1668629913397574:434506",
+                    "name": "Files\/File352.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "160",
+                    "uid": "1668629925288272:434905",
+                    "name": "Files\/File355.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "161",
+                    "uid": "1668629932504959:435113",
+                    "name": "Files\/File358",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "162",
+                    "uid": "1668629936129457:435194",
+                    "name": "Files\/File360",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "163",
+                    "uid": "1668629939449013:435327",
+                    "name": "Files\/File362",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "164",
+                    "uid": "1668629942063450:435480",
+                    "name": "Files\/File364.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "165",
+                    "uid": "1668629942237167:435489",
+                    "name": "Files\/File367.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "166",
+                    "uid": "1668629944261687:435544",
+                    "name": "Files\/File370.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "167",
+                    "uid": "1668629946659707:435688",
+                    "name": "sceneObject_0",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "168",
+                    "uid": "1668629946892073:435744",
+                    "name": "sceneObject_1",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "169",
+                    "uid": "1668629947140816:435761",
+                    "name": "sceneObject_2",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "170",
+                    "uid": "1668629947416406:435778",
+                    "name": "sceneObject_3",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "171",
+                    "uid": "1668629947688812:435795",
+                    "name": "sceneObject_4",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "172",
+                    "uid": "1668629948116166:435830",
+                    "name": "Files\/File378",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "173",
+                    "uid": "1668629948345783:435853",
+                    "name": "Files\/File379.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "174",
+                    "uid": "1668629948524138:435862",
+                    "name": "Files\/File382.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "175",
+                    "uid": "1668629950613816:436261",
+                    "name": "sceneObject_5",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "176",
+                    "uid": "1668629952011988:436307",
+                    "name": "Files\/File387.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "177",
+                    "uid": "1668629952078467:436311",
+                    "name": "Files\/File390.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "178",
+                    "uid": "1668629952171889:436315",
+                    "name": "Files\/File393.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "179",
+                    "uid": "1668629952261510:436319",
+                    "name": "Files\/File396.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "180",
+                    "uid": "1668629952297690:436323",
+                    "name": "Files\/File397.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "181",
+                    "uid": "1668629952319148:436327",
+                    "name": "Files\/File398.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -5049,6 +5237,266 @@
                 {
                     "k": "349",
                     "v": "Files\/File349.oprfb"
+                },
+                {
+                    "k": "350",
+                    "v": "Files\/File350"
+                },
+                {
+                    "k": "351",
+                    "v": "Files\/File351.lsmat"
+                },
+                {
+                    "k": "352",
+                    "v": "Files\/File352.pvr"
+                },
+                {
+                    "k": "353",
+                    "v": "Files\/File353.png"
+                },
+                {
+                    "k": "354",
+                    "v": "Files\/File354.png"
+                },
+                {
+                    "k": "355",
+                    "v": "Files\/File355.pvr"
+                },
+                {
+                    "k": "356",
+                    "v": "Files\/File356.png"
+                },
+                {
+                    "k": "357",
+                    "v": "Files\/File357.png"
+                },
+                {
+                    "k": "358",
+                    "v": "Files\/File358"
+                },
+                {
+                    "k": "359",
+                    "v": "Files\/File359.lsmat"
+                },
+                {
+                    "k": "360",
+                    "v": "Files\/File360"
+                },
+                {
+                    "k": "361",
+                    "v": "Files\/File361.lsmat"
+                },
+                {
+                    "k": "362",
+                    "v": "Files\/File362"
+                },
+                {
+                    "k": "363",
+                    "v": "Files\/File363.lsmat"
+                },
+                {
+                    "k": "364",
+                    "v": "Files\/File364.pvr"
+                },
+                {
+                    "k": "365",
+                    "v": "Files\/File365.png"
+                },
+                {
+                    "k": "366",
+                    "v": "Files\/File366.png"
+                },
+                {
+                    "k": "367",
+                    "v": "Files\/File367.pvr"
+                },
+                {
+                    "k": "368",
+                    "v": "Files\/File368.png"
+                },
+                {
+                    "k": "369",
+                    "v": "Files\/File369.png"
+                },
+                {
+                    "k": "370",
+                    "v": "Files\/File370.pvr"
+                },
+                {
+                    "k": "371",
+                    "v": "Files\/File371.png"
+                },
+                {
+                    "k": "372",
+                    "v": "Files\/File372.png"
+                },
+                {
+                    "k": "373",
+                    "v": "Files\/File373.oprfb"
+                },
+                {
+                    "k": "374",
+                    "v": "Files\/File374.oprfb"
+                },
+                {
+                    "k": "375",
+                    "v": "Files\/File375.oprfb"
+                },
+                {
+                    "k": "376",
+                    "v": "Files\/File376.oprfb"
+                },
+                {
+                    "k": "377",
+                    "v": "Files\/File377.oprfb"
+                },
+                {
+                    "k": "378",
+                    "v": "Files\/File378"
+                },
+                {
+                    "k": "379",
+                    "v": "Files\/File379.pvr"
+                },
+                {
+                    "k": "380",
+                    "v": "Files\/File380.png"
+                },
+                {
+                    "k": "381",
+                    "v": "Files\/File381.png"
+                },
+                {
+                    "k": "382",
+                    "v": "Files\/File382.pvr"
+                },
+                {
+                    "k": "383",
+                    "v": "Files\/File383.png"
+                },
+                {
+                    "k": "384",
+                    "v": "Files\/File384.png"
+                },
+                {
+                    "k": "385",
+                    "v": "Files\/File385.lsmat"
+                },
+                {
+                    "k": "386",
+                    "v": "Files\/File386.oprfb"
+                },
+                {
+                    "k": "387",
+                    "v": "Files\/File387.pvr"
+                },
+                {
+                    "k": "388",
+                    "v": "Files\/File388.png"
+                },
+                {
+                    "k": "389",
+                    "v": "Files\/File389.png"
+                },
+                {
+                    "k": "390",
+                    "v": "Files\/File390.pvr"
+                },
+                {
+                    "k": "391",
+                    "v": "Files\/File391.png"
+                },
+                {
+                    "k": "392",
+                    "v": "Files\/File392.png"
+                },
+                {
+                    "k": "393",
+                    "v": "Files\/File393.pvr"
+                },
+                {
+                    "k": "394",
+                    "v": "Files\/File394.png"
+                },
+                {
+                    "k": "395",
+                    "v": "Files\/File395.png"
+                },
+                {
+                    "k": "396",
+                    "v": "Files\/File396.js"
+                },
+                {
+                    "k": "397",
+                    "v": "Files\/File397.js"
+                },
+                {
+                    "k": "398",
+                    "v": "Files\/File398.js"
+                },
+                {
+                    "k": "399",
+                    "v": "Files\/File399.pvr"
+                },
+                {
+                    "k": "400",
+                    "v": "Files\/File400.pvr"
+                },
+                {
+                    "k": "401",
+                    "v": "Files\/File401.pvr"
+                },
+                {
+                    "k": "402",
+                    "v": "Files\/File402.pvr"
+                },
+                {
+                    "k": "403",
+                    "v": "Files\/File403.pvr"
+                },
+                {
+                    "k": "404",
+                    "v": "Files\/File404.pvr"
+                },
+                {
+                    "k": "405",
+                    "v": "Files\/File405.pvr"
+                },
+                {
+                    "k": "406",
+                    "v": "Files\/File406.pvr"
+                },
+                {
+                    "k": "407",
+                    "v": "Files\/File407.pvr"
+                },
+                {
+                    "k": "408",
+                    "v": "Files\/File408.pvr"
+                },
+                {
+                    "k": "409",
+                    "v": "Files\/File409.oprfb"
+                },
+                {
+                    "k": "410",
+                    "v": "Files\/File410.oprfb"
+                },
+                {
+                    "k": "411",
+                    "v": "Files\/File411.oprfb"
+                },
+                {
+                    "k": "412",
+                    "v": "Files\/File412.oprfb"
+                },
+                {
+                    "k": "413",
+                    "v": "Files\/File413.oprfb"
+                },
+                {
+                    "k": "414",
+                    "v": "Files\/File414.oprfb"
                 }
             ]
         },
@@ -5662,6 +6110,102 @@
                     {
                         "k": "149",
                         "v": "ConnectedUI\/Models\/ArrowPrefab 2.oprfb"
+                    },
+                    {
+                        "k": "1051",
+                        "v": "BlockDrawing\/Graphics\/BlockMaterial 2.lsmat"
+                    },
+                    {
+                        "k": "1052",
+                        "v": "Textures\/BlockNormals 2.png"
+                    },
+                    {
+                        "k": "1053",
+                        "v": "Textures\/Spinner 2.png"
+                    },
+                    {
+                        "k": "1054",
+                        "v": "Prototyping\/Avatars\/Graphics\/AvatarPointerMaterial 2.lsmat"
+                    },
+                    {
+                        "k": "1055",
+                        "v": "Prototyping\/Avatars\/Graphics\/Eyes 2.lsmat"
+                    },
+                    {
+                        "k": "1056",
+                        "v": "Prototyping\/Avatars\/Graphics\/Iridescence 2.lsmat"
+                    },
+                    {
+                        "k": "1057",
+                        "v": "Textures\/AvatarPointerOutlineTexture 2.png"
+                    },
+                    {
+                        "k": "1058",
+                        "v": "Textures\/AvatarPointerProfileTexture 2.png"
+                    },
+                    {
+                        "k": "1059",
+                        "v": "Textures\/EyesTexture 2.png"
+                    },
+                    {
+                        "k": "1060",
+                        "v": "Prototyping\/Avatars\/AvatarPointer 2.oprfb"
+                    },
+                    {
+                        "k": "1061",
+                        "v": "Prototyping\/Avatars\/Avatar_HoloEyes 2.oprfb"
+                    },
+                    {
+                        "k": "1062",
+                        "v": "Prototyping\/Avatars\/Avatar_IrradianceEyes 2.oprfb"
+                    },
+                    {
+                        "k": "1063",
+                        "v": "Prototyping\/Avatars\/Avatar_PhoneAndEyes 2.oprfb"
+                    },
+                    {
+                        "k": "1064",
+                        "v": "Prototyping\/Avatars\/Avatar_SphereFacePhone 2.oprfb"
+                    },
+                    {
+                        "k": "1065",
+                        "v": "Prototyping\/Placement\/GroundGrid 2.lsmat"
+                    },
+                    {
+                        "k": "1066",
+                        "v": "Textures\/GroundGridMask 20.png"
+                    },
+                    {
+                        "k": "1067",
+                        "v": "Textures\/GroundGridPattern 20.png"
+                    },
+                    {
+                        "k": "1068",
+                        "v": "Prototyping\/RemoteCursors\/RemoteCursor 2.oprfb"
+                    },
+                    {
+                        "k": "1069",
+                        "v": "Textures\/GroundGridMask 2.png"
+                    },
+                    {
+                        "k": "1070",
+                        "v": "Textures\/GroundGridPattern 2.png"
+                    },
+                    {
+                        "k": "1071",
+                        "v": "button_bet 2.png"
+                    },
+                    {
+                        "k": "1072",
+                        "v": "ChangeNumOnTap.js"
+                    },
+                    {
+                        "k": "1073",
+                        "v": "HelloWorldScript.js"
+                    },
+                    {
+                        "k": "1074",
+                        "v": "START_GAME.js"
                     }
                 ],
                 "hashes": [
@@ -5815,7 +6359,7 @@
                     },
                     {
                         "k": "41",
-                        "v": "6c1869b5f6eb8ed58ba69810e38b614b"
+                        "v": "56ddd6951a417a3059c8ea03a250f4cb"
                     },
                     {
                         "k": "42",
@@ -5863,7 +6407,7 @@
                     },
                     {
                         "k": "54",
-                        "v": "11cc5b886014536edcbe792b14136b98"
+                        "v": "1d3a3f86d094a2154251287706d563db"
                     },
                     {
                         "k": "56",
@@ -5899,7 +6443,7 @@
                     },
                     {
                         "k": "67",
-                        "v": "eb1b8774e282eba5537e5dfab67368b8"
+                        "v": "7833004f541531cfd78ebc95ff3fed41"
                     },
                     {
                         "k": "68",
@@ -5911,15 +6455,15 @@
                     },
                     {
                         "k": "70",
-                        "v": "52460805798140fef529bb3b8d912638"
+                        "v": "ee7114b1e6c28fd6940baf668c0ad939"
                     },
                     {
                         "k": "71",
-                        "v": "40b0856ae961badaef17bdfec27626e1"
+                        "v": "9e4de4494136720f836db3caf5e60e9b"
                     },
                     {
                         "k": "72",
-                        "v": "b21ae81ff3f4e0f64e5e890c8a0d49ac"
+                        "v": "43e504235682386eb7837b79b6fe4c72"
                     },
                     {
                         "k": "73",
@@ -5927,7 +6471,7 @@
                     },
                     {
                         "k": "74",
-                        "v": "f37821cf3d70492b958c2af2a82c8afb"
+                        "v": "d57eb5f1bf24989b18d50c1d647f4123"
                     },
                     {
                         "k": "76",
@@ -6019,7 +6563,7 @@
                     },
                     {
                         "k": "103",
-                        "v": "bc0ed5ba058e49c34c9dff15b6169f66"
+                        "v": "57132bea80ee2d52b5b3600ecbf4ba24"
                     },
                     {
                         "k": "104",
@@ -6031,7 +6575,7 @@
                     },
                     {
                         "k": "106",
-                        "v": "da78c1fec8a85ea19d62a801ff7360e9"
+                        "v": "5dbd82463f31af6a026d994ada64a8b9"
                     },
                     {
                         "k": "107",
@@ -6039,7 +6583,7 @@
                     },
                     {
                         "k": "108",
-                        "v": "1dc7310e9b2dd5e66f8d9702d2399eb1"
+                        "v": "313abd2f763a528d7c4800787c2c9bca"
                     },
                     {
                         "k": "109",
@@ -6047,11 +6591,11 @@
                     },
                     {
                         "k": "110",
-                        "v": "9553fdf791c98c25e5436fc72a44302f"
+                        "v": "b5c6f9b998ed95a41c232f1369beba8e"
                     },
                     {
                         "k": "111",
-                        "v": "1552dc0b4f3c31649d0ca6132ed2deaa"
+                        "v": "d87ad6a450521898672a0a4089a4c2c6"
                     },
                     {
                         "k": "112",
@@ -6119,11 +6663,11 @@
                     },
                     {
                         "k": "131",
-                        "v": "2517f9129932732dee6c7777ca65bbf0"
+                        "v": "ec02ee7fb9c9962e13c76941a6753b6c"
                     },
                     {
                         "k": "132",
-                        "v": "72a65e1dfecd029839bcb5118522bd4f"
+                        "v": "d37bd2214a1aa8fcd97b524d9c8b8227"
                     },
                     {
                         "k": "134",
@@ -6143,11 +6687,11 @@
                     },
                     {
                         "k": "139",
-                        "v": "0c69a8ac75f4a231acf079856a546352"
+                        "v": "ae8dd3ca697b54abd17078b28875b900"
                     },
                     {
                         "k": "141",
-                        "v": "7a2a7ab899aacb2ddd4380b470680618"
+                        "v": "fcb09b33fce35b13e0394a1c80b7be4c"
                     },
                     {
                         "k": "142",
@@ -6163,15 +6707,15 @@
                     },
                     {
                         "k": "145",
-                        "v": "ff4a198b928ce9b3ea79e5d452b9f55f"
+                        "v": "232e6c6b26438771d12d02939bb2b40a"
                     },
                     {
                         "k": "146",
-                        "v": "7fae213c8663e181132d26fcb2d7ad63"
+                        "v": "080e80dfcb6e238b9e066df615b7bc96"
                     },
                     {
                         "k": "147",
-                        "v": "5ce66d57d89629ca9784db31b7f99bcc"
+                        "v": "d09974b11ad33049bfe00ded816c4214"
                     },
                     {
                         "k": "148",
@@ -6180,14 +6724,110 @@
                     {
                         "k": "149",
                         "v": "864b529e71134f5227506e993f371ffb"
+                    },
+                    {
+                        "k": "1051",
+                        "v": "c5df8b5f7147fc37a11f2f5821c49293"
+                    },
+                    {
+                        "k": "1052",
+                        "v": "f2cc614f65e9f6e14625e8aab88cc5b8"
+                    },
+                    {
+                        "k": "1053",
+                        "v": "024a1b7e91b04aa7e7ad9828f2444316"
+                    },
+                    {
+                        "k": "1054",
+                        "v": "accc62f892938ae1b24e181456fbea8f"
+                    },
+                    {
+                        "k": "1055",
+                        "v": "7ac52e8c24f907f2babfd579a5f0b783"
+                    },
+                    {
+                        "k": "1056",
+                        "v": "efee55442ade409b314e94cd7e30a3bc"
+                    },
+                    {
+                        "k": "1057",
+                        "v": "2e4e6f92451f3995e005da17a15eee62"
+                    },
+                    {
+                        "k": "1058",
+                        "v": "02179f6ee7c9ae04a1f6ef1f6a88b828"
+                    },
+                    {
+                        "k": "1059",
+                        "v": "b2e9a01259e44c68a1d53befb34df753"
+                    },
+                    {
+                        "k": "1060",
+                        "v": "2bfdd157bf313670839570b95f19295a"
+                    },
+                    {
+                        "k": "1061",
+                        "v": "514b99358af11d5e4e41bd8c8f82edc6"
+                    },
+                    {
+                        "k": "1062",
+                        "v": "e1938b52989638591bf3741d7235584e"
+                    },
+                    {
+                        "k": "1063",
+                        "v": "eba5e0f3a22cc98f969b74eb90805fec"
+                    },
+                    {
+                        "k": "1064",
+                        "v": "f7421e2ce1558e8957374c21367263c1"
+                    },
+                    {
+                        "k": "1065",
+                        "v": "db7b872f3b31dc26a37b10921fc73089"
+                    },
+                    {
+                        "k": "1066",
+                        "v": "9107aa91a8d18484c51680d3a7a03d5a"
+                    },
+                    {
+                        "k": "1067",
+                        "v": "26b5600591ba238fbcf5109847db6d02"
+                    },
+                    {
+                        "k": "1068",
+                        "v": "78c74694f01b06f8d21b2ae69bb8819e"
+                    },
+                    {
+                        "k": "1069",
+                        "v": "9107aa91a8d18484c51680d3a7a03d5a"
+                    },
+                    {
+                        "k": "1070",
+                        "v": "26b5600591ba238fbcf5109847db6d02"
+                    },
+                    {
+                        "k": "1071",
+                        "v": "bfc88f2dfc0fd75d7abec06a4ea4c42a"
+                    },
+                    {
+                        "k": "1072",
+                        "v": "e4789463d111a751c47866901e37ba29"
+                    },
+                    {
+                        "k": "1073",
+                        "v": "d9c4c7c50232008919e6a016e82f222d"
+                    },
+                    {
+                        "k": "1074",
+                        "v": "de5c4fd42e8199430800f691a7c6107a"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-10-27T00:51:19",
+                        "lastModified": "2022-10-27T00:58:45",
                         "name": "Public",
-                        "hash": "b070fe1e6bf28663f8097ac5e4f3a0ac",
+                        "hash": "fbebe22e1bb9ae7065e168850583846b",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -6200,7 +6840,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-27T00:51:09",
                                 "name": "BlockDrawing",
-                                "hash": "ef75e429998e790db6762b6133911d15",
+                                "hash": "112a7af5723d606f28dda098e467f1b8",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -6211,15 +6851,22 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-27T00:51:09",
+                                        "lastModified": "2022-11-16T15:20:40",
                                         "name": "Graphics",
-                                        "hash": "a4fd60b5e7412db8824c9f686fafc67b",
+                                        "hash": "221a39778e5a12547aa83bc18cc49619",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:54",
+                                                "lastModified": "2022-11-16T15:18:32",
+                                                "name": "BlockMaterial 2.lsmat",
+                                                "hash": "c5df8b5f7147fc37a11f2f5821c49293",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:17:59",
                                                 "name": "BlockMaterial.lsmat",
-                                                "hash": "6c1869b5f6eb8ed58ba69810e38b614b",
+                                                "hash": "56ddd6951a417a3059c8ea03a250f4cb",
                                                 "children": ""
                                             },
                                             {
@@ -6294,9 +6941,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T15:18:00",
                                                 "name": "VizGrid.lsmat",
-                                                "hash": "11cc5b886014536edcbe792b14136b98",
+                                                "hash": "1d3a3f86d094a2154251287706d563db",
                                                 "children": ""
                                             }
                                         ]
@@ -6309,7 +6956,7 @@
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-10-27T01:11:23",
                                                 "name": "BlockDrawing.js",
                                                 "hash": "b72236f2d9a4d17b1a7d1f0150eb4fc6",
                                                 "children": ""
@@ -6369,6 +7016,13 @@
                             },
                             {
                                 "isFolder": "false",
+                                "lastModified": "2022-10-27T00:58:36",
+                                "name": "button_bet 2.png",
+                                "hash": "bfc88f2dfc0fd75d7abec06a4ea4c42a",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
                                 "lastModified": "2022-10-27T00:50:54",
                                 "name": "button_bet.png",
                                 "hash": "b43ef7a9e36d4ba41315bacf0259eaed",
@@ -6410,6 +7064,13 @@
                                 "children": ""
                             },
                             {
+                                "isFolder": "false",
+                                "lastModified": "2022-10-27T00:58:36",
+                                "name": "ChangeNumOnTap.js",
+                                "hash": "e4789463d111a751c47866901e37ba29",
+                                "children": ""
+                            },
+                            {
                                 "isFolder": "true",
                                 "lastModified": "2022-10-27T00:51:09",
                                 "name": "Connected",
@@ -6424,7 +7085,7 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-27T00:50:53",
+                                        "lastModified": "2022-10-27T01:00:13",
                                         "name": "ConnectedController.js",
                                         "hash": "174d14bb5eada8411e97533dc1417984",
                                         "children": ""
@@ -6463,7 +7124,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-27T00:51:09",
                                 "name": "ConnectedUI",
-                                "hash": "2c65c1577e2a59f1c5bf6b43671ed843",
+                                "hash": "2cfac7b36834556672735d5c2780e836",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -6474,22 +7135,22 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-27T00:51:53",
+                                        "lastModified": "2022-11-16T15:20:42",
                                         "name": "Materials",
-                                        "hash": "57fb5598f6b1140c1ac59c5db63d6cc0",
+                                        "hash": "ed63d865eb51ac9b326f1fef0b0f3701",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:51:43",
+                                                "lastModified": "2022-11-16T15:18:05",
                                                 "name": "Arrow 2.lsmat",
-                                                "hash": "5ce66d57d89629ca9784db31b7f99bcc",
+                                                "hash": "d09974b11ad33049bfe00ded816c4214",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T15:18:00",
                                                 "name": "Arrow.lsmat",
-                                                "hash": "eb1b8774e282eba5537e5dfab67368b8",
+                                                "hash": "7833004f541531cfd78ebc95ff3fed41",
                                                 "children": ""
                                             },
                                             {
@@ -6522,37 +7183,37 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:51:41",
+                                                "lastModified": "2022-11-16T15:18:04",
                                                 "name": "ProgressBar 2.lsmat",
-                                                "hash": "ff4a198b928ce9b3ea79e5d452b9f55f",
+                                                "hash": "232e6c6b26438771d12d02939bb2b40a",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T15:18:02",
                                                 "name": "ProgressBar.lsmat",
-                                                "hash": "52460805798140fef529bb3b8d912638",
+                                                "hash": "ee7114b1e6c28fd6940baf668c0ad939",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:51:42",
+                                                "lastModified": "2022-11-16T15:18:05",
                                                 "name": "Spinner 2.lsmat",
-                                                "hash": "7fae213c8663e181132d26fcb2d7ad63",
+                                                "hash": "080e80dfcb6e238b9e066df615b7bc96",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T15:18:03",
                                                 "name": "Spinner.lsmat",
-                                                "hash": "40b0856ae961badaef17bdfec27626e1",
+                                                "hash": "9e4de4494136720f836db3caf5e60e9b",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T15:18:03",
                                                 "name": "UICircle.lsmat",
-                                                "hash": "b21ae81ff3f4e0f64e5e890c8a0d49ac",
+                                                "hash": "43e504235682386eb7837b79b6fe4c72",
                                                 "children": ""
                                             },
                                             {
@@ -6564,9 +7225,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T15:18:04",
                                                 "name": "UnlitGradient.lsmat",
-                                                "hash": "f37821cf3d70492b958c2af2a82c8afb",
+                                                "hash": "d57eb5f1bf24989b18d50c1d647f4123",
                                                 "children": ""
                                             }
                                         ]
@@ -6797,6 +7458,13 @@
                             },
                             {
                                 "isFolder": "false",
+                                "lastModified": "2022-10-27T00:58:36",
+                                "name": "HelloWorldScript.js",
+                                "hash": "d9c4c7c50232008919e6a016e82f222d",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
                                 "lastModified": "2022-10-27T00:50:53",
                                 "name": "ObjectPrefab.oprfb",
                                 "hash": "ae1db8fbdbfa37d5dba5ea5221826808",
@@ -6804,9 +7472,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-10-27T00:51:09",
+                                "lastModified": "2022-11-16T15:24:59",
                                 "name": "Poker",
-                                "hash": "a93623c6db4942013a1431bacddb6393",
+                                "hash": "c54bc4c5110f0d09fad547e545e704ad",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -6824,9 +7492,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-27T00:50:53",
+                                        "lastModified": "2022-11-16T15:24:57",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "7a2a7ab899aacb2ddd4380b470680618",
+                                        "hash": "fcb09b33fce35b13e0394a1c80b7be4c",
                                         "children": ""
                                     },
                                     {
@@ -6842,19 +7510,33 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-27T00:51:09",
                                 "name": "Prototyping",
-                                "hash": "b3f32cec0f168daa0652f40c579908da",
+                                "hash": "b5ce4f6eef0c49066020184183fb8abe",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-27T00:51:09",
+                                        "lastModified": "2022-11-16T15:19:07",
                                         "name": "Avatars",
-                                        "hash": "b30127f89d27a96cd1ea2eb6dac0ebaf",
+                                        "hash": "49e46b102bfd286222bcade74b1bebfb",
                                         "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:19:06",
+                                                "name": "AvatarPointer 2.oprfb",
+                                                "hash": "2bfdd157bf313670839570b95f19295a",
+                                                "children": ""
+                                            },
                                             {
                                                 "isFolder": "false",
                                                 "lastModified": "2022-10-27T00:50:54",
                                                 "name": "AvatarPointer.oprfb",
                                                 "hash": "117415602ec926e43a313e3d00242b9f",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:19:06",
+                                                "name": "Avatar_HoloEyes 2.oprfb",
+                                                "hash": "514b99358af11d5e4e41bd8c8f82edc6",
                                                 "children": ""
                                             },
                                             {
@@ -6866,6 +7548,13 @@
                                             },
                                             {
                                                 "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:19:07",
+                                                "name": "Avatar_IrradianceEyes 2.oprfb",
+                                                "hash": "e1938b52989638591bf3741d7235584e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
                                                 "lastModified": "2022-10-27T00:50:54",
                                                 "name": "Avatar_IrradianceEyes.oprfb",
                                                 "hash": "0c2ac83a75608a76236af3d9ad6cdf64",
@@ -6873,9 +7562,23 @@
                                             },
                                             {
                                                 "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:19:07",
+                                                "name": "Avatar_PhoneAndEyes 2.oprfb",
+                                                "hash": "eba5e0f3a22cc98f969b74eb90805fec",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
                                                 "lastModified": "2022-10-27T00:50:54",
                                                 "name": "Avatar_PhoneAndEyes.oprfb",
                                                 "hash": "60fa9821d516e70df2d5fac79ae40c57",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:19:07",
+                                                "name": "Avatar_SphereFacePhone 2.oprfb",
+                                                "hash": "f7421e2ce1558e8957374c21367263c1",
                                                 "children": ""
                                             },
                                             {
@@ -6894,15 +7597,22 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-10-27T00:51:09",
+                                                "lastModified": "2022-11-16T15:20:42",
                                                 "name": "Graphics",
-                                                "hash": "279129c94204c5cc30be6282090b1956",
+                                                "hash": "cc412c9b393ef8e0ea679f5069db9d55",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2022-10-27T00:50:54",
+                                                        "lastModified": "2022-11-16T15:18:55",
+                                                        "name": "AvatarPointerMaterial 2.lsmat",
+                                                        "hash": "accc62f892938ae1b24e181456fbea8f",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2022-11-16T15:18:09",
                                                         "name": "AvatarPointerMaterial.lsmat",
-                                                        "hash": "bc0ed5ba058e49c34c9dff15b6169f66",
+                                                        "hash": "57132bea80ee2d52b5b3600ecbf4ba24",
                                                         "children": ""
                                                     },
                                                     {
@@ -6921,9 +7631,9 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2022-10-27T00:50:54",
+                                                        "lastModified": "2022-11-16T15:18:09",
                                                         "name": "AvatarSkin.lsmat",
-                                                        "hash": "da78c1fec8a85ea19d62a801ff7360e9",
+                                                        "hash": "5dbd82463f31af6a026d994ada64a8b9",
                                                         "children": ""
                                                     },
                                                     {
@@ -6935,9 +7645,16 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2022-10-27T00:50:54",
+                                                        "lastModified": "2022-11-16T15:18:58",
+                                                        "name": "Eyes 2.lsmat",
+                                                        "hash": "7ac52e8c24f907f2babfd579a5f0b783",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2022-11-16T15:18:10",
                                                         "name": "Eyes.lsmat",
-                                                        "hash": "1dc7310e9b2dd5e66f8d9702d2399eb1",
+                                                        "hash": "313abd2f763a528d7c4800787c2c9bca",
                                                         "children": ""
                                                     },
                                                     {
@@ -6956,16 +7673,23 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2022-10-27T00:50:54",
+                                                        "lastModified": "2022-11-16T15:18:10",
                                                         "name": "Hologram.lsmat",
-                                                        "hash": "9553fdf791c98c25e5436fc72a44302f",
+                                                        "hash": "b5c6f9b998ed95a41c232f1369beba8e",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2022-10-27T00:50:54",
+                                                        "lastModified": "2022-11-16T15:19:01",
+                                                        "name": "Iridescence 2.lsmat",
+                                                        "hash": "efee55442ade409b314e94cd7e30a3bc",
+                                                        "children": ""
+                                                    },
+                                                    {
+                                                        "isFolder": "false",
+                                                        "lastModified": "2022-11-16T15:18:10",
                                                         "name": "Iridescence.lsmat",
-                                                        "hash": "1552dc0b4f3c31649d0ca6132ed2deaa",
+                                                        "hash": "d87ad6a450521898672a0a4089a4c2c6",
                                                         "children": ""
                                                     },
                                                     {
@@ -7088,15 +7812,22 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-27T00:51:09",
+                                        "lastModified": "2022-11-16T15:20:42",
                                         "name": "Placement",
-                                        "hash": "aa357a3ee9745d52d1a7400422a9b5b7",
+                                        "hash": "3b3ebbb768acaf22c0ce13a37ab8dd85",
                                         "children": [
                                             {
                                                 "isFolder": "false",
                                                 "lastModified": "2022-10-27T00:51:09",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:20:42",
+                                                "name": "GroundGrid 2.lsmat",
+                                                "hash": "db7b872f3b31dc26a37b10921fc73089",
                                                 "children": ""
                                             },
                                             {
@@ -7136,16 +7867,16 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:54",
+                                                "lastModified": "2022-11-16T15:18:12",
                                                 "name": "ProximityGrid.lsmat",
-                                                "hash": "2517f9129932732dee6c7777ca65bbf0",
+                                                "hash": "ec02ee7fb9c9962e13c76941a6753b6c",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:54",
+                                                "lastModified": "2022-11-16T15:18:12",
                                                 "name": "ShadowCatcher.lsmat",
-                                                "hash": "72a65e1dfecd029839bcb5118522bd4f",
+                                                "hash": "d37bd2214a1aa8fcd97b524d9c8b8227",
                                                 "children": ""
                                             }
                                         ]
@@ -7174,9 +7905,9 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-27T00:51:09",
+                                        "lastModified": "2022-11-16T15:20:42",
                                         "name": "RemoteCursors",
-                                        "hash": "5d53d731fcae8962cac16c5721f43bde",
+                                        "hash": "3a616266715a8774870536f39839938c",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -7190,6 +7921,13 @@
                                                 "lastModified": "2022-10-27T00:50:54",
                                                 "name": "Iridescence.png",
                                                 "hash": "464f444dfcba88908c256dddc14e2779",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-11-16T15:19:10",
+                                                "name": "RemoteCursor 2.oprfb",
+                                                "hash": "78c74694f01b06f8d21b2ae69bb8819e",
                                                 "children": ""
                                             },
                                             {
@@ -7208,9 +7946,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:54",
+                                                "lastModified": "2022-11-16T15:18:13",
                                                 "name": "SoapBubble.lsmat",
-                                                "hash": "0c69a8ac75f4a231acf079856a546352",
+                                                "hash": "ae8dd3ca697b54abd17078b28875b900",
                                                 "children": ""
                                             }
                                         ]
@@ -7225,16 +7963,37 @@
                                 "children": ""
                             },
                             {
+                                "isFolder": "false",
+                                "lastModified": "2022-10-27T00:58:36",
+                                "name": "START_GAME.js",
+                                "hash": "de5c4fd42e8199430800f691a7c6107a",
+                                "children": ""
+                            },
+                            {
                                 "isFolder": "true",
-                                "lastModified": "2022-10-27T00:51:08",
+                                "lastModified": "2022-11-16T15:19:08",
                                 "name": "Textures",
-                                "hash": "8108c6934bf942f1a3f6f23a5c9bb815",
+                                "hash": "269eb6c95a641c55c8a36ffcde7ceca4",
                                 "children": [
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:19:01",
+                                        "name": "AvatarPointerOutlineTexture 2.png",
+                                        "hash": "2e4e6f92451f3995e005da17a15eee62",
+                                        "children": ""
+                                    },
                                     {
                                         "isFolder": "false",
                                         "lastModified": "2022-10-27T00:50:54",
                                         "name": "AvatarPointerOutlineTexture.png",
                                         "hash": "2e4e6f92451f3995e005da17a15eee62",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:19:01",
+                                        "name": "AvatarPointerProfileTexture 2.png",
+                                        "hash": "02179f6ee7c9ae04a1f6ef1f6a88b828",
                                         "children": ""
                                     },
                                     {
@@ -7249,6 +8008,13 @@
                                         "lastModified": "2022-10-27T00:50:53",
                                         "name": "Base.png",
                                         "hash": "cb607d7b25a160872c49fb4d2635cc33",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:18:33",
+                                        "name": "BlockNormals 2.png",
+                                        "hash": "f2cc614f65e9f6e14625e8aab88cc5b8",
                                         "children": ""
                                     },
                                     {
@@ -7442,6 +8208,13 @@
                                     },
                                     {
                                         "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:19:04",
+                                        "name": "EyesTexture 2.png",
+                                        "hash": "b2e9a01259e44c68a1d53befb34df753",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
                                         "lastModified": "2022-10-27T00:50:54",
                                         "name": "EyesTexture.png",
                                         "hash": "b2e9a01259e44c68a1d53befb34df753",
@@ -7456,9 +8229,37 @@
                                     },
                                     {
                                         "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:02:34",
+                                        "name": "GroundGridMask 2.png",
+                                        "hash": "9107aa91a8d18484c51680d3a7a03d5a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:19:08",
+                                        "name": "GroundGridMask 20.png",
+                                        "hash": "9107aa91a8d18484c51680d3a7a03d5a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
                                         "lastModified": "2022-10-27T00:50:54",
                                         "name": "GroundGridMask.png",
                                         "hash": "9107aa91a8d18484c51680d3a7a03d5a",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:02:34",
+                                        "name": "GroundGridPattern 2.png",
+                                        "hash": "26b5600591ba238fbcf5109847db6d02",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:19:08",
+                                        "name": "GroundGridPattern 20.png",
+                                        "hash": "26b5600591ba238fbcf5109847db6d02",
                                         "children": ""
                                     },
                                     {
@@ -7487,6 +8288,13 @@
                                         "lastModified": "2022-10-27T00:50:54",
                                         "name": "Resource.ds_store",
                                         "hash": "99f15f700d1d2020ea0820a3d8d55c42",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2022-11-16T15:18:44",
+                                        "name": "Spinner 2.png",
+                                        "hash": "024a1b7e91b04aa7e7ad9828f2444316",
                                         "children": ""
                                     },
                                     {
@@ -7547,7 +8355,9 @@
                         "publicId": "18446744073709551615",
                         "source": "",
                         "additional": {
-                            "RenderTargetRole": "1"
+                            "resourceInfoExportKey": {
+                                "RenderTargetRole": "1"
+                            }
                         }
                     },
                     {
@@ -7966,6 +8776,150 @@
                                 "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudioBgoiVICclgzC\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
                                 "additional": {
                                     "originHash": "9107aa91a8d18484c51680d3a7a03d5a"
+                                }
+                            },
+                            {
+                                "name": "BlockNormals 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "159",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629913397574:434506",
+                                "fileId": "352",
+                                "originalId": "353",
+                                "publicId": "1052",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "f2cc614f65e9f6e14625e8aab88cc5b8"
+                                }
+                            },
+                            {
+                                "name": "Spinner 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "160",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629925288272:434905",
+                                "fileId": "355",
+                                "originalId": "356",
+                                "publicId": "1053",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "024a1b7e91b04aa7e7ad9828f2444316"
+                                }
+                            },
+                            {
+                                "name": "AvatarPointerOutlineTexture 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "164",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629942063450:435480",
+                                "fileId": "364",
+                                "originalId": "365",
+                                "publicId": "1057",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "2e4e6f92451f3995e005da17a15eee62"
+                                }
+                            },
+                            {
+                                "name": "AvatarPointerProfileTexture 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "165",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629942237167:435489",
+                                "fileId": "367",
+                                "originalId": "368",
+                                "publicId": "1058",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "02179f6ee7c9ae04a1f6ef1f6a88b828"
+                                }
+                            },
+                            {
+                                "name": "EyesTexture 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "166",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629944261687:435544",
+                                "fileId": "370",
+                                "originalId": "371",
+                                "publicId": "1059",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "b2e9a01259e44c68a1d53befb34df753"
+                                }
+                            },
+                            {
+                                "name": "GroundGridMask 20",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "173",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629948345783:435853",
+                                "fileId": "379",
+                                "originalId": "380",
+                                "publicId": "1066",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "9107aa91a8d18484c51680d3a7a03d5a"
+                                }
+                            },
+                            {
+                                "name": "GroundGridPattern 20",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "174",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629948524138:435862",
+                                "fileId": "382",
+                                "originalId": "383",
+                                "publicId": "1067",
+                                "source": "C:\/Users\/adamg\/AppData\/Local\/Snap\/Lens Studio\/cache\/temp\/StudiohluRLZUFpAgf\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                "additional": {
+                                    "originHash": "26b5600591ba238fbcf5109847db6d02"
+                                }
+                            },
+                            {
+                                "name": "GroundGridMask 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "176",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629952011988:436307",
+                                "fileId": "387",
+                                "originalId": "388",
+                                "publicId": "1069",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/Textures\/GroundGridMask 2.png",
+                                "additional": {
+                                    "originHash": "9107aa91a8d18484c51680d3a7a03d5a"
+                                }
+                            },
+                            {
+                                "name": "GroundGridPattern 2",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "177",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "1668629952078467:436311",
+                                "fileId": "390",
+                                "originalId": "391",
+                                "publicId": "1070",
+                                "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/Textures\/GroundGridPattern 2.png",
+                                "additional": {
+                                    "originHash": "26b5600591ba238fbcf5109847db6d02"
                                 }
                             }
                         ]
@@ -8550,6 +9504,20 @@
                                         "fileId": "135",
                                         "originalId": "136",
                                         "publicId": "54",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "BlockMaterial 2",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "158",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629911129679:434376",
+                                        "fileId": "350",
+                                        "originalId": "351",
+                                        "publicId": "1051",
                                         "source": "",
                                         "additional": ""
                                     }
@@ -9678,6 +10646,48 @@
                                                 "additional": {
                                                     "originHash": "0c8dcfed2f50bb81ac5276a14967c005"
                                                 }
+                                            },
+                                            {
+                                                "name": "AvatarPointerMaterial 2",
+                                                "type": "2",
+                                                "subtype": "1",
+                                                "resourceId": "161",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1668629932504959:435113",
+                                                "fileId": "358",
+                                                "originalId": "359",
+                                                "publicId": "1054",
+                                                "source": "",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "Eyes 2",
+                                                "type": "2",
+                                                "subtype": "1",
+                                                "resourceId": "162",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1668629936129457:435194",
+                                                "fileId": "360",
+                                                "originalId": "361",
+                                                "publicId": "1055",
+                                                "source": "",
+                                                "additional": ""
+                                            },
+                                            {
+                                                "name": "Iridescence 2",
+                                                "type": "2",
+                                                "subtype": "1",
+                                                "resourceId": "163",
+                                                "dependency": "0",
+                                                "hidden": "false",
+                                                "uid": "1668629939449013:435327",
+                                                "fileId": "362",
+                                                "originalId": "363",
+                                                "publicId": "1056",
+                                                "source": "",
+                                                "additional": ""
                                             }
                                         ]
                                     },
@@ -9913,6 +10923,76 @@
                                                 "additional": ""
                                             }
                                         ]
+                                    },
+                                    {
+                                        "name": "AvatarPointer 2",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "167",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629946659707:435688",
+                                        "fileId": "373",
+                                        "originalId": "409",
+                                        "publicId": "1060",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Avatar_HoloEyes 2",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "168",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629946892073:435744",
+                                        "fileId": "374",
+                                        "originalId": "410",
+                                        "publicId": "1061",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Avatar_IrradianceEyes 2",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "169",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629947140816:435761",
+                                        "fileId": "375",
+                                        "originalId": "411",
+                                        "publicId": "1062",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Avatar_PhoneAndEyes 2",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "170",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629947416406:435778",
+                                        "fileId": "376",
+                                        "originalId": "412",
+                                        "publicId": "1063",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Avatar_SphereFacePhone 2",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "171",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629947688812:435795",
+                                        "fileId": "377",
+                                        "originalId": "413",
+                                        "publicId": "1064",
+                                        "source": "",
+                                        "additional": ""
                                     }
                                 ]
                             },
@@ -10057,6 +11137,20 @@
                                         "publicId": "132",
                                         "source": "",
                                         "additional": ""
+                                    },
+                                    {
+                                        "name": "GroundGrid 2",
+                                        "type": "2",
+                                        "subtype": "0",
+                                        "resourceId": "172",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629948116166:435830",
+                                        "fileId": "378",
+                                        "originalId": "385",
+                                        "publicId": "1065",
+                                        "source": "",
+                                        "additional": ""
                                     }
                                 ]
                             },
@@ -10161,6 +11255,20 @@
                                         "publicId": "139",
                                         "source": "",
                                         "additional": ""
+                                    },
+                                    {
+                                        "name": "RemoteCursor 2",
+                                        "type": "12",
+                                        "subtype": "0",
+                                        "resourceId": "175",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1668629950613816:436261",
+                                        "fileId": "386",
+                                        "originalId": "414",
+                                        "publicId": "1068",
+                                        "source": "",
+                                        "additional": ""
                                     }
                                 ]
                             }
@@ -10223,12 +11331,74 @@
                                 "additional": ""
                             }
                         ]
+                    },
+                    {
+                        "name": "button_bet 2",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "178",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1668629952171889:436315",
+                        "fileId": "393",
+                        "originalId": "394",
+                        "publicId": "1071",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/button_bet 2.png",
+                        "additional": {
+                            "originHash": "bfc88f2dfc0fd75d7abec06a4ea4c42a"
+                        }
+                    },
+                    {
+                        "name": "ChangeNumOnTap",
+                        "type": "4",
+                        "subtype": "0",
+                        "resourceId": "179",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1668629952261510:436319",
+                        "fileId": "396",
+                        "originalId": "18446744073709551615",
+                        "publicId": "1072",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/ChangeNumOnTap.js",
+                        "additional": ""
+                    },
+                    {
+                        "name": "HelloWorldScript",
+                        "type": "4",
+                        "subtype": "0",
+                        "resourceId": "180",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1668629952297690:436323",
+                        "fileId": "397",
+                        "originalId": "18446744073709551615",
+                        "publicId": "1073",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/HelloWorldScript.js",
+                        "additional": ""
+                    },
+                    {
+                        "name": "START_GAME",
+                        "type": "4",
+                        "subtype": "0",
+                        "resourceId": "181",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1668629952319148:436327",
+                        "fileId": "398",
+                        "originalId": "18446744073709551615",
+                        "publicId": "1074",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/START_GAME.js",
+                        "additional": ""
                     }
                 ]
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "objects": [
+                    "1665550693912568:2935978"
+                ]
+            }
         },
         "EffectsController": {
             "1": "",
@@ -12202,11 +13372,294 @@
                             }
                         ]
                     }
+                },
+                {
+                    "k": "1668629913397574:434506",
+                    "v": {
+                        "infos": {
+                            "originalSize": "107216",
+                            "compressedSize": "41408",
+                            "originalRAM": "1048576",
+                            "compressedRAM": "131072",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "354",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "f2cc614f65e9f6e14625e8aab88cc5b8",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "399"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629925288272:434905",
+                    "v": {
+                        "infos": {
+                            "originalSize": "5553",
+                            "compressedSize": "5024",
+                            "originalRAM": "262144",
+                            "compressedRAM": "32768",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "357",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "024a1b7e91b04aa7e7ad9828f2444316",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "400"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629942063450:435480",
+                    "v": {
+                        "infos": {
+                            "originalSize": "7981",
+                            "compressedSize": "6338",
+                            "originalRAM": "92416",
+                            "compressedRAM": "11552",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "366",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "2e4e6f92451f3995e005da17a15eee62",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "401"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629942237167:435489",
+                    "v": {
+                        "infos": {
+                            "originalSize": "7645",
+                            "compressedSize": "3742",
+                            "originalRAM": "32400",
+                            "compressedRAM": "4232",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "369",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "02179f6ee7c9ae04a1f6ef1f6a88b828",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "402"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629944261687:435544",
+                    "v": {
+                        "infos": {
+                            "originalSize": "4221",
+                            "compressedSize": "3353",
+                            "originalRAM": "262144",
+                            "compressedRAM": "32768",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "372",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "b2e9a01259e44c68a1d53befb34df753",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "403"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629948345783:435853",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2826",
+                            "compressedSize": "2033",
+                            "originalRAM": "65536",
+                            "compressedRAM": "8192",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "381",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "9107aa91a8d18484c51680d3a7a03d5a",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "404"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629948524138:435862",
+                    "v": {
+                        "infos": {
+                            "originalSize": "49509",
+                            "compressedSize": "42335",
+                            "originalRAM": "1048576",
+                            "compressedRAM": "174325",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "384",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "26b5600591ba238fbcf5109847db6d02",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "405"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629952011988:436307",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2826",
+                            "compressedSize": "2033",
+                            "originalRAM": "65536",
+                            "compressedRAM": "8192",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "389",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "9107aa91a8d18484c51680d3a7a03d5a",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "406"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629952078467:436311",
+                    "v": {
+                        "infos": {
+                            "originalSize": "49509",
+                            "compressedSize": "42335",
+                            "originalRAM": "1048576",
+                            "compressedRAM": "174325",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "392",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "26b5600591ba238fbcf5109847db6d02",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "407"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668629952171889:436315",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2904",
+                            "compressedSize": "1352",
+                            "originalRAM": "44088",
+                            "compressedRAM": "5712",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "395",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "bfc88f2dfc0fd75d7abec06a4ea4c42a",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "408"
+                            }
+                        ]
+                    }
                 }
             ]
         },
         "AssetImportController": {
             "itemUidToID": ""
+        },
+        "DigitalGoodsController": {
+            "digital_goods": ""
         }
     },
     "templateName": "",
