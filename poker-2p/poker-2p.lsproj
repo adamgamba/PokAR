@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1668642277702",
+    "lastChanged": "1668651589403",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -761,6 +761,9 @@
                         "button_next-hand"
                     ],
                     [
+                        "button_raise"
+                    ],
+                    [
                         "button_start-game"
                     ]
                 ]
@@ -772,6 +775,8 @@
                     "1517446348227994:84813",
                     "1594415847783893:415654",
                     "1665544305237623:2345573",
+                    "1665623483118806:26432",
+                    "1666846304916694:2419022",
                     "1666846305090947:2419635",
                     "1666846305253324:2420321",
                     "1666846305715915:2422772",
@@ -843,7 +848,7 @@
             "mapPinPoints": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1666845794740870:2110438"
+            "active_graph_asset": "-1:-1"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -2163,6 +2168,14 @@
                     "resId": "181",
                     "uid": "1668629952319148:436327",
                     "name": "Files\/File398.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "182",
+                    "uid": "1668647320481102:1518878",
+                    "name": "Files\/File415.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -3764,6 +3777,62 @@
                                     "attachTop": "false"
                                 }
                             }
+                        },
+                        {
+                            "k": "1668646779260531:1280765",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "true",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1668646779330751:1280897",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "true",
+                                    "fixHeight": "true",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1668647345766920:1600412",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "false"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1668647345803633:1600546",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "true",
+                                    "fixHeight": "true",
+                                    "attachBottom": "false",
+                                    "attachLeft": "true",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
                         }
                     ],
                     "generalData": ""
@@ -3900,7 +3969,11 @@
                 "125": "1666846307717153:2429255",
                 "126": "1666846307728220:2429257",
                 "127": "1666846307734011:2429259",
-                "128": "1666846307795904:2429395"
+                "128": "1666846307795904:2429395",
+                "129": "1668646779044612:1279811",
+                "130": "1668646779171291:1280287",
+                "131": "1668647345648182:1599934",
+                "132": "1668647345722745:1600173"
             }
         },
         "LayerComponent": {
@@ -5506,6 +5579,22 @@
                 {
                     "k": "414",
                     "v": "Files\/File414.oprfb"
+                },
+                {
+                    "k": "415",
+                    "v": "Files\/File415.pvr"
+                },
+                {
+                    "k": "416",
+                    "v": "Files\/File416.png"
+                },
+                {
+                    "k": "417",
+                    "v": "Files\/File417.png"
+                },
+                {
+                    "k": "418",
+                    "v": "Files\/File418.pvr"
                 }
             ]
         },
@@ -6215,6 +6304,10 @@
                     {
                         "k": "1074",
                         "v": "START_GAME.js"
+                    },
+                    {
+                        "k": "1076",
+                        "v": "button_raise.png"
                     }
                 ],
                 "hashes": [
@@ -6424,7 +6517,7 @@
                     },
                     {
                         "k": "57",
-                        "v": "e11dc29701b3ad94765605e34fd38fa2"
+                        "v": "82559bc8ea1e8181821473cf35bd5781"
                     },
                     {
                         "k": "58",
@@ -6436,7 +6529,7 @@
                     },
                     {
                         "k": "61",
-                        "v": "174d14bb5eada8411e97533dc1417984"
+                        "v": "ebfdc160c4f3f1cf3511ddf0fc35cf80"
                     },
                     {
                         "k": "62",
@@ -6700,7 +6793,7 @@
                     },
                     {
                         "k": "141",
-                        "v": "b274777e47c58a1b2aa756d6be8897db"
+                        "v": "05c2bf49d005597d9b72ddab9518faff"
                     },
                     {
                         "k": "142",
@@ -6829,14 +6922,22 @@
                     {
                         "k": "1074",
                         "v": "de5c4fd42e8199430800f691a7c6107a"
+                    },
+                    {
+                        "k": "1075",
+                        "v": "c049158ae8eecae72c05165634a23208"
+                    },
+                    {
+                        "k": "1076",
+                        "v": "c049158ae8eecae72c05165634a23208"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-10-27T00:58:45",
+                        "lastModified": "2022-11-16T20:08:48",
                         "name": "Public",
-                        "hash": "d410f09663ef6a698134d6651e786b94",
+                        "hash": "d3de4b4d539b00a4f5a56ba95f07e685",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -6849,7 +6950,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-27T00:51:09",
                                 "name": "BlockDrawing",
-                                "hash": "112a7af5723d606f28dda098e467f1b8",
+                                "hash": "b90e62305b891e0d740f0e2268f7974d",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -6961,7 +7062,7 @@
                                         "isFolder": "true",
                                         "lastModified": "2022-10-27T00:51:09",
                                         "name": "Scripts",
-                                        "hash": "bc7286392da49ed9c46d77778ea8a1be",
+                                        "hash": "b7697804414b920851de77a85a1ea3ec",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -6972,9 +7073,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-10-27T00:50:53",
+                                                "lastModified": "2022-11-16T18:46:12",
                                                 "name": "BlockSync.js",
-                                                "hash": "e11dc29701b3ad94765605e34fd38fa2",
+                                                "hash": "82559bc8ea1e8181821473cf35bd5781",
                                                 "children": ""
                                             },
                                             {
@@ -7067,6 +7168,13 @@
                             },
                             {
                                 "isFolder": "false",
+                                "lastModified": "2022-11-16T20:08:23",
+                                "name": "button_raise.png",
+                                "hash": "c049158ae8eecae72c05165634a23208",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
                                 "lastModified": "2022-10-27T00:50:54",
                                 "name": "button_start-game.png",
                                 "hash": "0ddf12289321109719f3cbee4d416059",
@@ -7083,7 +7191,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-10-27T00:51:09",
                                 "name": "Connected",
-                                "hash": "b0b36b5f5c81ad037906c8a6f7594284",
+                                "hash": "3bebbbb75a3d48f2c7585f8f82f511e1",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -7094,9 +7202,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-27T01:00:13",
+                                        "lastModified": "2022-11-16T18:49:50",
                                         "name": "ConnectedController.js",
-                                        "hash": "174d14bb5eada8411e97533dc1417984",
+                                        "hash": "ebfdc160c4f3f1cf3511ddf0fc35cf80",
                                         "children": ""
                                     },
                                     {
@@ -7483,7 +7591,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-11-16T16:34:54",
                                 "name": "Poker",
-                                "hash": "00dd05f3cf2ddfcf8f9f6375e62424ed",
+                                "hash": "5b52a9cb48759c0dddb8e3d9b8dc9bdb",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -7501,9 +7609,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-11-16T17:07:07",
+                                        "lastModified": "2022-11-16T20:19:24",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "b274777e47c58a1b2aa756d6be8897db",
+                                        "hash": "05c2bf49d005597d9b72ddab9518faff",
                                         "children": ""
                                     },
                                     {
@@ -11398,12 +11506,32 @@
                         "publicId": "1074",
                         "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/START_GAME.js",
                         "additional": ""
+                    },
+                    {
+                        "name": "button_raise",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "182",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1668647320481102:1518878",
+                        "fileId": "415",
+                        "originalId": "416",
+                        "publicId": "1076",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/button_raise.png",
+                        "additional": {
+                            "originHash": "c049158ae8eecae72c05165634a23208"
+                        }
                     }
                 ]
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "objects": [
+                    "1594408625639694:129403"
+                ]
+            }
         },
         "EffectsController": {
             "1": "",
@@ -13654,6 +13782,34 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "408"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668647320481102:1518878",
+                    "v": {
+                        "infos": {
+                            "originalSize": "2721",
+                            "compressedSize": "1258",
+                            "originalRAM": "41448",
+                            "compressedRAM": "5440",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "417",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "c049158ae8eecae72c05165634a23208",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "418"
                             }
                         ]
                     }

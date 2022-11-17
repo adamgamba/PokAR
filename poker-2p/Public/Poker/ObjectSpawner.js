@@ -15,6 +15,7 @@
 //@input SceneObject startButton
 //@input SceneObject checkButton
 //@input SceneObject betButton
+//@input SceneObject raiseButton
 //@input SceneObject callButton
 //@input SceneObject foldButton
 //@input SceneObject nextHandButton
@@ -58,6 +59,7 @@ const actions = {
   CHECK: "check",
   CALL: "call",
   BET: "bet",
+  RAISE: "raise",
 };
 const rounds = {
   PREFLOP: "preflop",
@@ -127,7 +129,6 @@ packets.on(
 
 events.on("updateSharedCache", function (newCache, userId) {
   setCache(newCache);
-  sharedCache.gameMessage = userId; // * test
   updateUI();
 });
 // ---
@@ -138,10 +139,11 @@ packets.on("/poker/startGame/", function (body, params, userId) {
 // Message to be received ONCE by non-host player
 events.on("startGame", function (userId) {
   sharedCache.hostId = userId;
-  onStartGame();
 
   localCache.isHost = false;
   localCache.playerName = players.B;
+  onStartGame();
+
   //   myAction: true // ?
   //   nextTurnActions: [actions.FOLD, actions.CALL, actions.BET],
 
@@ -156,43 +158,69 @@ packets.on(
   }
 );
 
-// Message to be received ONCE by non-host player
 events.on("setNextTurnActions", function (actions) {
   setNextTurnActions(actions);
 });
 // ---
-packets.on("/poker/declareWinner/", function (body, params, userId) {
-  var winner = JSON.parse(body);
-  events.trigger("declareWinner", winner.winner);
+packets.on("/poker/showdown/", function (body, params, userId) {
+  events.trigger("showdown");
 });
 
-// Message to be received ONCE by non-host player
-events.on("declareWinner", function (winner) {
-  endHand(winner);
+events.on("showdown", function () {
+  showdown();
 });
+// ---
+packets.on("/poker/endHand/", function (body, params, userId) {
+  var nextDealer = JSON.parse(body).nextDealer;
+  events.trigger("endHand", nextDealer);
+});
+
+events.on("endHand", function (nextDealer) {
+  endHand(nextDealer);
+});
+// ---
+packets.on("/poker/nextHand/", function (body, params, userId) {
+  events.trigger("nextHand");
+});
+
+events.on("nextHand", function () {
+  onNextHand();
+});
+// ---
+// packets.on("/poker/endHand/", function (body, params, userId) {
+//   var winner = JSON.parse(body);
+//   events.trigger("endHand", winner.winner);
+// });
+
+// events.on("endHand", function (winner) {
+//   endHand(winner);
+// });
+// ---
+
 // *
 
 // TODO by Wednesday:
-// - START RESEARCH JOURNAL
-// - fix directories
-// - Clean up code from previous app
-// - Code up "x to call" so base functionality works (with raising too)
-// - Code up text "x to call"
-// - Bet amount to be variable
-// -
+// * - START RESEARCH JOURNAL
+// * - fix directories
+// ! - Clean up code from previous app
+// * - Code up "x to call" so base functionality works (with raising too)
+// * - Code up text "x to call"
+// * - Bet amount to be variable
+
 // TODO later:
-// - put all persistent variables in big JSON object and add to
+// * - put all persistent variables in big JSON object and add to
 //   connected lens realtime store
-// - update vars for both players at every game update
-// - get player ID/name of each player, say "waiting for opponent" when
-//   its not your turn
+// * - update vars for both players at every game update
+// * - get player ID/name of each player, say "waiting for opponent"
+//     when its not your turn
 
 // TODO - 11/16
-// - make static identity for each player (know who is A and who is B)
-// - render "waiting message" for player who is not action
-// - update button options correctly
-// - change text of bet vs. raise
-// - Dont double charge blinds or double pay winner
+// * - make static identity for each player (know who is A and who is B)
+// * - render "waiting message" for player who is not action
+// * - update button options correctly
+// * - change text of bet vs. raise
+// * - Dont double charge blinds or double pay winner
+// ! - Deal with all in situations
 // *
 
 // @input Component.ScriptComponent connectedController
@@ -244,22 +272,8 @@ function setCache(newCache) {
 
 // Helper Functions
 
-// End hand and pay out to winner
-// Only do this once (use player A for consistency)
-function endHand(winner) {
-  if (localCache.playerName == players.B) {
-    return;
-  }
-
-  if (winner == players.A) {
-    sharedCache.stacks.A += sharedCache.stacks.POT;
-    sharedCache.gameMessage +=
-      " Player A wins $" + sharedCache.stacks.POT + ".";
-  } else {
-    sharedCache.stacks.B += sharedCache.stacks.POT;
-    sharedCache.gameMessage +=
-      " Player B wins $" + sharedCache.stacks.POT + ".";
-  }
+// Reset caches
+function advanceCache() {
   sharedCache.stacks.POT = 0;
   sharedCache.currentDealer = getOpponent(sharedCache.currentDealer);
   sharedCache.currentVillain = getOpponent(sharedCache.currentVillain);
@@ -272,21 +286,52 @@ function endHand(winner) {
   ];
   sharedCache.previousAction = null;
   sharedCache.amountToCall = 0;
+  sharedCache.previousBetAmount = 0;
+  packets.sendObject("/poker/updateSharedCache/", sharedCache);
 
+  return sharedCache.currentDealer;
+}
+
+// End hand
+function endHand(nextDealer) {
   // Enable correct UI elements
   script.startButton.enabled = false;
   script.checkButton.enabled = false;
   script.betButton.enabled = false;
+  script.raiseButton.enabled = false;
   script.callButton.enabled = false;
   script.foldButton.enabled = false;
-  script.nextHandButton.enabled = true;
+  script.nextHandButton.enabled = false;
   script.AWinsButton.enabled = false;
   script.BWinsButton.enabled = false;
 
+  if (localCache.playerName == nextDealer) {
+    script.gameMessage.text =
+      "You are the dealer. Deal two cards to each player.";
+    script.nextHandButton.enabled = true;
+  } else {
+    script.nextHandButton.enabled = false;
+    script.gameMessage.text = "Waiting for opponent...";
+  }
+
+  //   packets.sendObject("/poker/updateSharedCache/", sharedCache);
+  //   updateUI();
+}
+
+// Pay out to winner - Only do this once
+function payoutWinner(winner) {
+  if (winner == players.A) {
+    sharedCache.stacks.A += sharedCache.stacks.POT;
+    sharedCache.gameMessage +=
+      " Player A wins $" + sharedCache.stacks.POT + ".";
+  } else {
+    sharedCache.stacks.B += sharedCache.stacks.POT;
+    sharedCache.gameMessage +=
+      " Player B wins $" + sharedCache.stacks.POT + ".";
+  }
+
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
   updateUI();
-
-  sharedCache.gameMessage = "";
 }
 
 function advanceRound() {
@@ -294,7 +339,8 @@ function advanceRound() {
   // All which have identical actions/first player to act
   sharedCache.currentPlayer = sharedCache.currentVillain;
   sharedCache.amountToCall = 0;
-  setNextTurnActions(actions.CHECK, actions.BET);
+  sharedCache.previousBetAmount = 0;
+  setNextTurnActions([actions.CHECK, actions.BET]);
 
   switch (sharedCache.currentRound) {
     case rounds.PREFLOP:
@@ -315,6 +361,7 @@ function advanceRound() {
 
       break;
     case rounds.RIVER:
+      packets.send("/poker/showdown/");
       showdown();
       break;
     default:
@@ -329,6 +376,7 @@ function showdown() {
   script.startButton.enabled = false;
   script.checkButton.enabled = false;
   script.betButton.enabled = false;
+  script.raiseButton.enabled = false;
   script.callButton.enabled = false;
   script.foldButton.enabled = false;
   script.nextHandButton.enabled = false;
@@ -348,7 +396,9 @@ function getOpponent(player) {
   return player == players.A ? players.B : players.A;
 }
 
-function setNextTurnActions() {
+function setNextTurnActions(allowedActions) {
+  packets.sendObject("/poker/updateSharedCache/", sharedCache);
+
   // Only renders buttons for player who currently has action
   localCache.myAction =
     localCache.playerName == sharedCache.currentPlayer;
@@ -357,8 +407,14 @@ function setNextTurnActions() {
 
   script.checkButton.enabled = false;
   script.betButton.enabled = false;
+  script.raiseButton.enabled = false;
   script.callButton.enabled = false;
   script.foldButton.enabled = false;
+
+  for (var i in allowedActions) {
+    var allowedAction = allowedActions[i];
+    sharedCache.nextTurnActions.push(allowedAction);
+  }
 
   if (!localCache.myAction) {
     packets.sendObject(
@@ -371,12 +427,8 @@ function setNextTurnActions() {
   }
   script.waitingMessage.text = "";
 
-  for (var i in arguments) {
-    var action = arguments[i];
-    sharedCache.nextTurnActions.push(action);
-  }
-
-  for (var action in sharedCache.nextTurnActions) {
+  for (var j in allowedActions) {
+    var action = allowedActions[j];
     switch (action) {
       case actions.BET:
         script.betButton.enabled = true;
@@ -390,8 +442,12 @@ function setNextTurnActions() {
       case actions.FOLD:
         script.foldButton.enabled = true;
         break;
+      case actions.RAISE:
+        script.raiseButton.enabled = true;
+        break;
     }
   }
+  updateUI();
 }
 
 function updateUI() {
@@ -451,7 +507,7 @@ function onCheck() {
   // Case where villain checks as first action
   else {
     sharedCache.currentPlayer = getOpponent(sharedCache.currentPlayer);
-    setNextTurnActions(actions.CHECK, actions.BET);
+    setNextTurnActions([actions.CHECK, actions.BET]);
   }
   sharedCache.previousAction = actions.CHECK;
 
@@ -465,7 +521,13 @@ function onFold() {
     "Player " + sharedCache.currentPlayer + " folds.";
 
   var winner = getOpponent(sharedCache.currentPlayer);
-  endHand(winner);
+
+  //   packets.sendObject("/poker/declareWinner/", { winner: winner });
+  payoutWinner(winner);
+  var nextDealer = advanceCache();
+  endHand(nextDealer);
+  packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
+
   sharedCache.previousAction = actions.FOLD;
 
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
@@ -477,20 +539,31 @@ function onCall() {
   sharedCache.gameMessage =
     "Player " + sharedCache.currentPlayer + " calls.";
 
-  betsAmount(sharedCache.currentPlayer, sharedCache.amountToCall);
-  sharedCache.amountToCall = 0;
+  if (sharedCache.amountToCall > 0) {
+    betsAmount(sharedCache.currentPlayer, sharedCache.amountToCall);
+  }
 
   if (sharedCache.previousAction == null) {
     sharedCache.currentPlayer = getOpponent(sharedCache.currentPlayer);
-    setNextTurnActions(actions.CHECK, actions.BET);
+    sharedCache.previousBetAmount = sharedCache.amountToCall;
+    sharedCache.amountToCall = 0;
+
+    setNextTurnActions([actions.CHECK, actions.RAISE]);
   } else {
-    // todo - subtract chips
+    // todo - subtract chips ?????
+    sharedCache.amountToCall = 0;
+
     advanceRound();
   }
   sharedCache.previousAction = actions.CALL;
 
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
   updateUI();
+}
+
+// onRaise function directly calls onBet (same behavior)
+function onRaise() {
+  onBet();
 }
 
 // Includes raising/regular betting
@@ -517,6 +590,7 @@ options.onTextChanged = function (text, range) {
 options.onKeyboardStateChanged = function (isOpen) {
   if (!isOpen) {
     var betAmount = parseInt(currText);
+    var validBet = true;
 
     // ! include check for betAmount NaN
     // ! > players behind
@@ -525,7 +599,8 @@ options.onKeyboardStateChanged = function (isOpen) {
     // Disallow first bet of < BIG blind
     if (sharedCache.previousBetAmount == 0 && betAmount < blinds.BIG) {
       print("Invalid bet. try again");
-      onBet();
+      validBet = false;
+      return;
     }
 
     // Disallow raise of < 2x previous bet
@@ -534,17 +609,24 @@ options.onKeyboardStateChanged = function (isOpen) {
       betAmount < 2 * sharedCache.previousBetAmount
     ) {
       print("Invalid bet. try again");
-      onBet();
+      validBet = false;
+      return;
     }
 
     // Disallow non numeric bets
     // Disallow bets of more money than the player has
     var currPlayerAmountBehind =
-      currentPlayer == players.A ? stacks.A : stacks.B;
+      sharedCache.currentPlayer == players.A
+        ? sharedCache.stacks.A
+        : sharedCache.stacks.B;
+
     if (isNaN(betAmount) || betAmount > currPlayerAmountBehind) {
       print("Invalid bet. try again");
-      onBet();
-    } else {
+      validBet = false;
+      return;
+    }
+
+    if (validBet) {
       print("Valid bet.");
       resolveOnBet(betAmount);
     }
@@ -552,6 +634,8 @@ options.onKeyboardStateChanged = function (isOpen) {
 };
 
 function resolveOnBet(betAmount) {
+  sharedCache.previousBetAmount = betAmount;
+
   print(
     "Player " + sharedCache.currentPlayer + " bets $" + betAmount + "."
   );
@@ -569,7 +653,7 @@ function resolveOnBet(betAmount) {
 
   sharedCache.currentPlayer = getOpponent(sharedCache.currentPlayer);
   sharedCache.previousAction = actions.BET;
-  setNextTurnActions(actions.FOLD, actions.CALL, actions.BET);
+  setNextTurnActions([actions.FOLD, actions.CALL, actions.RAISE]);
 
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
   updateUI();
@@ -595,13 +679,19 @@ function resolveOnBet(betAmount) {
 
 function onAWins() {
   print("Player A Wins!");
-  packets.sendObject("/poker/declareWinner/", { winner: players.A });
-  endHand(players.A);
+
+  payoutWinner(players.A);
+  var nextDealer = advanceCache();
+  endHand(nextDealer);
+  packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
 }
 function onBWins() {
   print("Player B Wins!");
-  packets.sendObject("/poker/declareWinner/", { winner: players.B });
-  endHand(players.B);
+
+  payoutWinner(players.B);
+  var nextDealer = advanceCache();
+  endHand(nextDealer);
+  packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
 }
 
 // ! end my code
@@ -677,6 +767,10 @@ global.behaviorSystem.addCustomTriggerResponse(
 );
 global.behaviorSystem.addCustomTriggerResponse("PLAYER_FOLDS", onFold);
 global.behaviorSystem.addCustomTriggerResponse("PLAYER_BETS", onBet);
+global.behaviorSystem.addCustomTriggerResponse(
+  "PLAYER_RAISES",
+  onRaise
+);
 global.behaviorSystem.addCustomTriggerResponse("PLAYER_CALLS", onCall);
 
 global.behaviorSystem.addCustomTriggerResponse("NEXT_HAND", onNextHand);
@@ -686,22 +780,41 @@ global.behaviorSystem.addCustomTriggerResponse("B_WINS", onBWins);
 // Starts the game for both players
 function onStartGame() {
   print("Game started.");
-  packets.send("/poker/startGame/"); // Current player becomes to host (Player A)
-
-  // Enable correct UI elements
-  script.startButton.enabled = false;
-  script.checkButton.enabled = false;
-  script.betButton.enabled = true;
-  script.callButton.enabled = true;
-  script.foldButton.enabled = true;
-  script.nextHandButton.enabled = false;
-  script.AWinsButton.enabled = false;
-  script.BWinsButton.enabled = false;
 
   // Only do this once (use player A for consistency)
-  if (localCache.playerName == players.B) {
-    return;
+  if (localCache.playerName != players.B) {
+    packets.send("/poker/startGame/");
+
+    // Current player becomes to host (Player A)
+    // Send start message to other player
+    localCache.isHost = true;
+    localCache.playerName = players.A;
+
+    // Enable correct UI elements
+    script.startButton.enabled = false;
+    script.checkButton.enabled = false;
+    script.betButton.enabled = true;
+    script.raiseButton.enabled = false;
+    script.callButton.enabled = true;
+    script.foldButton.enabled = true;
+    script.nextHandButton.enabled = false;
+    script.AWinsButton.enabled = false;
+    script.BWinsButton.enabled = false;
+    script.waitingMessage.text = "";
+  } else {
+    // Enable correct UI elements
+    script.startButton.enabled = false;
+    script.checkButton.enabled = false;
+    script.betButton.enabled = false;
+    script.raiseButton.enabled = false;
+    script.callButton.enabled = false;
+    script.foldButton.enabled = false;
+    script.nextHandButton.enabled = false;
+    script.AWinsButton.enabled = false;
+    script.BWinsButton.enabled = false;
+    script.waitingMessage.text = "Waiting for opponent...";
   }
+
   // Start first hand
   onNextHand();
 
@@ -710,18 +823,39 @@ function onStartGame() {
 
 function onNextHand() {
   print("Hand started.");
-  // Pay blinds
-  payBlinds();
 
-  // Enable correct UI elements
-  script.startButton.enabled = false;
-  script.checkButton.enabled = false;
-  script.betButton.enabled = true;
-  script.callButton.enabled = true;
-  script.foldButton.enabled = true;
-  script.nextHandButton.enabled = false;
-  script.AWinsButton.enabled = false;
-  script.BWinsButton.enabled = false;
+  // Pay blinds - Only do this once (use current dealer for consistency)
+  if (localCache.playerName == sharedCache.currentDealer) {
+    payBlinds();
+    packets.sendObject("/poker/updateSharedCache/", sharedCache);
+    updateUI();
+
+    packets.sendObject("/poker/nextHand/");
+
+    // Enable correct UI elements
+    script.startButton.enabled = false;
+    script.checkButton.enabled = false;
+    script.betButton.enabled = true;
+    script.raiseButton.enabled = false;
+    script.callButton.enabled = true;
+    script.foldButton.enabled = true;
+    script.nextHandButton.enabled = false;
+    script.AWinsButton.enabled = false;
+    script.BWinsButton.enabled = false;
+    script.waitingMessage.text = "";
+  } else {
+    // Enable correct UI elements
+    script.startButton.enabled = false;
+    script.checkButton.enabled = false;
+    script.betButton.enabled = false;
+    script.raiseButton.enabled = false;
+    script.callButton.enabled = false;
+    script.foldButton.enabled = false;
+    script.nextHandButton.enabled = false;
+    script.AWinsButton.enabled = false;
+    script.BWinsButton.enabled = false;
+    script.waitingMessage.text = "Waiting for opponent...";
+  }
 
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
   updateUI();
