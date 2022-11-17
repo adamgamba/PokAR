@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1668635158589",
+    "lastChanged": "1668642277702",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -795,7 +795,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "3",
+                "is_capture": "0",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -6700,7 +6700,7 @@
                     },
                     {
                         "k": "141",
-                        "v": "0a7d0e42e5d491409fb145ba93ef5c65"
+                        "v": "b274777e47c58a1b2aa756d6be8897db"
                     },
                     {
                         "k": "142",
@@ -6836,7 +6836,7 @@
                         "isFolder": "true",
                         "lastModified": "2022-10-27T00:58:45",
                         "name": "Public",
-                        "hash": "4846fbc0a15bd486a212585aba647076",
+                        "hash": "d410f09663ef6a698134d6651e786b94",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -7483,7 +7483,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-11-16T16:34:54",
                                 "name": "Poker",
-                                "hash": "40eb5325d7849517dc53d66f7702f210",
+                                "hash": "00dd05f3cf2ddfcf8f9f6375e62424ed",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -7501,9 +7501,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-11-16T16:39:03",
+                                        "lastModified": "2022-11-16T17:07:07",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "0a7d0e42e5d491409fb145ba93ef5c65",
+                                        "hash": "b274777e47c58a1b2aa756d6be8897db",
                                         "children": ""
                                     },
                                     {

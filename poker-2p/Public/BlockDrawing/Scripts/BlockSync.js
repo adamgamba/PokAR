@@ -10,7 +10,7 @@ var events = new utils.Events();
 script.api.events = events;
 
 // State cache
-var cache = (function () {
+var sharedCache = (function () {
   var storage = {};
   var count = 0;
   function arrayToString(arr) {
@@ -52,7 +52,7 @@ var cache = (function () {
 
 // Expose actions
 script.api.create = function (positionArray, colorArray) {
-  cache.set(positionArray, colorArray);
+  sharedCache.set(positionArray, colorArray);
   packets.sendObject("/blocks/create/", {
     p: positionArray,
     c: colorArray,
@@ -91,7 +91,7 @@ packets.on("/blocks/state/request/", function (body, params, userId) {
   // If we don't have a cache, disregard
   // This needs to be update to not allow
   // people who has not created the
-  if (cache.getCount() < 1) {
+  if (sharedCache.getCount() < 1) {
     return;
   }
 
@@ -102,7 +102,7 @@ packets.on("/blocks/state/request/", function (body, params, userId) {
     "/blocks/state/offer/accept/" + offerId + "/",
     function () {
       // send the cache
-      var blocks = cache.getCache();
+      var blocks = sharedCache.getCache();
       blocks.forEach(function (message) {
         packets.sendObject(
           "/blocks/state/create/" + offerId + "/",
@@ -117,7 +117,7 @@ packets.on("/blocks/state/request/", function (body, params, userId) {
 });
 
 events.on("create", function (positionArray, colorArray) {
-  cache.set(positionArray, colorArray);
+  sharedCache.set(positionArray, colorArray);
 });
 
 function requestPlayersCache() {
