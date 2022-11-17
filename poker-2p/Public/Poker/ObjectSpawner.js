@@ -160,6 +160,16 @@ packets.on(
 events.on("setNextTurnActions", function (actions) {
   setNextTurnActions(actions);
 });
+// ---
+packets.on("/poker/declareWinner/", function (body, params, userId) {
+  var winner = JSON.parse(body);
+  events.trigger("declareWinner", winner.winner);
+});
+
+// Message to be received ONCE by non-host player
+events.on("declareWinner", function (winner) {
+  endHand(winner);
+});
 // *
 
 // TODO by Wednesday:
@@ -182,6 +192,7 @@ events.on("setNextTurnActions", function (actions) {
 // - render "waiting message" for player who is not action
 // - update button options correctly
 // - change text of bet vs. raise
+// - Dont double charge blinds or double pay winner
 // *
 
 // @input Component.ScriptComponent connectedController
@@ -232,7 +243,14 @@ function setCache(newCache) {
 // var gameMessage = "";
 
 // Helper Functions
+
+// End hand and pay out to winner
+// Only do this once (use player A for consistency)
 function endHand(winner) {
+  if (localCache.playerName == players.B) {
+    return;
+  }
+
   if (winner == players.A) {
     sharedCache.stacks.A += sharedCache.stacks.POT;
     sharedCache.gameMessage +=
@@ -577,10 +595,12 @@ function resolveOnBet(betAmount) {
 
 function onAWins() {
   print("Player A Wins!");
+  packets.sendObject("/poker/declareWinner/", { winner: players.A });
   endHand(players.A);
 }
 function onBWins() {
   print("Player B Wins!");
+  packets.sendObject("/poker/declareWinner/", { winner: players.B });
   endHand(players.B);
 }
 
@@ -663,7 +683,7 @@ global.behaviorSystem.addCustomTriggerResponse("NEXT_HAND", onNextHand);
 global.behaviorSystem.addCustomTriggerResponse("A_WINS", onAWins);
 global.behaviorSystem.addCustomTriggerResponse("B_WINS", onBWins);
 
-// var startgame = false;
+// Starts the game for both players
 function onStartGame() {
   print("Game started.");
   packets.send("/poker/startGame/"); // Current player becomes to host (Player A)
@@ -678,6 +698,10 @@ function onStartGame() {
   script.AWinsButton.enabled = false;
   script.BWinsButton.enabled = false;
 
+  // Only do this once (use player A for consistency)
+  if (localCache.playerName == players.B) {
+    return;
+  }
   // Start first hand
   onNextHand();
 
