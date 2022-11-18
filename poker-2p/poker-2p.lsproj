@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1668651589403",
+    "lastChanged": "1668665342678",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -765,6 +765,9 @@
                     ],
                     [
                         "button_start-game"
+                    ],
+                    [
+                        "chips-logo"
                     ]
                 ]
             ]
@@ -776,9 +779,6 @@
                     "1594415847783893:415654",
                     "1665544305237623:2345573",
                     "1665623483118806:26432",
-                    "1666846304916694:2419022",
-                    "1666846305090947:2419635",
-                    "1666846305253324:2420321",
                     "1666846305715915:2422772",
                     "1666846306105062:2424367",
                     "1666846306426328:2425483",
@@ -800,7 +800,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "0",
+                "is_capture": "3",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -2179,6 +2179,14 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "183",
+                    "uid": "1668665070042327:129670",
+                    "name": "Files\/File419.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -2493,7 +2501,7 @@
                         {
                             "k": "1665544627305285:2405190",
                             "v": {
-                                "isBasicMode": "true",
+                                "isBasicMode": "false",
                                 "basicModeSetup": {
                                     "fixWidth": "true",
                                     "fixHeight": "true",
@@ -3823,7 +3831,7 @@
                         {
                             "k": "1668647345803633:1600546",
                             "v": {
-                                "isBasicMode": "true",
+                                "isBasicMode": "false",
                                 "basicModeSetup": {
                                     "fixWidth": "true",
                                     "fixHeight": "true",
@@ -5595,6 +5603,22 @@
                 {
                     "k": "418",
                     "v": "Files\/File418.pvr"
+                },
+                {
+                    "k": "419",
+                    "v": "Files\/File419.pvr"
+                },
+                {
+                    "k": "420",
+                    "v": "Files\/File420.png"
+                },
+                {
+                    "k": "421",
+                    "v": "Files\/File421.png"
+                },
+                {
+                    "k": "422",
+                    "v": "Files\/File422.pvr"
                 }
             ]
         },
@@ -6308,6 +6332,10 @@
                     {
                         "k": "1076",
                         "v": "button_raise.png"
+                    },
+                    {
+                        "k": "1077",
+                        "v": "chips-logo.png"
                     }
                 ],
                 "hashes": [
@@ -6353,7 +6381,7 @@
                     },
                     {
                         "k": "12",
-                        "v": "cd7ab201cb203575ca4985649432116c"
+                        "v": "fb64fa8a2cf25b004d83751663213e20"
                     },
                     {
                         "k": "13",
@@ -6793,7 +6821,7 @@
                     },
                     {
                         "k": "141",
-                        "v": "05c2bf49d005597d9b72ddab9518faff"
+                        "v": "567196454098f2df89ede6de1142bb2a"
                     },
                     {
                         "k": "142",
@@ -6930,14 +6958,18 @@
                     {
                         "k": "1076",
                         "v": "c049158ae8eecae72c05165634a23208"
+                    },
+                    {
+                        "k": "1077",
+                        "v": "255ed811387efbc4a7ca37c983d9ea5e"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-11-16T20:08:48",
+                        "lastModified": "2022-11-17T01:04:27",
                         "name": "Public",
-                        "hash": "d3de4b4d539b00a4f5a56ba95f07e685",
+                        "hash": "074238d4226be2b6ecbc2ef2b1576aea",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -7060,7 +7092,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-10-27T00:51:09",
+                                        "lastModified": "2022-11-17T00:07:27",
                                         "name": "Scripts",
                                         "hash": "b7697804414b920851de77a85a1ea3ec",
                                         "children": [
@@ -7073,7 +7105,7 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-11-16T18:46:12",
+                                                "lastModified": "2022-11-17T00:07:27",
                                                 "name": "BlockSync.js",
                                                 "hash": "82559bc8ea1e8181821473cf35bd5781",
                                                 "children": ""
@@ -7168,7 +7200,7 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-11-16T20:08:23",
+                                "lastModified": "2022-11-17T00:07:27",
                                 "name": "button_raise.png",
                                 "hash": "c049158ae8eecae72c05165634a23208",
                                 "children": ""
@@ -7188,8 +7220,15 @@
                                 "children": ""
                             },
                             {
+                                "isFolder": "false",
+                                "lastModified": "2022-11-17T01:03:52",
+                                "name": "chips-logo.png",
+                                "hash": "255ed811387efbc4a7ca37c983d9ea5e",
+                                "children": ""
+                            },
+                            {
                                 "isFolder": "true",
-                                "lastModified": "2022-10-27T00:51:09",
+                                "lastModified": "2022-11-17T00:07:27",
                                 "name": "Connected",
                                 "hash": "3bebbbb75a3d48f2c7585f8f82f511e1",
                                 "children": [
@@ -7202,7 +7241,7 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-11-16T18:49:50",
+                                        "lastModified": "2022-11-17T00:07:27",
                                         "name": "ConnectedController.js",
                                         "hash": "ebfdc160c4f3f1cf3511ddf0fc35cf80",
                                         "children": ""
@@ -7589,9 +7628,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-11-16T16:34:54",
+                                "lastModified": "2022-11-17T00:55:03",
                                 "name": "Poker",
-                                "hash": "5b52a9cb48759c0dddb8e3d9b8dc9bdb",
+                                "hash": "1f0499e5fa356d96fa9801f1d383710d",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -7609,9 +7648,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-11-16T20:19:24",
+                                        "lastModified": "2022-11-17T00:55:03",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "05c2bf49d005597d9b72ddab9518faff",
+                                        "hash": "567196454098f2df89ede6de1142bb2a",
                                         "children": ""
                                     },
                                     {
@@ -8088,9 +8127,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-11-16T15:19:08",
+                                "lastModified": "2022-11-17T00:58:39",
                                 "name": "Textures",
-                                "hash": "269eb6c95a641c55c8a36ffcde7ceca4",
+                                "hash": "96f3b120d2a86a322b83ce8577bb6d70",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -8304,9 +8343,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-27T00:50:54",
+                                        "lastModified": "2022-11-17T00:58:38",
                                         "name": "cookie-broken-mat.lsmat",
-                                        "hash": "cd7ab201cb203575ca4985649432116c",
+                                        "hash": "fb64fa8a2cf25b004d83751663213e20",
                                         "children": ""
                                     },
                                     {
@@ -11522,16 +11561,28 @@
                         "additional": {
                             "originHash": "c049158ae8eecae72c05165634a23208"
                         }
+                    },
+                    {
+                        "name": "chips-logo",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "183",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1668665070042327:129670",
+                        "fileId": "419",
+                        "originalId": "420",
+                        "publicId": "1077",
+                        "source": "C:\/Users\/adamg\/OneDrive\/Documents\/aAdam Princeton Senior\/COS 497 IW\/Lens Studio\/PokAR\/poker-2p\/Public\/chips-logo.png",
+                        "additional": {
+                            "originHash": "255ed811387efbc4a7ca37c983d9ea5e"
+                        }
                     }
                 ]
             }
         },
         "InspectorController": {
-            "selection": {
-                "objects": [
-                    "1594408625639694:129403"
-                ]
-            }
+            "selection": ""
         },
         "EffectsController": {
             "1": "",
@@ -13810,6 +13861,34 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "418"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1668665070042327:129670",
+                    "v": {
+                        "infos": {
+                            "originalSize": "224196",
+                            "compressedSize": "39101",
+                            "originalRAM": "997880",
+                            "compressedRAM": "125984",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "421",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "255ed811387efbc4a7ca37c983d9ea5e",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "422"
                             }
                         ]
                     }
