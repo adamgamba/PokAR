@@ -15,9 +15,14 @@
 //@ui {"widget":"separator"}
 //@ui { "widget":"group_start", "label": "Advanced (for custom UIs)" }
 //@input string onShouldDismissSplashScreen { "label": "onShouldDismissSplashScreen" }
+//@input SceneObject splashScreen
+//@input SceneObject splashScreenHolder
 //@input string onShouldDisplayConnectedOptions { "label": "onShouldDisplayConnectedOptions" }
 //@ui { "widget":"group_end" }
 //@ui { "widget":"group_end" }
+
+// script.splashScreen.enabled = false;
+// script.splashScreen.enabled = false;
 
 var connectedController = global.connectedController.api;
 var FlowState = connectedController.FlowState;
@@ -27,16 +32,22 @@ var EventType = connectedController.EventType;
 // onExperienceStarted(multiplayerSession:MultiplayerSession, hasJoined:boolean, sessionType:string, snapcode:Texture)
 
 var handleOnExperienceShouldStart = function (connectedState) {
-    if (connectedState.flowState === FlowState.DONE) {
-        connectedController.offStateChange(handleOnExperienceShouldStart);
-        ifIsApiFunction(script.scriptComponent, script.onExperienceShouldStart)
-            .involkeWith(
-                connectedState.multiplayerSession, 
-                connectedState.hasJoined,
-                connectedState.sessionType, 
-                connectedState.snapCode
-            );
-    }
+  if (connectedState.flowState === FlowState.DONE) {
+    print("experience should start");
+    script.splashScreen.enabled = true;
+    script.splashScreenHolder.enabled = true;
+
+    connectedController.offStateChange(handleOnExperienceShouldStart);
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onExperienceShouldStart
+    ).involkeWith(
+      connectedState.multiplayerSession,
+      connectedState.hasJoined,
+      connectedState.sessionType,
+      connectedState.snapCode
+    );
+  }
 };
 
 connectedController.onStateChange(handleOnExperienceShouldStart);
@@ -44,87 +55,129 @@ connectedController.onStateChange(handleOnExperienceShouldStart);
 // ------------------------------------------------
 // onMessageReceived(userId:string, message:string)
 
-connectedController.events.on(EventType.MESSAGE_RECEIVED, function (userId, message) {
-    ifIsApiFunction(script.scriptComponent, script.onMessageReceived)
-        .involkeWith(userId, message);
-});
+connectedController.events.on(
+  EventType.MESSAGE_RECEIVED,
+  function (userId, message) {
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onMessageReceived
+    ).involkeWith(userId, message);
+  }
+);
 
 // -------------------------------------------------------------------------
 // onMessageReceivedBytes(userId:string, message:Number[])
 
-connectedController.events.on(EventType.MESSAGE_RECEIVED_BYTES, function (userId, message) {
-    ifIsApiFunction(script.scriptComponent, script.onMessageReceivedBytes)
-        .involkeWith(userId, message);
-});
+connectedController.events.on(
+  EventType.MESSAGE_RECEIVED_BYTES,
+  function (userId, message) {
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onMessageReceivedBytes
+    ).involkeWith(userId, message);
+  }
+);
 
 // --------------------------------------
 // onUserJoinedSession(userInfo:UserInfo)
 
-connectedController.events.on(EventType.USER_JOINED_SESSION, function (userInfo) {
-    ifIsApiFunction(script.scriptComponent, script.onUserJoinedSession)
-        .involkeWith(userInfo);
-});
+connectedController.events.on(
+  EventType.USER_JOINED_SESSION,
+  function (userInfo) {
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onUserJoinedSession
+    ).involkeWith(userInfo);
+  }
+);
 
 // --------------------------------------
 // onUserLeftSession(userInfo:UserInfo)
 
-connectedController.events.on(EventType.USER_LEFT_SESSION, function (userInfo) {
-    ifIsApiFunction(script.scriptComponent, script.onUserLeftSession)
-        .involkeWith(userInfo);
-});
+connectedController.events.on(
+  EventType.USER_LEFT_SESSION,
+  function (userInfo) {
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onUserLeftSession
+    ).involkeWith(userInfo);
+  }
+);
 
 // --------------
 // onDisconnected(disconnectInfo:string)
 
-connectedController.events.on(EventType.DISCONNECTED, function (disconnectInfo) {
-    ifIsApiFunction(script.scriptComponent, script.onDisconnected)
-        .involkeWith(disconnectInfo);
-});
-
+connectedController.events.on(
+  EventType.DISCONNECTED,
+  function (disconnectInfo) {
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onDisconnected
+    ).involkeWith(disconnectInfo);
+  }
+);
 
 // ---------------------------
 // onShouldDismissSplashScreen()
 // - Called when connectedController has either created a session, joined a session, or errored
 
-var handleShouldDismissSplashScreen = function (connectedState) {
-    if (connectedState.flowState === FlowState.SESSION_TYPE_SELECT ||
-        connectedState.flowState === FlowState.JOINER_WAITING_FOR_TRACKING ||
-        connectedState.flowState === FlowState.ERRORED ||
-        connectedState.flowState === FlowState.DONE ) {
-            connectedController.offStateChange(handleShouldDismissSplashScreen);
-            ifIsApiFunction(script.scriptComponent, script.onShouldDismissSplashScreen)
-                .involkeWith();
-    }
-}
+// var handleShouldDismissSplashScreen = function (connectedState) {
+//   print("SHOULD DISMISS A");
 
-connectedController.onStateChange(handleShouldDismissSplashScreen);
+//   if (
+//     connectedState.flowState === FlowState.SESSION_TYPE_SELECT ||
+//     connectedState.flowState ===
+//       FlowState.JOINER_WAITING_FOR_TRACKING ||
+//     connectedState.flowState === FlowState.ERRORED ||
+//     connectedState.flowState === FlowState.DONE
+//   ) {
+//     connectedController.offStateChange(handleShouldDismissSplashScreen);
+//     ifIsApiFunction(
+//       script.scriptComponent,
+//       script.onShouldDismissSplashScreen
+//     ).involkeWith();
+//   }
+// };
+
+// connectedController.onStateChange(handleShouldDismissSplashScreen);
 
 // ---------------------------
 // onShouldDisplayConnectedOptions()
 // - Called when connectedController has created a session and not errored.
-
+script.splashScreen.enabled = false;
+script.splashScreenHolder.enabled = false;
 var handleShouldDisplayConnectedOptions = function (connectedState) {
-    if (connectedState.flowState === FlowState.SESSION_TYPE_SELECT) {
-        connectedController.offStateChange(handleShouldDisplayConnectedOptions);
-        ifIsApiFunction(script.scriptComponent, script.onShouldDisplayConnectedOptions)
-                .involkeWith();
-    }
-}
+  if (connectedState.flowState === FlowState.SESSION_TYPE_SELECT) {
+    print("should display connected options");
+    script.splashScreen.enabled = false;
+    script.splashScreenHolder.enabled = false;
 
+    connectedController.offStateChange(
+      handleShouldDisplayConnectedOptions
+    );
+    ifIsApiFunction(
+      script.scriptComponent,
+      script.onShouldDisplayConnectedOptions
+    ).involkeWith();
+  }
+};
 
 connectedController.onStateChange(handleShouldDisplayConnectedOptions);
 
 // --------------------------
 // Utils
 
-function ifIsApiFunction( scriptComponent, functionName ) {
-    var isApiFunction = scriptComponent && scriptComponent.api && typeof scriptComponent.api[functionName] === 'function';
-    return {
-        involkeWith: function () {
-            if (isApiFunction) {
-                scriptComponent.api[functionName].apply(null, arguments);
-            }
-        }
-    }
-    return;
+function ifIsApiFunction(scriptComponent, functionName) {
+  var isApiFunction =
+    scriptComponent &&
+    scriptComponent.api &&
+    typeof scriptComponent.api[functionName] === "function";
+  return {
+    involkeWith: function () {
+      if (isApiFunction) {
+        scriptComponent.api[functionName].apply(null, arguments);
+      }
+    },
+  };
+  return;
 }

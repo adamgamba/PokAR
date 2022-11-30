@@ -11,6 +11,9 @@
 //@input SceneObject mouthPositionObject
 //@input Component.Camera camera
 
+//@input SceneObject startGameScreen
+//@input SceneObject startGameScreenHolder
+
 // * UI Elements
 //@input SceneObject startButton
 //@input SceneObject checkButton
@@ -22,6 +25,10 @@
 //@input SceneObject AWinsButton
 //@input SceneObject BWinsButton
 
+//@input SceneObject ModeSelectButton1
+//@input SceneObject ModeSelectButton2
+//@input SceneObject ModeSelectScreen
+
 //@input Component.Text stackANumber
 //@input Component.Text stackBNumber
 //@input Component.Text potNumber
@@ -31,6 +38,16 @@
 //@input Component.Text amountToCall
 //@input Component.Text gameMessage
 //@input Component.Text waitingMessage
+
+//@input SceneObject stackANumberObj
+//@input SceneObject stackBNumberObj
+//@input SceneObject potNumberObj
+//@input SceneObject currentRoundObj
+//@input SceneObject currentPlayerObj
+//@input SceneObject currentDealerObj
+//@input SceneObject amountToCallObj
+//@input SceneObject gameMessageObj
+//@input SceneObject waitingMessageObj
 
 //@input SceneObject gameOverScreen
 //@input float missedScoreMax
@@ -44,6 +61,8 @@ var utils = global.utils;
 // Create event system
 var events = new utils.Events();
 script.api.events = events;
+
+// script.startGameScreen.enabled = false;
 
 // Define Enums
 const players = {
@@ -372,6 +391,7 @@ function advanceRound() {
 function showdown() {
   print("Showdown! Who has the winner?");
   sharedCache.gameMessage = "Showdown!\n Select the winner.";
+  script.waitingMessage.text = "";
   // Enable correct UI elements
   script.startButton.enabled = false;
   script.checkButton.enabled = false;
@@ -757,6 +777,14 @@ function onBWins() {
 //   }
 // });
 
+// global.behaviorSystem.addCustomTriggerResponse(
+//   "START_REMOTE",
+//   onStartRemote
+// );
+// global.behaviorSystem.addCustomTriggerResponse(
+//   "START_COLOCATED",
+//   onStartColocated
+// );
 global.behaviorSystem.addCustomTriggerResponse(
   "START_GAME",
   onStartGame
@@ -776,10 +804,43 @@ global.behaviorSystem.addCustomTriggerResponse("PLAYER_CALLS", onCall);
 global.behaviorSystem.addCustomTriggerResponse("NEXT_HAND", onNextHand);
 global.behaviorSystem.addCustomTriggerResponse("A_WINS", onAWins);
 global.behaviorSystem.addCustomTriggerResponse("B_WINS", onBWins);
+script.startGameScreen.enabled = true;
+script.startGameScreenHolder.enabled = true;
+
+function onStartRemote() {
+  print("Game started remotely.");
+  script.ModeSelectButton1.enabled = false;
+  script.ModeSelectButton2.enabled = false;
+  script.ModeSelectScreen.enabled = false;
+  script.startGameScreen.enabled = true;
+  script.startGameScreenHolder.enabled = true;
+  script.stackANumberObj.enabled = true;
+}
+function onStartColocated() {
+  print("Game started colocated.");
+  script.ModeSelectButton1.enabled = false;
+  script.ModeSelectButton2.enabled = false;
+  script.ModeSelectScreen.enabled = false;
+  script.startGameScreen.enabled = true;
+  script.startGameScreenHolder.enabled = true;
+}
 
 // Starts the game for both players
+
 function onStartGame() {
   print("Game started.");
+  script.startGameScreen.enabled = false;
+  script.startGameScreenHolder.enabled = false;
+
+  script.stackANumberObj.enabled = true;
+  script.stackBNumberObj.enabled = true;
+  script.potNumberObj.enabled = true;
+  script.currentRoundObj.enabled = true;
+  script.currentPlayerObj.enabled = true;
+  script.currentDealerObj.enabled = true;
+  script.amountToCallObj.enabled = true;
+  script.gameMessageObj.enabled = true;
+  script.waitingMessageObj.enabled = true;
 
   // Only do this once (use player A for consistency)
   if (localCache.playerName != players.B) {

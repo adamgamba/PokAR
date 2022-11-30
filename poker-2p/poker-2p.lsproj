@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1668665342678",
+    "lastChanged": "1669527991324",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -800,7 +800,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "3",
+                "is_capture": "0",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -6561,7 +6561,7 @@
                     },
                     {
                         "k": "62",
-                        "v": "5ddd9481965f0d86f5a6906c229c0800"
+                        "v": "324cd80c734b0c5f6286d4ae6334a3d0"
                     },
                     {
                         "k": "63",
@@ -6821,7 +6821,7 @@
                     },
                     {
                         "k": "141",
-                        "v": "567196454098f2df89ede6de1142bb2a"
+                        "v": "2862e7ce5f484965f21513f8edbd0a99"
                     },
                     {
                         "k": "142",
@@ -6969,7 +6969,7 @@
                         "isFolder": "true",
                         "lastModified": "2022-11-17T01:04:27",
                         "name": "Public",
-                        "hash": "074238d4226be2b6ecbc2ef2b1576aea",
+                        "hash": "e14bc6419fe03d9cf5ebc402fb84755e",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -7230,7 +7230,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-11-17T00:07:27",
                                 "name": "Connected",
-                                "hash": "3bebbbb75a3d48f2c7585f8f82f511e1",
+                                "hash": "6f70791051bcf36dac3a0a633f0a3c08",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -7248,9 +7248,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-10-27T00:50:53",
+                                        "lastModified": "2022-11-26T13:03:10",
                                         "name": "ConnectedHelper.js",
-                                        "hash": "5ddd9481965f0d86f5a6906c229c0800",
+                                        "hash": "324cd80c734b0c5f6286d4ae6334a3d0",
                                         "children": ""
                                     },
                                     {
@@ -7630,7 +7630,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-11-17T00:55:03",
                                 "name": "Poker",
-                                "hash": "1f0499e5fa356d96fa9801f1d383710d",
+                                "hash": "2a62035dd44c2422f1406608af2663f8",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -7648,9 +7648,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-11-17T00:55:03",
+                                        "lastModified": "2022-11-26T13:05:29",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "567196454098f2df89ede6de1142bb2a",
+                                        "hash": "2862e7ce5f484965f21513f8edbd0a99",
                                         "children": ""
                                     },
                                     {
@@ -11582,7 +11582,11 @@
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "objects": [
+                    "1666846304913957:2419009"
+                ]
+            }
         },
         "EffectsController": {
             "1": "",
