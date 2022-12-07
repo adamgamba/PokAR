@@ -31,6 +31,26 @@ var EventType = connectedController.EventType;
 // ---------------------------------------------------------------------------------------------------------
 // onExperienceStarted(multiplayerSession:MultiplayerSession, hasJoined:boolean, sessionType:string, snapcode:Texture)
 
+// var handleShouldPlaceStacks = function (connectedState) {
+//   if (connectedState.flowState === FlowState.DONE) {
+//     print("ready to place stacks");
+//     // connectedState.set
+//     // script.splashScreen.enabled = true;
+//     // script.splashScreenHolder.enabled = true;
+
+//     // connectedController.offStateChange(handleOnExperienceShouldStart);
+//     // ifIsApiFunction(
+//     //   script.scriptComponent,
+//     //   script.onExperienceShouldStart
+//     // ).involkeWith(
+//     //   connectedState.multiplayerSession,
+//     //   connectedState.hasJoined,
+//     //   connectedState.sessionType,
+//     //   connectedState.snapCode
+//     // );
+//   }
+// };
+
 var handleOnExperienceShouldStart = function (connectedState) {
   if (connectedState.flowState === FlowState.DONE) {
     print("experience should start");
@@ -144,8 +164,8 @@ connectedController.events.on(
 // ---------------------------
 // onShouldDisplayConnectedOptions()
 // - Called when connectedController has created a session and not errored.
-script.splashScreen.enabled = false;
-script.splashScreenHolder.enabled = false;
+// script.splashScreen.enabled = false;
+// script.splashScreenHolder.enabled = false;
 var handleShouldDisplayConnectedOptions = function (connectedState) {
   if (connectedState.flowState === FlowState.SESSION_TYPE_SELECT) {
     print("should display connected options");

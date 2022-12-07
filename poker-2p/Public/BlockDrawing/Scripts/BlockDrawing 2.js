@@ -1,39 +1,59 @@
 // @input Component.ScriptComponent blockSync
 // @input Component.Camera camera
-// @input Asset.RenderMesh cubeOneUnitMesh
+// @input Asset.RenderMesh chipMesh
+// @input Asset.Material chipWhite
+// @input Asset.Material chipRed
+// @input Asset.Material chipGreen
+// @input Asset.Material chipBlack
 // @input Asset.Material cubeMaterial
 // @input Asset.Material vizGridMaterial
 // @input Asset.Material vizGridInactiveMaterial
 
 // * My code additions
 //@input Component.Text headerText
-script.numStacksPlaced = 0;
-script.headerText.text = "";
+//@input int numStacksPlaced
+// script.numStacksPlaced = 0;
+// script.headerText.text = "";
 
 //@input Component.Text stackANumber
 //@input Component.Text stackBNumber
 //@input Component.Text potNumber
+
+// @input Component.ScriptComponent objectSpawner
+// @input Component.ScriptComponent packets
+
+//@input SceneObject startGameScreen
+//@input SceneObject startGameScreenHolder
 
 script.stackPositions = {
   A: [],
   B: [],
   POT: [],
 };
+script.sceneObjects = [];
+chipColors = {
+  WHITE: "white",
+  RED: "red",
+  GREEN: "green",
+  BLACK: "black",
+};
 
 // * end
 
+var packets = script.packets.api;
 var utils = global.utils;
 var log = utils.makeLogger("BlockDrawing");
 
-const GRID_SIZE = 2.5;
+const GRID_SIZE = 4;
 
 // Colors
 var blockColors = [
-  "#fff30c", //yellow
-  "#fb400a", //red
-  "#2250ff", //blue
-  "#23de93", //green
-  "#fb8795", //pink
+  "#ffffff",
+  //   "#fff30c", //yellow
+  //   "#fb400a", //red
+  //   "#2250ff", //blue
+  //   "#23de93", //green
+  //   "#fb8795", //pink
 ].map(hexToVec4);
 
 // Expose the current color
@@ -108,6 +128,8 @@ script.api.start = function () {
 
   script.cubeHiddenLastFrame = null;
 
+  script.headerText.text = "Select location for your stack";
+
   init();
 
   // ----------------------------------------------------------------------------
@@ -135,6 +157,13 @@ script.api.start = function () {
     print("Initialised Block Drawing");
   }
 
+  script.api.onMarkerFound = function () {
+    script.headerText.text = "marker found...";
+  };
+  script.api.onMarkerLost = function () {
+    script.headerText.text = "marker lost...";
+  };
+
   // ----------------------------------------------------------------------------
   function onUpdate(eventData) {
     script.cursorMeshVisual.mainPass.baseColor = script.currentColor;
@@ -144,6 +173,13 @@ script.api.start = function () {
       script.currentColor.z,
       0
     );
+
+    script.cursor.enabled = true;
+    script.ghostCursor.enabled = true;
+    if (script.numStacksPlaced >= 3) {
+      script.cursor.enabled = false;
+      script.ghostCursor.enabled = false;
+    }
 
     var pos = new vec2(0.5, 0.6);
     var dist = 60; // This sets the distance
@@ -187,7 +223,7 @@ script.api.start = function () {
 
     // If we have started using the color picker we need to
     // ignore the touch down but we don't find out until next frame
-    if (script.numFramesTouchDown > 1) {
+    if (script.numFramesTouchDown >= 1) {
       if (!isOccupied(p1Quantized, script.occupancy)) {
         var positionArray = vec3ToArray(p1Quantized);
         var colorArray = vec4ToArray(script.currentColor);
@@ -198,6 +234,7 @@ script.api.start = function () {
   }
 
   // ----------------------------------------------------------------------------
+
   function createBlock(positionArray, colorArray) {
     // We currently have no way of sending a message to just one user, so when a new user joins and the host
     // decides to send them the state of the drawing it will be received by everyone, so we add a check here
@@ -210,24 +247,97 @@ script.api.start = function () {
     switch (script.numStacksPlaced) {
       case 0:
         print("case 0");
-        script.headerText.text = "placed A";
+        script.headerText.text = "Select location for opponent's stack";
         script.stackPositions["A"] = positionArray;
+
+        // Render stack "A"
+        var stackName = "A";
+        print("stackname:" + stackName);
+        var amount = parseInt(script.stackANumber.text);
+        print("amount:" + amount);
+
+        var positionArray = script.stackPositions[stackName];
+        var colorArray = vec4ToArray(script.currentColor);
+        renderChipStack(positionArray, amount, colorArray, stackName);
+
         break;
       case 1:
         print("case 1");
-        script.headerText.text = "placed B";
+        // Check if its too close to A
+        print("stack pos A = " + script.stackPositions["A"]);
+        print("pos Array = " + positionArray);
+        var dist = distBetween(
+          script.stackPositions["A"],
+          positionArray
+        );
+        print("DIST BETWEEN A AND B = " + dist);
+        if (dist < GRID_SIZE * 4) {
+          return;
+        }
+
+        script.headerText.text = "Select location for the pot";
         script.stackPositions["B"] = positionArray;
+
+        // Render stack "B"
+        stackName = "B";
+        amount = parseInt(script.stackBNumber.text);
+        positionArray = script.stackPositions[stackName];
+        colorArray = vec4ToArray(script.currentColor);
+        renderChipStack(positionArray, amount, colorArray, stackName);
+
         break;
       case 2:
-        print("case 2");
-        script.headerText.text = "placed POT";
+        // print("case 2");
+        // print("stack pos A = " + script.stackPositions["A"]);
+        // print("stack pos B = " + script.stackPositions["B"]);
+        // print("pos Array = " + positionArray);
+        // Check if its too close to A OR B
+        var distA = distBetween(
+          script.stackPositions["A"],
+          positionArray
+        );
+        var distB = distBetween(
+          script.stackPositions["B"],
+          positionArray
+        );
+        // print("DIST BETWEEN A AND POT = " + distA);
+        // print("DIST BETWEEN B AND POT = " + distB);
+        if (distA < GRID_SIZE * 4 || distB < GRID_SIZE * 4) {
+          return;
+        }
+
+        script.headerText.text = "";
         script.stackPositions["POT"] = positionArray;
+
+        // Enable start buttons
+        script.startGameScreen.enabled = true;
+        script.startGameScreenHolder.enabled = true;
+
+        packets.sendObject(
+          "/poker/sendStackPositions/",
+          script.stackPositions
+        );
         break;
       default:
+        print("click ignored");
         return;
     }
+    // print("text: script.numStacksPlaced = " + script.numStacksPlaced);
+    // print("typeof = " + typeof script.numStacksPlaced);
     script.numStacksPlaced += 1;
+    // print("text: script.numStacksPlaced = " + script.numStacksPlaced);
+
+    // var objectSpawner = script.objectSpawner.api;
+
+    // print("OBJECT SPAWNER:" + JSON.stringify(objectSpawner));
+    // for (var x in objectSpawner) {
+    //   print("x:" + x);
+    //   //   print("x[]:" + objectSpawner[x]);
+    // }
+
+    // objectSpawner.onStartRemote();
     print("create block... num blocks = " + script.numStacksPlaced);
+    renderChipStacks();
 
     // // * test chip denominations
     // print("stack a size = " + parseInt(script.stackANumber.text));
@@ -239,10 +349,37 @@ script.api.start = function () {
     // );
   }
 
+  // Calculates 3d distance between two length-3 arrays
+  function distBetween(v1, v2) {
+    return (
+      ((v1[0] - v2[0]) ** 2 +
+        (v1[1] - v2[1]) ** 2 +
+        (v1[2] - v2[2]) ** 2) **
+      0.5
+    );
+  }
+
   function renderChipStacks() {
+    if (script.numStacksPlaced < 3) {
+      return;
+    }
+    // Destroy existing scene objects
+    print("destroying existing stacks..." + script.sceneObjects);
+
+    for (var i in script.sceneObjects) {
+      var obj = script.sceneObjects[i];
+      obj.destroy();
+      print("destroyed obj" + obj);
+    }
+    script.sceneObjects = [];
+    // scene.clearScreen(); // ?
+
     // Render stack "A"
     var stackName = "A";
+    print("stackname:" + stackName);
     var amount = parseInt(script.stackANumber.text);
+    print("amount:" + amount);
+
     var positionArray = script.stackPositions[stackName];
     var colorArray = vec4ToArray(script.currentColor);
     renderChipStack(positionArray, amount, colorArray, stackName);
@@ -261,6 +398,7 @@ script.api.start = function () {
     colorArray = vec4ToArray(script.currentColor);
     renderChipStack(positionArray, amount, colorArray, stackName);
   }
+  script.api.renderChipStacks = renderChipStacks;
 
   function renderChipStack(
     positionArray,
@@ -276,17 +414,22 @@ script.api.start = function () {
     remainder = remainder % 5;
     var num1s = remainder;
 
-    print("num25s = " + num25s);
-    print("num5s = " + num5s);
-    print("num1s = " + num1s);
+    // print("num25s = " + num25s);
+    // print("num5s = " + num5s);
+    // print("num1s = " + num1s);
 
     var stackPos = positionArray.slice();
 
     // Render 25s
     for (var i = 0; i < num25s; i++) {
-      var new25s = getNewCubeSceneObject();
+      var new25s = getNewCubeSceneObject(chipColors.GREEN);
+      script.sceneObjects.push(new25s);
+
+      stackPos[0] += Math.random() * 0.5 - 0.25;
+      stackPos[2] += Math.random() * 0.5 - 0.25;
+
       updateBlock(new25s, stackPos, colorArray);
-      stackPos[1] += 2.5;
+      stackPos[1] += 1;
       //   script.stackPositions[stackName].push({
       //     pos: stackPos,
       //     color: "green",
@@ -294,11 +437,15 @@ script.api.start = function () {
     }
     // Render 5s
     stackPos = positionArray.slice();
-    stackPos[0] += 5;
+    stackPos[0] += GRID_SIZE * 2.1;
     for (var i = 0; i < num5s; i++) {
-      var new5s = getNewCubeSceneObject();
+      var new5s = getNewCubeSceneObject(chipColors.RED);
+      script.sceneObjects.push(new5s);
+      stackPos[0] += Math.random() * 0.5 - 0.25;
+      stackPos[2] += Math.random() * 0.5 - 0.25;
+
       updateBlock(new5s, stackPos, colorArray);
-      stackPos[1] += 2.5;
+      stackPos[1] += 1;
       //   script.stackPositions[stackName].push({
       //     pos: stackPos,
       //     color: "red",
@@ -306,11 +453,15 @@ script.api.start = function () {
     }
     // Render 1s
     stackPos = positionArray.slice();
-    stackPos[0] += 10;
+    stackPos[0] += GRID_SIZE * 4.2;
     for (var i = 0; i < num1s; i++) {
-      var new1s = getNewCubeSceneObject();
+      var new1s = getNewCubeSceneObject(chipColors.WHITE);
+      script.sceneObjects.push(new1s);
+      stackPos[0] += Math.random() * 0.5 - 0.25;
+      stackPos[2] += Math.random() * 0.5 - 0.25;
+
       updateBlock(new1s, stackPos, colorArray);
-      stackPos[1] += 2.5;
+      stackPos[1] += 1;
       //   script.stackPositions[stackName].push({
       //     pos: stackPos,
       //     color: "white",
@@ -328,6 +479,7 @@ script.api.start = function () {
 
   // ----------------------------------------------------------------------------
   function updateBlock(target, positionArray, colorArray) {
+    // print("pos array:" + positionArray);
     var pos = vec3FromArray(positionArray);
     var color = vec4FromArray(colorArray);
 
@@ -360,19 +512,50 @@ script.api.start = function () {
   }
 
   // ----------------------------------------------------------------------------
-  function getNewCubeSceneObject(optionalSceneObject) {
-    print("getNewCubeSceneObject()...");
+  function getNewCubeSceneObject(color) {
+    // print("getNewCubeSceneObject()...");
     script.cubeCounter++;
 
+    // for (var x in scene) {
+    //   print("***" + x);
+    // }
     var cube = scene.createSceneObject("Cube" + script.cubeCounter);
     var cursorMeshVisual = cube.createComponent("Component.MeshVisual");
-    cursorMeshVisual.mesh = script.cubeOneUnitMesh;
+    cursorMeshVisual.mesh = script.chipMesh;
+
     cursorMeshVisual.meshShadowMode = 1;
     cursorMeshVisual.clearMaterials();
-    cursorMeshVisual.addMaterial(script.cubeMaterial.clone());
+    switch (color) {
+      case chipColors.WHITE:
+        cursorMeshVisual.addMaterial(script.chipWhite.clone());
+        break;
+      case chipColors.RED:
+        cursorMeshVisual.addMaterial(script.chipRed.clone());
+        break;
+      case chipColors.GREEN:
+        cursorMeshVisual.addMaterial(script.chipGreen.clone());
+        break;
+      default:
+        cursorMeshVisual.addMaterial(script.chipBlack.clone());
+        break;
+    }
+    // cursorMeshVisual.addMaterial(script.cubeMaterial.clone());
+
     cube
       .getTransform()
       .setLocalScale(new vec3(GRID_SIZE, GRID_SIZE, GRID_SIZE));
+
+    var newRotation = cube.getTransform().getLocalRotation();
+    newRotation.z = 90;
+    newRotation.y = 90;
+    cube.getTransform().setLocalRotation(newRotation);
+
+    // var newPosition = cube.getTransform().getLocalPosition();
+    // newPosition.x += Math.random() - 0.5;
+    // newPosition.y += Math.random() - 0.5;
+    // newPosition.z += Math.random() - 0.5;
+    // // print("new pos:" + newPosition);
+    // cube.getTransform().setLocalPosition(newPosition);
 
     return cube;
   }

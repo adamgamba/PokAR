@@ -55,7 +55,12 @@
 // *************** test 2p
 // @input Component.ScriptComponent connectedController
 // @input Component.ScriptComponent packets
+// @input Component.ScriptComponent chipDrawing
+//@input int numStacksPlaced
+
 var packets = script.packets.api;
+var chipDrawing = script.chipDrawing.api;
+
 var utils = global.utils;
 
 // Create event system
@@ -104,6 +109,11 @@ var sharedCache = {
   gameMessage: "",
   hostId: "",
   previousBetAmount: 0,
+  stackPositions: {
+    A: [],
+    B: [],
+    POT: [],
+  },
 };
 
 var localCache = {
@@ -206,6 +216,23 @@ events.on("nextHand", function () {
   onNextHand();
 });
 // ---
+packets.on(
+  "/poker/sendStackPositions/",
+  function (body, params, userId) {
+    var stackPositions = JSON.parse(body);
+    events.trigger("sendStackPositions", stackPositions);
+  }
+);
+
+events.on("sendStackPositions", function (stackPositions) {
+  sendStackPositions(stackPositions);
+});
+// ---
+
+function sendStackPositions(stackPositions) {
+  sharedCache.stackPositions = stackPositions;
+  packets.sendObject("/poker/updateSharedCache/", sharedCache);
+}
 // packets.on("/poker/endHand/", function (body, params, userId) {
 //   var winner = JSON.parse(body);
 //   events.trigger("endHand", winner.winner);
@@ -479,6 +506,12 @@ function updateUI() {
   script.currentDealer.text = sharedCache.currentDealer;
   script.amountToCall.text = sharedCache.amountToCall.toString();
   script.gameMessage.text = sharedCache.gameMessage;
+
+  print("rendering chip stacks...");
+  print("stack = " + script.stackANumber.text);
+  print("stack = " + script.stackBNumber.text);
+  print("stack = " + script.potNumber.text);
+  chipDrawing.renderChipStacks();
 }
 
 function payBlinds() {
@@ -804,31 +837,47 @@ global.behaviorSystem.addCustomTriggerResponse("PLAYER_CALLS", onCall);
 global.behaviorSystem.addCustomTriggerResponse("NEXT_HAND", onNextHand);
 global.behaviorSystem.addCustomTriggerResponse("A_WINS", onAWins);
 global.behaviorSystem.addCustomTriggerResponse("B_WINS", onBWins);
-script.startGameScreen.enabled = true;
-script.startGameScreenHolder.enabled = true;
+script.startGameScreen.enabled = false;
+script.startGameScreenHolder.enabled = false;
 
-function onStartRemote() {
-  print("Game started remotely.");
-  script.ModeSelectButton1.enabled = false;
-  script.ModeSelectButton2.enabled = false;
-  script.ModeSelectScreen.enabled = false;
-  script.startGameScreen.enabled = true;
-  script.startGameScreenHolder.enabled = true;
-  script.stackANumberObj.enabled = true;
-}
-function onStartColocated() {
-  print("Game started colocated.");
-  script.ModeSelectButton1.enabled = false;
-  script.ModeSelectButton2.enabled = false;
-  script.ModeSelectScreen.enabled = false;
-  script.startGameScreen.enabled = true;
-  script.startGameScreenHolder.enabled = true;
-}
+// function onStartRemote() {
+//   print("Game started remotely.");
+//   script.ModeSelectButton1.enabled = false;
+//   script.ModeSelectButton2.enabled = false;
+//   script.ModeSelectScreen.enabled = false;
+
+//   print("***num stacks placed = " + script.numStacksPlaced);
+
+//   if (parseInt(script.numStacksPlaced.text) < 3) {
+//     print("startgamescreen disabled...");
+//     script.startGameScreen.enabled = false;
+//     script.startGameScreenHolder.enabled = false;
+//   } else {
+//     print("startgamescreen enabled...");
+//     script.startGameScreen.enabled = true;
+//     script.startGameScreenHolder.enabled = true;
+//   }
+
+//   script.startGameScreen.enabled = true;
+//   script.startGameScreenHolder.enabled = true;
+//   //   script.stackANumberObj.enabled = true;
+// }
+// script.api.onStartRemote = onStartRemote;
+
+// function onStartColocated() {
+//   print("Game started colocated.");
+//   script.ModeSelectButton1.enabled = false;
+//   script.ModeSelectButton2.enabled = false;
+//   script.ModeSelectScreen.enabled = false;
+//   script.startGameScreen.enabled = true;
+//   script.startGameScreenHolder.enabled = true;
+// }
 
 // Starts the game for both players
 
 function onStartGame() {
   print("Game started.");
+
   script.startGameScreen.enabled = false;
   script.startGameScreenHolder.enabled = false;
 
