@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1670446349994",
+    "lastChanged": "1670447057824",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1895,6 +1895,7 @@
                     "1665555217336797:3638674",
                     "1665623483118806:26432",
                     "1665623483454954:27052",
+                    "1666846304887200:2418964",
                     "1666846304891888:2418966",
                     "1666846304896818:2418971",
                     "1666846304899132:2418973",
@@ -2067,6 +2068,7 @@
                     "1670375506525946:637746",
                     "1670376266097459:1352181",
                     "1670377025474127:245184",
+                    "1670377443119406:911889",
                     "1670377443224566:911938",
                     "1670377443257380:911958",
                     "1670377444271315:912569",
@@ -2134,7 +2136,7 @@
             "mapPinPoints": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1670390225390779:85622"
+            "active_graph_asset": "-1:-1"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -10872,7 +10874,7 @@
                     },
                     {
                         "k": "74",
-                        "v": "263906786621e3b4a34e970983311e81"
+                        "v": "1e6dab1947a12fd6eda0d151c3fb53f5"
                     },
                     {
                         "k": "75",
@@ -11584,7 +11586,7 @@
                     },
                     {
                         "k": "26943",
-                        "v": "980b299b26db01276b7d3d1a0bdf39b6"
+                        "v": "e79a7208b62298d461e9dabf3bccfc58"
                     },
                     {
                         "k": "26944",
@@ -11594,9 +11596,9 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-12-07T00:22:54",
+                        "lastModified": "2022-12-07T15:58:34",
                         "name": "Public",
-                        "hash": "29ccf16786b09a70b47678d67fd41391",
+                        "hash": "a2549efc2960d522eb831a65dc1fe6f7",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -11609,7 +11611,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-12-01T04:06:21",
                                 "name": "BlockDrawing",
-                                "hash": "bec9772865afa8f96926909924cec73f",
+                                "hash": "4b7e2f8b3d55032bd939facab83e67e4",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -11735,13 +11737,13 @@
                                         "isFolder": "true",
                                         "lastModified": "2022-12-07T00:22:53",
                                         "name": "Scripts",
-                                        "hash": "da2e1d14e8f8974fc3fa38d21ca891c1",
+                                        "hash": "a1e9e9f6b613bcd8cdc62a241ef178b3",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-12-07T00:22:53",
+                                                "lastModified": "2022-12-07T16:03:26",
                                                 "name": "BlockDrawing 2.js",
-                                                "hash": "263906786621e3b4a34e970983311e81",
+                                                "hash": "1e6dab1947a12fd6eda0d151c3fb53f5",
                                                 "children": ""
                                             },
                                             {
@@ -13336,9 +13338,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2022-12-07T00:17:06",
+                                "lastModified": "2022-12-07T15:58:15",
                                 "name": "Text3D Default.lsmat",
-                                "hash": "980b299b26db01276b7d3d1a0bdf39b6",
+                                "hash": "e79a7208b62298d461e9dabf3bccfc58",
                                 "children": ""
                             },
                             {

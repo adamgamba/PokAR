@@ -400,14 +400,22 @@ script.api.start = function () {
 
     // Render stack "B"
     stackName = "B";
+    print("stackname:" + stackName);
+
     amount = parseInt(script.stackBNumber.text);
+    print("amount:" + amount);
+
     enableChipStack(stackName, amount);
     script.textStackBFacingA.text = "Opponent: $" + amount.toString();
     script.textStackBFacingB.text = "Me: $" + amount.toString();
 
     // Render stack "B"
     stackName = "POT";
-    amount = parseInt(script.stackBNumber.text);
+    print("stackname:" + stackName);
+
+    amount = parseInt(script.potNumber.text);
+    print("amount:" + amount);
+
     enableChipStack(stackName, amount);
     script.textStackPotFacingA.text = "Pot: $" + amount.toString();
     script.textStackPotFacingB.text = "Pot: $" + amount.toString();
