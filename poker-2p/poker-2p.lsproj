@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1670383965328",
+    "lastChanged": "1670446349994",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1849,7 +1849,6 @@
             "collapsedList": [
                 [
                     "1517446348227994:84813",
-                    "1592408243355212:3301",
                     "1592408243417099:3505",
                     "1593192808824372:8284",
                     "1594406783260552:23337",
@@ -2055,6 +2054,7 @@
                     "1669873443626593:7395618",
                     "1669873923064106:7970431",
                     "1669877014717925:1723609",
+                    "1669877366486786:1973337",
                     "1669877366503960:1973411",
                     "1669877366932866:1973579",
                     "1669877366970993:1973593",
@@ -2067,8 +2067,12 @@
                     "1670375506525946:637746",
                     "1670376266097459:1352181",
                     "1670377025474127:245184",
+                    "1670377443224566:911938",
                     "1670377443257380:911958",
-                    "1670377444271315:912569"
+                    "1670377444271315:912569",
+                    "1670377523007527:1097234",
+                    "1670378631238527:1373392",
+                    "1670378633028801:1398748"
                 ]
             ],
             "selectionSetList": ""
@@ -2082,7 +2086,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "0",
+                "is_capture": "3",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -2130,7 +2134,7 @@
             "mapPinPoints": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "-1:-1"
+            "active_graph_asset": "1670390225390779:85622"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -4813,6 +4817,14 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "698",
+                    "uid": "1670390225390779:85622",
+                    "name": "Files\/File1194",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -7106,7 +7118,13 @@
                 "348": "1670382979283423:5662712",
                 "349": "1670383768051272:175741",
                 "350": "1670383834128529:280528",
-                "351": "1670383838679519:331838"
+                "351": "1670383838679519:331838",
+                "352": "1670390374800747:214198",
+                "353": "1670445613308925:592072",
+                "354": "1670445970440378:693076",
+                "355": "1670445970454153:693091",
+                "356": "1670445985256372:823431",
+                "357": "1670445985268279:823444"
             }
         },
         "LayerComponent": {
@@ -9512,6 +9530,14 @@
                 {
                     "k": "1193",
                     "v": "Files\/File1193.lsmat"
+                },
+                {
+                    "k": "1194",
+                    "v": "Files\/File1194"
+                },
+                {
+                    "k": "1195",
+                    "v": "Files\/File1195.lsmat"
                 }
             ]
         },
@@ -10565,6 +10591,10 @@
                     {
                         "k": "26942",
                         "v": "Materials\/Unlit Capture.lsmat"
+                    },
+                    {
+                        "k": "26943",
+                        "v": "Text3D Default.lsmat"
                     }
                 ],
                 "hashes": [
@@ -10842,7 +10872,7 @@
                     },
                     {
                         "k": "74",
-                        "v": "28f9c996d684996cdeceb53322724a0b"
+                        "v": "263906786621e3b4a34e970983311e81"
                     },
                     {
                         "k": "75",
@@ -11262,7 +11292,7 @@
                     },
                     {
                         "k": "194",
-                        "v": "c9531edd221a7cafefb8cabd24adae23"
+                        "v": "4f3f4d4e95689f4566a794464f359ab6"
                     },
                     {
                         "k": "195",
@@ -11551,14 +11581,22 @@
                     {
                         "k": "26942",
                         "v": "c27d82e5575d11679c2ca61a86771c03"
+                    },
+                    {
+                        "k": "26943",
+                        "v": "980b299b26db01276b7d3d1a0bdf39b6"
+                    },
+                    {
+                        "k": "26944",
+                        "v": "10439b7f75521860e6c8eb9cfe505236"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-12-06T20:44:01",
+                        "lastModified": "2022-12-07T00:22:54",
                         "name": "Public",
-                        "hash": "80a69068ed9ddf82be4e1ee98019ca1c",
+                        "hash": "29ccf16786b09a70b47678d67fd41391",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -11571,7 +11609,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-12-01T04:06:21",
                                 "name": "BlockDrawing",
-                                "hash": "bdf5b5a753272977a5de161dfee58b31",
+                                "hash": "bec9772865afa8f96926909924cec73f",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -11695,15 +11733,15 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-06T19:57:26",
+                                        "lastModified": "2022-12-07T00:22:53",
                                         "name": "Scripts",
-                                        "hash": "5103bf21a19b0d7b326f4eaa422bbac6",
+                                        "hash": "da2e1d14e8f8974fc3fa38d21ca891c1",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2022-12-06T22:24:31",
+                                                "lastModified": "2022-12-07T00:22:53",
                                                 "name": "BlockDrawing 2.js",
-                                                "hash": "28f9c996d684996cdeceb53322724a0b",
+                                                "hash": "263906786621e3b4a34e970983311e81",
                                                 "children": ""
                                             },
                                             {
@@ -12616,9 +12654,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-06T19:55:49",
+                                "lastModified": "2022-12-07T00:22:45",
                                 "name": "Poker",
-                                "hash": "9c0c723daf702240ab732dc88a26a208",
+                                "hash": "285fad4d8709572830f791f77c13f8af",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -12636,9 +12674,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-12-06T19:55:49",
+                                        "lastModified": "2022-12-07T00:22:45",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "c9531edd221a7cafefb8cabd24adae23",
+                                        "hash": "4f3f4d4e95689f4566a794464f359ab6",
                                         "children": ""
                                     },
                                     {
@@ -13261,7 +13299,7 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-12-06T20:46:21",
+                                        "lastModified": "2022-12-06T23:11:16",
                                         "name": "HelperFunctions.js",
                                         "hash": "6ed21c1102a6a4f129191563ebdc5939",
                                         "children": ""
@@ -13294,6 +13332,13 @@
                                 "lastModified": "2022-12-01T04:06:03",
                                 "name": "START_GAME.js",
                                 "hash": "de5c4fd42e8199430800f691a7c6107a",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-12-07T00:17:06",
+                                "name": "Text3D Default.lsmat",
+                                "hash": "980b299b26db01276b7d3d1a0bdf39b6",
                                 "children": ""
                             },
                             {
@@ -20685,6 +20730,20 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "name": "Text3D Default",
+                        "type": "2",
+                        "subtype": "1",
+                        "resourceId": "698",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1670390225390779:85622",
+                        "fileId": "1194",
+                        "originalId": "1195",
+                        "publicId": "26943",
+                        "source": "",
+                        "additional": ""
                     }
                 ]
             }
@@ -20692,7 +20751,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1670377443212451:911923"
+                    "1669842900206166:1222535"
                 ]
             }
         },
