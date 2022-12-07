@@ -86,10 +86,10 @@ const actions = {
   RAISE: "raise",
 };
 const rounds = {
-  PREFLOP: "preflop",
-  FLOP: "flop",
-  TURN: "turn",
-  RIVER: "river",
+  PREFLOP: "Preflop",
+  FLOP: "Flop",
+  TURN: "Turn",
+  RIVER: "River",
 };
 
 // State cache
@@ -242,6 +242,21 @@ function sendStackPositions(stackPositions) {
 //   endHand(winner);
 // });
 // ---
+
+// * 3D Text Objects
+//@input Component.Text3D textStackAFacingA
+//@input Component.Text3D textStackBFacingA
+//@input Component.Text3D textStackPotFacingA
+//@input Component.Text3D textStackAFacingB
+//@input Component.Text3D textStackBFacingB
+//@input Component.Text3D textStackPotFacingB
+
+script.textStackAFacingA.enabled = false;
+script.textStackBFacingA.enabled = false;
+script.textStackPotFacingA.enabled = false;
+script.textStackAFacingB.enabled = false;
+script.textStackBFacingB.enabled = false;
+script.textStackPotFacingB.enabled = false;
 
 // *
 
@@ -502,8 +517,14 @@ function updateUI() {
   script.stackBNumber.text = sharedCache.stacks.B.toString();
   script.potNumber.text = sharedCache.stacks.POT.toString();
   script.currentRound.text = sharedCache.currentRound;
-  script.currentPlayer.text = sharedCache.currentPlayer;
-  script.currentDealer.text = sharedCache.currentDealer;
+  script.currentPlayer.text =
+    sharedCache.currentPlayer == localCache.playerName
+      ? "Me"
+      : "Opponent";
+  script.currentDealer.text =
+    sharedCache.currentDealer == localCache.playerName
+      ? "Me"
+      : "Opponent";
   script.amountToCall.text = sharedCache.amountToCall.toString();
   script.gameMessage.text = sharedCache.gameMessage;
 
@@ -881,9 +902,9 @@ function onStartGame() {
   script.startGameScreen.enabled = false;
   script.startGameScreenHolder.enabled = false;
 
-  script.stackANumberObj.enabled = true;
-  script.stackBNumberObj.enabled = true;
-  script.potNumberObj.enabled = true;
+  script.stackANumberObj.enabled = false;
+  script.stackBNumberObj.enabled = false;
+  script.potNumberObj.enabled = false;
   script.currentRoundObj.enabled = true;
   script.currentPlayerObj.enabled = true;
   script.currentDealerObj.enabled = true;
@@ -911,6 +932,15 @@ function onStartGame() {
     script.AWinsButton.enabled = false;
     script.BWinsButton.enabled = false;
     script.waitingMessage.text = "";
+
+    // Enable correct 3D text elements
+    print("enabling...");
+    script.textStackAFacingA.enabled = true;
+    script.textStackBFacingA.enabled = true;
+    script.textStackPotFacingA.enabled = true;
+    script.textStackAFacingB.enabled = false;
+    script.textStackBFacingB.enabled = false;
+    script.textStackPotFacingB.enabled = false;
   } else {
     // Enable correct UI elements
     script.startButton.enabled = false;
@@ -923,6 +953,15 @@ function onStartGame() {
     script.AWinsButton.enabled = false;
     script.BWinsButton.enabled = false;
     script.waitingMessage.text = "Waiting for opponent...";
+
+    // Enable correct 3D text elements
+    print("disabling...");
+    script.textStackAFacingA.enabled = false;
+    script.textStackBFacingA.enabled = false;
+    script.textStackPotFacingA.enabled = false;
+    script.textStackAFacingB.enabled = true;
+    script.textStackBFacingB.enabled = true;
+    script.textStackPotFacingB.enabled = true;
   }
 
   // Start first hand
