@@ -906,7 +906,7 @@ function onStartGame() {
   script.stackBNumberObj.enabled = false;
   script.potNumberObj.enabled = false;
   script.currentRoundObj.enabled = true;
-  script.currentPlayerObj.enabled = true;
+  script.currentPlayerObj.enabled = false;
   script.currentDealerObj.enabled = true;
   script.amountToCallObj.enabled = true;
   script.gameMessageObj.enabled = true;
