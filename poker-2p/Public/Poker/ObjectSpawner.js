@@ -38,6 +38,7 @@
 //@input Component.Text amountToCall
 //@input Component.Text gameMessage
 //@input Component.Text waitingMessage
+//@input Component.Text handNumber
 
 //@input SceneObject stackANumberObj
 //@input SceneObject stackBNumberObj
@@ -48,6 +49,7 @@
 //@input SceneObject amountToCallObj
 //@input SceneObject gameMessageObj
 //@input SceneObject waitingMessageObj
+//@input SceneObject handNumberObj
 
 //@input SceneObject gameOverScreen
 //@input float missedScoreMax
@@ -114,6 +116,7 @@ var sharedCache = {
     B: [],
     POT: [],
   },
+  handNumber: 1,
 };
 
 var localCache = {
@@ -300,36 +303,10 @@ script.textStackPotFacingB.enabled = false;
 // To be used to send game data to opponent
 function getCache() {
   return sharedCache;
-  //   {
-  //     stacks: stacks,
-  //     currentDealer: currentDealer,
-  //     currentVillain: currentVillain,
-  //     currentRound: currentRound,
-  //     currentPlayer: currentPlayer,
-  //     nextTurnActions: nextTurnActions,
-  //     previousAction: previousAction,
-  //     amountToCall: amountToCall,
-  //     gameMessage: gameMessage,
-  //   };
 }
 function setCache(newCache) {
   sharedCache = newCache;
 }
-
-// Define vars to be updated
-// var stacks = {
-//   A: 100,
-//   B: 100,
-//   POT: 0,
-// };
-// var currentDealer = players.A;
-// var currentVillain = players.B;
-// var currentRound = rounds.PREFLOP;
-// var currentPlayer = currentDealer;
-// var nextTurnActions = [actions.FOLD, actions.CALL, actions.BET];
-// var previousAction = null;
-// var amountToCall = 0;
-// var gameMessage = "";
 
 // Helper Functions
 
@@ -365,6 +342,8 @@ function endHand(nextDealer) {
   script.nextHandButton.enabled = false;
   script.AWinsButton.enabled = false;
   script.BWinsButton.enabled = false;
+
+  script.handNumber += 1;
 
   if (localCache.playerName == nextDealer) {
     script.gameMessage.text =
@@ -527,6 +506,7 @@ function updateUI() {
       : "Opponent";
   script.amountToCall.text = sharedCache.amountToCall.toString();
   script.gameMessage.text = sharedCache.gameMessage;
+  script.handNumber = sharedCache.handNumber;
 
   print("rendering chip stacks...");
   print("stack = " + script.stackANumber.text);
@@ -911,6 +891,7 @@ function onStartGame() {
   script.amountToCallObj.enabled = true;
   script.gameMessageObj.enabled = true;
   script.waitingMessageObj.enabled = true;
+  script.handNumber.enabled = true;
 
   // Only do this once (use player A for consistency)
   if (localCache.playerName != players.B) {
