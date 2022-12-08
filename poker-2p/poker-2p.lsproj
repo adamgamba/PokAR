@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1670450067462",
+    "lastChanged": "1670460116086",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1957,7 +1957,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "0",
+                "is_capture": "3",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -6630,6 +6630,48 @@
                                     "attachTop": "true"
                                 }
                             }
+                        },
+                        {
+                            "k": "1670459797636768:1759405",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1670459797767971:1759780",
+                            "v": {
+                                "isBasicMode": "false",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
+                        },
+                        {
+                            "k": "1670459797827766:1759914",
+                            "v": {
+                                "isBasicMode": "true",
+                                "basicModeSetup": {
+                                    "fixWidth": "false",
+                                    "fixHeight": "false",
+                                    "attachBottom": "false",
+                                    "attachLeft": "false",
+                                    "attachRight": "false",
+                                    "attachTop": "true"
+                                }
+                            }
                         }
                     ],
                     "generalData": ""
@@ -6995,7 +7037,10 @@
                 "354": "1670445970440378:693076",
                 "355": "1670445970454153:693091",
                 "356": "1670445985256372:823431",
-                "357": "1670445985268279:823444"
+                "357": "1670445985268279:823444",
+                "358": "1670459797488388:1758925",
+                "359": "1670459797571263:1759166",
+                "360": "1670459797699150:1759539"
             }
         },
         "LayerComponent": {
@@ -11163,7 +11208,7 @@
                     },
                     {
                         "k": "194",
-                        "v": "ca133af21d4026091069af769e406d89"
+                        "v": "c48d546da00031468c06d8bc7ee78e86"
                     },
                     {
                         "k": "195",
@@ -11467,7 +11512,7 @@
                         "isFolder": "true",
                         "lastModified": "2022-12-07T16:38:48",
                         "name": "Public",
-                        "hash": "87e1366c985a219758b9dee778278302",
+                        "hash": "54fcead51f6ec7711ecdee1dd66c9957",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -12527,7 +12572,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-12-07T00:22:45",
                                 "name": "Poker",
-                                "hash": "11d56091fbfacc934676a7eeaec135f8",
+                                "hash": "b809591341fd128a8e5262872b7346b4",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -12545,9 +12590,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-12-07T16:32:26",
+                                        "lastModified": "2022-12-07T19:39:53",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "ca133af21d4026091069af769e406d89",
+                                        "hash": "c48d546da00031468c06d8bc7ee78e86",
                                         "children": ""
                                     },
                                     {
@@ -20622,7 +20667,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1665555217336797:3638674"
+                    "1670459797488388:1758925"
                 ]
             }
         },
