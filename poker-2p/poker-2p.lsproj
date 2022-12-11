@@ -3,7 +3,7 @@
     "document_id": "GvJ8qzBu2O7ZMsugX4LR",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1670616800208",
+    "lastChanged": "1670708284284",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1850,7 +1850,6 @@
                 [
                     "1517446348227994:84813",
                     "1592408243355212:3301",
-                    "1592408243363086:3370",
                     "1592408243417099:3505",
                     "1593192808824372:8284",
                     "1594406783260552:23337",
@@ -2235,7 +2234,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "3",
+                "is_capture": "0",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -2283,7 +2282,7 @@
             "mapPinPoints": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1669877304452802:1897761"
+            "active_graph_asset": "-1:-1"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -20943,7 +20942,11 @@
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "objects": [
+                    "1669842900206166:1222535"
+                ]
+            }
         },
         "EffectsController": {
             "1": "",
