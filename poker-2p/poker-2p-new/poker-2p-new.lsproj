@@ -3,7 +3,7 @@
     "document_id": "t16J5gUCBp_XAAkoBH0H",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1670797534663",
+    "lastChanged": "1670808157824",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1828,6 +1828,9 @@
                         "button_start-game"
                     ],
                     [
+                        "button_start-game-as-dealer"
+                    ],
+                    [
                         "cards"
                     ],
                     [
@@ -1851,8 +1854,6 @@
                     "1517446348227994:84813",
                     "1592408243417099:3505",
                     "1593192808824372:8284",
-                    "1594406783260552:23337",
-                    "1594406821028277:36199",
                     "1594408625639694:129403",
                     "1594409375145389:149007",
                     "1594409375164078:149267",
@@ -1896,29 +1897,21 @@
                     "1665555217336797:3638674",
                     "1665623483118806:26432",
                     "1665623483454954:27052",
-                    "1666846304887200:2418964",
                     "1666846304891888:2418966",
-                    "1666846304896818:2418971",
                     "1666846304899132:2418973",
                     "1666846304903655:2418986",
                     "1666846304910951:2419004",
                     "1666846304913957:2419009",
-                    "1666846304916694:2419022",
                     "1666846304921331:2419024",
                     "1666846304925248:2419026",
                     "1666846304992072:2419188",
                     "1666846305027333:2419348",
-                    "1666846305090947:2419635",
-                    "1666846305093919:2419637",
                     "1666846305096758:2419639",
                     "1666846305128360:2419773",
                     "1666846305161843:2419907",
-                    "1666846305253324:2420321",
-                    "1666846305256330:2420323",
                     "1666846305259071:2420325",
                     "1666846305289363:2420457",
                     "1666846305330915:2420593",
-                    "1666846305371498:2420727",
                     "1666846305374657:2420729",
                     "1666846305376612:2420731",
                     "1666846305448208:2421329",
@@ -1926,7 +1919,6 @@
                     "1666846305528325:2421929",
                     "1666846305532891:2421931",
                     "1666846305715915:2422772",
-                    "1666846305723603:2422774",
                     "1666846305731672:2422776",
                     "1666846305736450:2422778",
                     "1666846305740308:2422780",
@@ -2229,7 +2221,7 @@
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
-                "is_capture": "3",
+                "is_capture": "0",
                 "camera_type": "2"
             },
             "show_snap_ui": "true",
@@ -2277,7 +2269,7 @@
             "mapPinPoints": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1670390225390779:85622"
+            "active_graph_asset": "-1:-1"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -4965,6 +4957,14 @@
                     "resId": "698",
                     "uid": "1670390225390779:85622",
                     "name": "Files\/File1194",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "699",
+                    "uid": "1670799800686314:201264",
+                    "name": "Files\/File1196.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -9726,6 +9726,22 @@
                 {
                     "k": "1195",
                     "v": "Files\/File1195.lsmat"
+                },
+                {
+                    "k": "1196",
+                    "v": "Files\/File1196.pvr"
+                },
+                {
+                    "k": "1197",
+                    "v": "Files\/File1197.png"
+                },
+                {
+                    "k": "1198",
+                    "v": "Files\/File1198.png"
+                },
+                {
+                    "k": "1199",
+                    "v": "Files\/File1199.pvr"
                 }
             ]
         },
@@ -10783,6 +10799,10 @@
                     {
                         "k": "26943",
                         "v": "Text3D Default.lsmat"
+                    },
+                    {
+                        "k": "26944",
+                        "v": "button_start-game-as-dealer.png"
                     }
                 ],
                 "hashes": [
@@ -11776,15 +11796,15 @@
                     },
                     {
                         "k": "26944",
-                        "v": "d41d8cd98f00b204e9800998ecf8427e"
+                        "v": "b9bda9ae1bc48532c81f8366fe10d59a"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-12-11T17:10:08",
+                        "lastModified": "2022-12-11T18:03:20",
                         "name": "Public",
-                        "hash": "c8f8921b6d29f6f663340bf7ccc06300",
+                        "hash": "7181721994db0c11bc99ef8acdd90840",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -11795,7 +11815,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "BlockDrawing",
                                 "hash": "4b7e2f8b3d55032bd939facab83e67e4",
                                 "children": [
@@ -11808,7 +11828,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Graphics",
                                         "hash": "8b72c616f601280cdbcf6f764d81b253",
                                         "children": [
@@ -11921,7 +11941,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Scripts",
                                         "hash": "a1e9e9f6b613bcd8cdc62a241ef178b3",
                                         "children": [
@@ -12057,6 +12077,13 @@
                             },
                             {
                                 "isFolder": "false",
+                                "lastModified": "2022-12-11T18:03:08",
+                                "name": "button_start-game-as-dealer.png",
+                                "hash": "b9bda9ae1bc48532c81f8366fe10d59a",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
                                 "lastModified": "2022-12-01T04:06:03",
                                 "name": "button_start-game.png",
                                 "hash": "0ddf12289321109719f3cbee4d416059",
@@ -12085,7 +12112,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Connected",
                                 "hash": "a5727275abcb7915dc0f7d16b811773e",
                                 "children": [
@@ -12142,7 +12169,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "ConnectedUI",
                                 "hash": "4f85b82e712bf8127408336189c87c26",
                                 "children": [
@@ -12155,7 +12182,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Materials",
                                         "hash": "ffd5cf4acd489bab0f143e9c867618e2",
                                         "children": [
@@ -12254,7 +12281,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Models",
                                         "hash": "ff3bae28fe7d559790403166bc7b147d",
                                         "children": [
@@ -12290,7 +12317,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Scripts",
                                         "hash": "82a870eacccc5569836d08c945180ed1",
                                         "children": [
@@ -12319,7 +12346,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Textures",
                                         "hash": "f5acdddd4e143d7e350175e621b1ce23",
                                         "children": [
@@ -12402,7 +12429,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "ScanningAnimation",
                                                 "hash": "b9e06b10a08ea25744c864f67409bb84",
                                                 "children": [
@@ -12424,7 +12451,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "ScanningAnimation 2",
                                                 "hash": "5eae1e3efed4f8d49bcda0fb0b89ff07",
                                                 "children": [
@@ -12464,7 +12491,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Cross Hint",
                                 "hash": "c66bc06b512a23e0eb4aff1db51546c2",
                                 "children": [
@@ -12477,7 +12504,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Material",
                                         "hash": "08fdcaf61ebf26ebf758a4cfadd591d2",
                                         "children": [
@@ -12499,7 +12526,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Scripts",
                                         "hash": "01288fefbb8cc0229094a4331792d680",
                                         "children": [
@@ -12521,13 +12548,13 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Textures",
                                         "hash": "91ff967cf1e055057c00b06a21da6988",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "1",
                                                 "hash": "e400827994af6800dc3db7e86f2f6ff7",
                                                 "children": [
@@ -12602,7 +12629,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Markers [REPLACE_ME]",
                                 "hash": "8440e8d0685cdf843c51361cdecc6a93",
                                 "children": [
@@ -12624,7 +12651,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Materials",
                                 "hash": "b9beaa73c6ab7770cb966f0015854014",
                                 "children": [
@@ -12653,7 +12680,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Meshes",
                                 "hash": "dbb9d75313e3c929b4f4382611f0c7ba",
                                 "children": [
@@ -12666,13 +12693,13 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Mark",
                                         "hash": "5316604b5b30a0fb208de52c7bd35d20",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Animations",
                                                 "hash": "59adb24ef3cdbe0297f05b395827453f",
                                                 "children": [
@@ -12694,7 +12721,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Materials",
                                                 "hash": "baa11005c74953bfaec1ffbf0c0bd3c5",
                                                 "children": [
@@ -12723,7 +12750,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Meshes",
                                                 "hash": "15107a59a53a26dba1db114028200611",
                                                 "children": [
@@ -12780,7 +12807,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Sound",
                                                 "hash": "def5a6f96a73308a0369c58f3fc82ad5",
                                                 "children": [
@@ -12802,7 +12829,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Textures",
                                                 "hash": "cb7f1e0fee4148917427aa34a8cbc489",
                                                 "children": [
@@ -12842,7 +12869,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Poker",
                                 "hash": "b36046250cb52845bee94fc88e8c7067",
                                 "children": [
@@ -12885,13 +12912,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Prototyping",
                                 "hash": "45e4fcaee39507f002ddfa4e1be78324",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Avatars",
                                         "hash": "3932b969cf13941da3cd5ba9d7bf53ca",
                                         "children": [
@@ -13044,7 +13071,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Graphics",
                                                 "hash": "1447ab75e689566662a113939a0c469f",
                                                 "children": [
@@ -13192,7 +13219,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Meshes",
                                                 "hash": "eda4e855edfc53ed1778f05ae0ed0634",
                                                 "children": [
@@ -13235,7 +13262,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2022-12-11T17:01:25",
+                                                "lastModified": "2022-12-11T17:22:40",
                                                 "name": "Scripts",
                                                 "hash": "c04a2513c3dbeeda60f8a4a43a1aa121",
                                                 "children": [
@@ -13287,7 +13314,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Placement",
                                         "hash": "f63f0f3dc4a0665a9f9f73fc6cf37e5f",
                                         "children": [
@@ -13379,7 +13406,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "Players",
                                         "hash": "8f1c5b1cf3ed874f8f74cd2f70ba1eac",
                                         "children": [
@@ -13401,7 +13428,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "RemoteCursors",
                                         "hash": "7a039221e97da22dc1b85d1a5242fc96",
                                         "children": [
@@ -13474,7 +13501,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Scripts",
                                 "hash": "5abbd855b51a7ceebc17d88a86163f91",
                                 "children": [
@@ -13531,7 +13558,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2022-12-11T17:01:25",
+                                "lastModified": "2022-12-11T17:22:40",
                                 "name": "Textures",
                                 "hash": "61f65c005c7b46147200896af2127344",
                                 "children": [
@@ -13593,7 +13620,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13615,7 +13642,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken 2",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13637,7 +13664,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken 3",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13659,7 +13686,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken 4",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13681,7 +13708,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken 5",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13703,7 +13730,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken 6",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13725,7 +13752,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "cookie-broken 7",
                                         "hash": "bd64b76c2ac2b8b2d4beb31854c8e176",
                                         "children": [
@@ -13768,7 +13795,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2022-12-11T17:01:25",
+                                        "lastModified": "2022-12-11T17:22:40",
                                         "name": "echopark",
                                         "hash": "5a1f00279495bbc7935c9e6c2a9cfada",
                                         "children": [
@@ -20932,6 +20959,22 @@
                         "publicId": "26943",
                         "source": "",
                         "additional": ""
+                    },
+                    {
+                        "name": "button_start-game-as-dealer",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "699",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1670799800686314:201264",
+                        "fileId": "1196",
+                        "originalId": "1197",
+                        "publicId": "26944",
+                        "source": "C:\/Users\/adamg\/Downloads\/button_start-game-as-dealer.png",
+                        "additional": {
+                            "originHash": "b9bda9ae1bc48532c81f8366fe10d59a"
+                        }
                     }
                 ]
             }
@@ -20939,7 +20982,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1669842898471653:1218482"
+                    "1594406821028277:36199"
                 ]
             }
         },
@@ -26720,6 +26763,34 @@
                         },
                         "uncompressed_file": "1173",
                         "compressed_files": ""
+                    }
+                },
+                {
+                    "k": "1670799800686314:201264",
+                    "v": {
+                        "infos": {
+                            "originalSize": "3565",
+                            "compressedSize": "2266",
+                            "originalRAM": "96096",
+                            "compressedRAM": "12376",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "1198",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "b9bda9ae1bc48532c81f8366fe10d59a",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "1199"
+                            }
+                        ]
                     }
                 }
             ]
