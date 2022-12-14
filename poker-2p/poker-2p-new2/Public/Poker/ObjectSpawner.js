@@ -282,6 +282,7 @@ packets.on("/poker/nextHand/", function (body, params, userId) {
 
 events.on("nextHand", function () {
   onNextHand();
+  sharedCache.handNumber += 1;
 });
 // ---
 
@@ -400,6 +401,10 @@ function advanceRound() {
   sharedCache.amountToCall = 0;
   sharedCache.previousBetAmount = 0;
 
+  if (sharedCache.currentRound != rounds.RIVER) {
+    setNextTurnActions([actions.CHECK, actions.BET]);
+  }
+
   switch (sharedCache.currentRound) {
     case rounds.PREFLOP:
       sharedCache.currentRound = rounds.FLOP;
@@ -440,6 +445,7 @@ function advanceRound() {
 
 function showdown() {
   print("Showdown! Who has the winner?");
+
   //   localCache.gameMessage = "Showdown! Select the winner.";
   script.waitingMessage.text = "";
   // Enable correct UI elements
@@ -804,6 +810,18 @@ options.onKeyboardStateChanged = function (isOpen) {
       return;
     }
 
+    // Disallow bets of more money than the opponent has
+    var opponentAmountBehind =
+      sharedCache.currentPlayer == players.B
+        ? sharedCache.stacks.A
+        : sharedCache.stacks.B;
+
+    if (betAmount > opponentAmountBehind) {
+      print("Invalid bet. try again");
+      validBet = false;
+      return;
+    }
+
     if (validBet) {
       print("Valid bet.");
       resolveOnBet(betAmount);
@@ -855,7 +873,6 @@ function onAWins() {
   payoutWinner(players.A);
   var nextDealer = advanceCache();
   endHand(nextDealer);
-  setNextTurnActions([actions.CHECK, actions.BET]);
 
   packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
 
@@ -876,7 +893,6 @@ function onBWins() {
   payoutWinner(players.B);
   var nextDealer = advanceCache();
   endHand(nextDealer);
-  setNextTurnActions([actions.CHECK, actions.BET]);
 
   packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
 
@@ -1017,7 +1033,6 @@ function onStartGame() {
 
 function onNextHand() {
   print("Hand started.");
-  sharedCache.handNumber += 1;
 
   // Pay blinds - Only do this once (use current dealer for consistency)
   if (localCache.playerName == sharedCache.currentDealer) {

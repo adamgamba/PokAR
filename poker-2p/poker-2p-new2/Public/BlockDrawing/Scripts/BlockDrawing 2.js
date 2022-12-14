@@ -547,8 +547,12 @@ script.api.start = function () {
     var num1s = remainder;
 
     // Render 100s (assuming max stack = 200)
-    if (num100s > 0) {
+    if (num100s == 1) {
       stackObj.getChild(0).enabled = true;
+    }
+    if (num100s == 2) {
+      stackObj.getChild(0).enabled = true;
+      stackObj.getChild(13).enabled = true;
     }
 
     // Render 25s
