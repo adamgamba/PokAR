@@ -178,6 +178,14 @@ events.on("updateSharedCache", function (newCache, userId) {
     return;
   }
 
+  // * test
+  if (localCache.gameMessage.startsWith("Deal")) {
+    // localCache.gameMessage ;
+    updateUI();
+    return;
+  }
+  // * end test
+
   var player =
     newCache.previousPlayer == localCache.playerName
       ? "I "
@@ -194,24 +202,24 @@ events.on("updateSharedCache", function (newCache, userId) {
       break;
     case actions.FOLD:
       action = "fold";
-      if (newCache.currentPlayer != localCache.playerName) {
+      if (newCache.previousPlayer != localCache.playerName) {
         action += "s";
       }
       break;
     case actions.CHECK:
       action = "check";
-      if (newCache.currentPlayer != localCache.playerName) {
+      if (newCache.previousPlayer != localCache.playerName) {
         action += "s";
       }
       break;
     case actions.CALL:
       action = "call";
-      if (newCache.currentPlayer != localCache.playerName) {
+      if (newCache.previousPlayer != localCache.playerName) {
         action += "s";
       }
       break;
     case actions.BET:
-      if (newCache.currentPlayer != localCache.playerName) {
+      if (newCache.previousPlayer != localCache.playerName) {
         action = "bet";
       } else {
         action = "bets";
@@ -219,7 +227,7 @@ events.on("updateSharedCache", function (newCache, userId) {
       action += " $" + newCache.previousBetAmount.toString();
       break;
     case actions.RAISE:
-      if (newCache.currentPlayer != localCache.playerName) {
+      if (newCache.previousPlayer != localCache.playerName) {
         action = "raise to";
       } else {
         action = "raises to";
