@@ -120,7 +120,7 @@ var sharedCache = {
     B: [],
     POT: [],
   },
-  handNumber: 0,
+  handNumber: 1,
   winner: null,
   dealerMessage: "", // ! testing
   isAllIn: false, // ! testing
@@ -535,30 +535,30 @@ function updateUI() {
       : "Opponent";
 
   //  * temp comment out
-  //   if (
-  //     sharedCache.amountToCall == 0 ||
-  //     sharedCache.currentPlayer != localCache.playerName
-  //   ) {
-  //     script.amountToCallObj.enabled = false;
-  //   } else {
-  script.amountToCallObj.enabled = true;
-  script.amountToCall.text = sharedCache.amountToCall.toString();
-  //   }
+  if (
+    sharedCache.amountToCall == 0 ||
+    sharedCache.currentPlayer != localCache.playerName
+  ) {
+    script.amountToCallObj.enabled = false;
+  } else {
+    script.amountToCallObj.enabled = true;
+    script.amountToCall.text = sharedCache.amountToCall.toString();
+  }
 
   // TODO: Build Game Message
   if (sharedCache.previousAction != null) {
     var gameMsg = "";
-    if (sharedCache.isAllIn) {
+    if (sharedCache.isAllIn && sharedCache.previousBetAmount > 0) {
       if (sharedCache.previousPlayer == localCache.playerName) {
         gameMsg =
-          "I'm all in for $" +
+          "I'm All-In for $" +
           sharedCache.previousBetAmount.toString() +
-          " more.";
+          ".";
       } else {
         gameMsg =
-          "Opponent is all in for $" +
+          "Opponent is All-In for $" +
           sharedCache.previousBetAmount.toString() +
-          " more.";
+          ".";
       }
     } else {
       gameMsg +=
@@ -585,10 +585,10 @@ function updateUI() {
       }
 
       gameMsg += ".";
-      script.gameMessage.text = gameMsg;
     }
+    script.gameMessage.text = gameMsg;
   } else {
-    script.gameMessage.text = "No action yet";
+    script.gameMessage.text = "";
   }
   //   localCache.gameMessage;
   //   localCache.gameMessage = "";
@@ -601,7 +601,7 @@ function updateUI() {
     script.dealerMessage.text = sharedCache.dealerMessage;
   }
 
-  script.allInMessage.text = sharedCache.isAllIn ? "ALL IN!!!" : "nope";
+  //   script.allInMessage.text = sharedCache.isAllIn ? "ALL IN!!!" : "";
 
   print("rendering chip stacks...");
   print("stack = " + script.stackANumber.text);
@@ -626,6 +626,8 @@ function payBlinds() {
   betsAmount(sharedCache.currentVillain, blinds.BIG);
 
   sharedCache.amountToCall = blinds.BIG - blinds.LITTLE;
+  packets.sendObject("/poker/updateSharedCache/", sharedCache);
+  updateUI();
 }
 
 // * Event Functions
@@ -949,7 +951,7 @@ function onStartGame() {
   script.waitingMessageObj.enabled = true;
   script.handNumberObj.enabled = true;
   script.dealerMessageObj.enabled = true;
-  script.allInMessageObj.enabled = true;
+  script.allInMessageObj.enabled = false;
 
   // Only do this once (use player A for consistency)
   if (localCache.playerName != players.B) {
@@ -1007,10 +1009,18 @@ function onStartGame() {
 
 function onNextHand() {
   print("Hand started.");
+  sharedCache.handNumber += 1;
 
   // Pay blinds - Only do this once (use current dealer for consistency)
   if (localCache.playerName == sharedCache.currentDealer) {
     payBlinds();
+
+    // script.waitingMessage.text =
+    //   "Reached A. playerName = " +
+    //   localCache.playerName +
+    //   ". currDealer = " +
+    //   sharedCache.currentDealer +
+    //   ".";
 
     // packets.sendObject("/poker/updateSharedCache/", sharedCache);
     // updateUI();
@@ -1042,7 +1052,6 @@ function onNextHand() {
     script.waitingMessage.text = "Waiting for opponent...";
   }
 
-  //   sharedCache.handNumber += 1;
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
   updateUI();
 }
