@@ -399,7 +399,6 @@ function advanceRound() {
   sharedCache.currentPlayer = sharedCache.currentVillain;
   sharedCache.amountToCall = 0;
   sharedCache.previousBetAmount = 0;
-  setNextTurnActions([actions.CHECK, actions.BET]);
 
   switch (sharedCache.currentRound) {
     case rounds.PREFLOP:
@@ -454,7 +453,7 @@ function showdown() {
   script.AWinsButton.enabled = true;
   script.BWinsButton.enabled = true;
 
-  sharedCache.isShowdown = false;
+  //   sharedCache.isShowdown = false;
 }
 
 function betsAmount(player, amount) {
@@ -596,6 +595,7 @@ function updateUI() {
 
   if (sharedCache.isShowdown) {
     script.dealerMessage.text = "Showdown! Select the winner.";
+    script.waitingMessage.text = "";
     // TODO - add option to chop
   } else {
     script.dealerMessage.text = sharedCache.dealerMessage;
@@ -634,6 +634,7 @@ function payBlinds() {
 function onCheck() {
   sharedCache.previousPlayer = sharedCache.currentPlayer;
   sharedCache.dealerMessage = "";
+  sharedCache.isShowdown = false;
 
   //   if (sharedCache.currentPlayer == localCache.playerName) {
   //     localCache.gameMessage = "I check. (oncheck)";
@@ -662,6 +663,7 @@ function onCheck() {
 function onFold() {
   sharedCache.previousPlayer = sharedCache.currentPlayer;
   sharedCache.dealerMessage = "";
+  sharedCache.isShowdown = false;
 
   print("Player " + sharedCache.currentPlayer + " folds.");
   //   sharedCache.gameMessage =
@@ -686,6 +688,7 @@ function onFold() {
 function onCall() {
   sharedCache.previousPlayer = sharedCache.currentPlayer;
   sharedCache.dealerMessage = "";
+  sharedCache.isShowdown = false;
 
   print("Player " + sharedCache.currentPlayer + " calls.");
   //   sharedCache.gameMessage =
@@ -728,6 +731,7 @@ function onRaise() {
 function onBet(isRaising) {
   sharedCache.previousPlayer = sharedCache.currentPlayer;
   sharedCache.dealerMessage = "";
+  sharedCache.isShowdown = false;
   sharedCache.previousAction = isRaising ? actions.RAISE : actions.BET;
 
   // Launch keyboard and gather input
@@ -851,6 +855,8 @@ function onAWins() {
   payoutWinner(players.A);
   var nextDealer = advanceCache();
   endHand(nextDealer);
+  setNextTurnActions([actions.CHECK, actions.BET]);
+
   packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
 
   updateUI();
@@ -870,6 +876,8 @@ function onBWins() {
   payoutWinner(players.B);
   var nextDealer = advanceCache();
   endHand(nextDealer);
+  setNextTurnActions([actions.CHECK, actions.BET]);
+
   packets.sendObject("/poker/endHand/", { nextDealer: nextDealer });
 
   updateUI();
