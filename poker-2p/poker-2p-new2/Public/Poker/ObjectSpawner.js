@@ -120,7 +120,7 @@ var sharedCache = {
     B: [],
     POT: [],
   },
-  handNumber: 1,
+  handNumber: 0,
   winner: null,
   dealerMessage: "", // ! testing
   isAllIn: false, // ! testing
@@ -146,88 +146,94 @@ packets.on(
 );
 
 events.on("updateSharedCache", function (newCache, userId) {
+  // Make sure we don't overwrite the hand number with a lower value
+  newCache.handNumber = Math.max(
+    sharedCache.handNumber,
+    newCache.handNumber
+  );
+
   setCache(newCache); // Update shared cache
   updateUI();
   return;
 
-  // Update local cache (game message)
-  if (newCache.winner != null) {
-    if (newCache.winner == localCache.playerName) {
-      localCache.gameMessage =
-        "I win $" + sharedCache.stacks.POT.toString();
-    } else {
-      localCache.gameMessage =
-        "Opponent wins $" + sharedCache.stacks.POT.toString();
-    }
+  //   // Update local cache (game message)
+  //   if (newCache.winner != null) {
+  //     if (newCache.winner == localCache.playerName) {
+  //       localCache.gameMessage =
+  //         "I win $" + sharedCache.stacks.POT.toString();
+  //     } else {
+  //       localCache.gameMessage =
+  //         "Opponent wins $" + sharedCache.stacks.POT.toString();
+  //     }
 
-    updateUI();
-    return;
-  }
-
-  //   // * test
-  //   if (localCache.gameMessage.includes("Deal")) {
-  //     // localCache.gameMessage ;
   //     updateUI();
   //     return;
   //   }
-  //   // * end test
 
-  var playerStr =
-    newCache.previousPlayer == localCache.playerName
-      ? "I "
-      : "Opponent ";
+  //   //   // * test
+  //   //   if (localCache.gameMessage.includes("Deal")) {
+  //   //     // localCache.gameMessage ;
+  //   //     updateUI();
+  //   //     return;
+  //   //   }
+  //   //   // * end test
 
-  var actionStr = "";
-  switch (newCache.previousAction) {
-    case null:
-      //   action = "null !!!";
-      //   if (newCache.currentPlayer == localCache.playerName) {
-      //     action += "s";
-      //   }
-      //   action += "."
-      break;
-    case actions.FOLD:
-      actionStr = "fold";
-      if (newCache.previousPlayer != localCache.playerName) {
-        actionStr += "s";
-      }
-      break;
-    case actions.CHECK:
-      actionStr = "check";
-      if (newCache.previousPlayer != localCache.playerName) {
-        actionStr += "s";
-      }
-      break;
-    case actions.CALL:
-      actionStr = "call";
-      if (newCache.previousPlayer != localCache.playerName) {
-        actionStr += "s";
-      }
-      break;
-    case actions.BET:
-      if (newCache.previousPlayer == localCache.playerName) {
-        actionStr = "bet";
-      } else {
-        actionStr = "bets";
-      }
-      actionStr += " $" + newCache.previousBetAmount.toString();
-      break;
-    case actions.RAISE:
-      if (newCache.previousPlayer == localCache.playerName) {
-        actionStr = "raise to";
-      } else {
-        actionStr = "raises to";
-      }
-      actionStr += " $" + newCache.previousBetAmount.toString();
-      break;
-  }
-  actionStr += ". ";
+  //   var playerStr =
+  //     newCache.previousPlayer == localCache.playerName
+  //       ? "I "
+  //       : "Opponent ";
 
-  if (newCache.previousAction != null) {
-    localCache.gameMessage += playerStr + actionStr;
-  }
+  //   var actionStr = "";
+  //   switch (newCache.previousAction) {
+  //     case null:
+  //       //   action = "null !!!";
+  //       //   if (newCache.currentPlayer == localCache.playerName) {
+  //       //     action += "s";
+  //       //   }
+  //       //   action += "."
+  //       break;
+  //     case actions.FOLD:
+  //       actionStr = "fold";
+  //       if (newCache.previousPlayer != localCache.playerName) {
+  //         actionStr += "s";
+  //       }
+  //       break;
+  //     case actions.CHECK:
+  //       actionStr = "check";
+  //       if (newCache.previousPlayer != localCache.playerName) {
+  //         actionStr += "s";
+  //       }
+  //       break;
+  //     case actions.CALL:
+  //       actionStr = "call";
+  //       if (newCache.previousPlayer != localCache.playerName) {
+  //         actionStr += "s";
+  //       }
+  //       break;
+  //     case actions.BET:
+  //       if (newCache.previousPlayer == localCache.playerName) {
+  //         actionStr = "bet";
+  //       } else {
+  //         actionStr = "bets";
+  //       }
+  //       actionStr += " $" + newCache.previousBetAmount.toString();
+  //       break;
+  //     case actions.RAISE:
+  //       if (newCache.previousPlayer == localCache.playerName) {
+  //         actionStr = "raise to";
+  //       } else {
+  //         actionStr = "raises to";
+  //       }
+  //       actionStr += " $" + newCache.previousBetAmount.toString();
+  //       break;
+  //   }
+  //   actionStr += ". ";
 
-  updateUI();
+  //   if (newCache.previousAction != null) {
+  //     localCache.gameMessage += playerStr + actionStr;
+  //   }
+
+  //   updateUI();
 });
 
 // ---
@@ -282,7 +288,6 @@ packets.on("/poker/nextHand/", function (body, params, userId) {
 
 events.on("nextHand", function () {
   onNextHand();
-  sharedCache.handNumber += 1;
 });
 // ---
 
@@ -1036,6 +1041,7 @@ function onNextHand() {
 
   // Pay blinds - Only do this once (use current dealer for consistency)
   if (localCache.playerName == sharedCache.currentDealer) {
+    sharedCache.handNumber += 1;
     payBlinds();
 
     // script.waitingMessage.text =
