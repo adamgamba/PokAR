@@ -864,8 +864,9 @@ function resolveOnBet(betAmount) {
   updateUI();
 }
 
+// Actually "I Win" button
 function onAWins() {
-  print("Player A Wins!");
+  //   print("Player A Wins!");
 
   //   if (players.A == localCache.playerName) {
   //     localCache.gameMessage =
@@ -875,7 +876,7 @@ function onAWins() {
   //       "Opponent wins $" + sharedCache.stacks.POT.toString();
   //   }
 
-  payoutWinner(players.A);
+  payoutWinner(localCache.playerName);
   var nextDealer = advanceCache();
   endHand(nextDealer);
 
@@ -884,8 +885,10 @@ function onAWins() {
   updateUI();
   packets.sendObject("/poker/updateSharedCache/", sharedCache);
 }
+
+// Actually "Opponent Wins" button
 function onBWins() {
-  print("Player B Wins!");
+  //   print("Player B Wins!");
 
   //   if (players.B == localCache.playerName) {
   //     localCache.gameMessage =
@@ -895,7 +898,7 @@ function onBWins() {
   //       "Opponent wins $" + sharedCache.stacks.POT.toString();
   //   }
 
-  payoutWinner(players.B);
+  payoutWinner(getOpponent(localCache.playerName));
   var nextDealer = advanceCache();
   endHand(nextDealer);
 

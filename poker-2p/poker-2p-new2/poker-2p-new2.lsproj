@@ -3,7 +3,7 @@
     "document_id": "em7E6TiMwNdiM3hpmxo2",
     "original_document_id": "teLTJ9o3wD2nmRrbjOIk",
     "version": "29",
-    "lastChanged": "1670991604244",
+    "lastChanged": "1671062726382",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1812,7 +1812,13 @@
                         "button_fold"
                     ],
                     [
+                        "button_i-win"
+                    ],
+                    [
                         "button_next-hand"
+                    ],
+                    [
+                        "button_opponent-wins"
                     ],
                     [
                         "button_raise"
@@ -1883,9 +1889,7 @@
                     "1665550693813886:2935605",
                     "1665550693912568:2935978",
                     "1665551823334710:3235674",
-                    "1665551961009662:3277160",
                     "1665551961015245:3277162",
-                    "1665551962547762:3279225",
                     "1665551962556992:3279229",
                     "1665555216996963:3638060",
                     "1665555217117455:3638301",
@@ -1970,7 +1974,6 @@
                     "1666846307734011:2429259",
                     "1666846307795904:2429395",
                     "1668630079868974:486862",
-                    "1668646779044612:1279811",
                     "1668646779171291:1280287",
                     "1668647345648182:1599934",
                     "1668647345722745:1600173",
@@ -4985,6 +4988,22 @@
                     "resId": "700",
                     "uid": "1670949745986577:498571",
                     "name": "Files\/File1200.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "701",
+                    "uid": "1671062419639389:200853",
+                    "name": "Files\/File1204.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "702",
+                    "uid": "1671062420208781:200889",
+                    "name": "Files\/File1208.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -9841,6 +9860,38 @@
                 {
                     "k": "1203",
                     "v": "Files\/File1203.pvr"
+                },
+                {
+                    "k": "1204",
+                    "v": "Files\/File1204.pvr"
+                },
+                {
+                    "k": "1205",
+                    "v": "Files\/File1205.png"
+                },
+                {
+                    "k": "1206",
+                    "v": "Files\/File1206.png"
+                },
+                {
+                    "k": "1207",
+                    "v": "Files\/File1207.pvr"
+                },
+                {
+                    "k": "1208",
+                    "v": "Files\/File1208.pvr"
+                },
+                {
+                    "k": "1209",
+                    "v": "Files\/File1209.png"
+                },
+                {
+                    "k": "1210",
+                    "v": "Files\/File1210.png"
+                },
+                {
+                    "k": "1211",
+                    "v": "Files\/File1211.pvr"
                 }
             ]
         },
@@ -10906,6 +10957,14 @@
                     {
                         "k": "26945",
                         "v": "button_deal-next-hand.png"
+                    },
+                    {
+                        "k": "26946",
+                        "v": "button_i-win.png"
+                    },
+                    {
+                        "k": "26947",
+                        "v": "button_opponent-wins.png"
                     }
                 ],
                 "hashes": [
@@ -11603,7 +11662,7 @@
                     },
                     {
                         "k": "194",
-                        "v": "9e07ca39a643239b0839c547f5693cfd"
+                        "v": "eb9311f726fd324721272cc3bc49c953"
                     },
                     {
                         "k": "195",
@@ -11904,14 +11963,22 @@
                     {
                         "k": "26945",
                         "v": "c00890d1c5ecc19ef1627244d9c3c5b6"
+                    },
+                    {
+                        "k": "26946",
+                        "v": "7a3764151a38b963e1cc1f5a5a1a2e5f"
+                    },
+                    {
+                        "k": "26947",
+                        "v": "ebc4d9933fd1a2ace397d4ace3fa7457"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2022-12-13T23:07:00",
+                        "lastModified": "2022-12-14T19:00:20",
                         "name": "Public",
-                        "hash": "641e87b0f17c5560f75e119f001c22b8",
+                        "hash": "0682352d53fd9b5fbccaa8cb66a8e003",
                         "children": [
                             {
                                 "isFolder": "false",
@@ -12177,9 +12244,23 @@
                             },
                             {
                                 "isFolder": "false",
+                                "lastModified": "2022-12-14T18:59:00",
+                                "name": "button_i-win.png",
+                                "hash": "7a3764151a38b963e1cc1f5a5a1a2e5f",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
                                 "lastModified": "2022-12-13T23:06:59",
                                 "name": "button_next-hand.png",
                                 "hash": "be1e73e5f690aa4269c881d95de2e020",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2022-12-14T18:58:34",
+                                "name": "button_opponent-wins.png",
+                                "hash": "ebc4d9933fd1a2ace397d4ace3fa7457",
                                 "children": ""
                             },
                             {
@@ -12985,7 +13066,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2022-12-13T23:06:56",
                                 "name": "Poker",
-                                "hash": "80db743527f464897a97bfc9a625373a",
+                                "hash": "2b2ec4b35d7ca2818911748e6f71e58c",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -13003,9 +13084,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2022-12-13T23:17:54",
+                                        "lastModified": "2022-12-14T19:03:11",
                                         "name": "ObjectSpawner.js",
-                                        "hash": "9e07ca39a643239b0839c547f5693cfd",
+                                        "hash": "eb9311f726fd324721272cc3bc49c953",
                                         "children": ""
                                     },
                                     {
@@ -21105,6 +21186,38 @@
                         "additional": {
                             "originHash": "c00890d1c5ecc19ef1627244d9c3c5b6"
                         }
+                    },
+                    {
+                        "name": "button_i-win",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "701",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1671062419639389:200853",
+                        "fileId": "1204",
+                        "originalId": "1205",
+                        "publicId": "26946",
+                        "source": "C:\/Users\/adamg\/Downloads\/button_i-win.png",
+                        "additional": {
+                            "originHash": "7a3764151a38b963e1cc1f5a5a1a2e5f"
+                        }
+                    },
+                    {
+                        "name": "button_opponent-wins",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "702",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "1671062420208781:200889",
+                        "fileId": "1208",
+                        "originalId": "1209",
+                        "publicId": "26947",
+                        "source": "C:\/Users\/adamg\/Downloads\/button_opponent-wins.png",
+                        "additional": {
+                            "originHash": "ebc4d9933fd1a2ace397d4ace3fa7457"
+                        }
                     }
                 ]
             }
@@ -21112,7 +21225,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1669895792521082:7575059"
+                    "1665551823334710:3235674"
                 ]
             }
         },
@@ -26947,6 +27060,62 @@
                                     "settings_hash": "2049"
                                 },
                                 "v": "1203"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1671062419639389:200853",
+                    "v": {
+                        "infos": {
+                            "originalSize": "1701",
+                            "compressedSize": "1119",
+                            "originalRAM": "60456",
+                            "compressedRAM": "7888",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "1206",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "7a3764151a38b963e1cc1f5a5a1a2e5f",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "1207"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "k": "1671062420208781:200889",
+                    "v": {
+                        "infos": {
+                            "originalSize": "3394",
+                            "compressedSize": "1898",
+                            "originalRAM": "60456",
+                            "compressedRAM": "7888",
+                            "extension": "png",
+                            "settings": {
+                                "isCompressed": "true",
+                                "level": "2",
+                                "type": "1",
+                                "subtype": "9"
+                            }
+                        },
+                        "uncompressed_file": "1210",
+                        "compressed_files": [
+                            {
+                                "k": {
+                                    "uncompressed_hash": "ebc4d9933fd1a2ace397d4ace3fa7457",
+                                    "settings_hash": "2049"
+                                },
+                                "v": "1211"
                             }
                         ]
                     }
